@@ -1,10 +1,42 @@
-/* some properties for later use
-html {
-  font-size: 10px;
-  font-family: "PT Sans", sans-serif;
-  background-color: #000000;
+ html {
+  font-size: 20px;
+  font-family: "PT Sans", verdana, sans-serif;
 }
 
+body {
+  background-color: white;
+}
+
+#logo {
+  margin-left: 29px;
+  margin-top: 28px;
+} 
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ li a {
+  display: block;
+  width: 182px;
+  height: 134px;
+  border: 1px solid grey;
+  background-color: #1B203D;
+}
+
+.icons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 50%;
+}
+
+/* some properties for later use
 h1 {
   font-size: 60px;
   text-align: center;

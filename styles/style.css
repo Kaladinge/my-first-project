@@ -5,11 +5,13 @@
 
 body {
   background-color: white;
+  margin: 0;
 }
 
 #logo {
   margin-left: 29px;
   margin-top: 28px;
+  margin-bottom: 7px;
 } 
 
 nav ul {
@@ -19,14 +21,27 @@ nav ul {
   overflow: hidden;
 }
 
- li a {
+.horizontal2 {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 55px;
+  margin-left: 45%;
+  width: 50%;
+}
+
+
+ .icons {
   display: block;
   width: 182px;
   height: 134px;
   border: 1px solid grey;
   background-color: #1B203D;
+  justify-content: center;
 }
 
+
+/*
 .icons {
   display: block;
   margin-left: auto;
@@ -35,6 +50,7 @@ nav ul {
   margin-bottom: auto;
   height: 50%;
 }
+*/
 
 /* some properties for later use
 h1 {

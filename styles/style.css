@@ -17,6 +17,7 @@ h2{
   font-family: "Russo One", verdana, sans-serif;
   text-align: center;
   font-size: 30px;
+  line-height: 20px;
 }
 
 #logo {
@@ -24,6 +25,9 @@ h2{
   margin-top: 28px;
   margin-bottom: 7px;
 } 
+
+header {
+}
 
 nav ul {
   list-style-type: none;
@@ -57,7 +61,7 @@ nav ul {
 }
 
  .vertical {
-  display: block;
+  display: inline-block;
   vertical-align: middle;
   text-align: center;
   display: table-cell;
@@ -75,12 +79,11 @@ nav ul {
   height: 134px;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
+.frames {
+border: 3px solid grey;
 }
 
-.frame {
+.frame1 {
   position: relative;
   width: 1340px;
   height: 557px;
@@ -94,11 +97,11 @@ footer {
   height: 557px;
 }
 
+
 .lines {
   position: absolute;
   top: 135px;
   left: 896px;
-  line-height: 20px;
 }
 
 .lines2{
@@ -109,6 +112,35 @@ footer {
 
 #here {
   color: #A6C906;
+}
+
+.frame2 {
+  position: relative;
+  width: 567px;
+  height:378px;
+}
+
+.lines3 h2 {
+ color: black;
+}
+
+#buy {
+  color: #9859D0;
+}
+
+.lines3 {
+  
+}
+
+/* footer info */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#linkboy {
+  width: 50%;
 }
 
 /*

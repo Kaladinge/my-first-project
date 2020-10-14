@@ -3,19 +3,22 @@
   font-family: "PT Sans", verdana, sans-serif;
 }
 
+
 body {
   background-color: white;
   margin: 0px;
+  
 }
+
 
 h1 {
   font-family: "Russo One", verdana, sans-serif;
 }
 
 h2{
-  color: white;
+  color: black;
   font-family: "Russo One", verdana, sans-serif;
-  text-align: center;
+  text-align: left;
   font-size: 30px;
   line-height: 20px;
 }
@@ -79,58 +82,61 @@ nav ul {
   height: 134px;
 }
 
-.frames {
-border: 3px solid grey;
+
+/* sidebar info */
+
+.sidebar {
+  width: 400px;
 }
 
-.frame1 {
-  position: relative;
-  width: 1340px;
-  height: 557px;
+.mainheader {
+  margin-bottom: 30px;
 }
 
-#link-black {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 634px;
-  height: 557px;
+.subheader {
+  margin: 0;
+  color: grey;
+}
+
+.gamepicture {
+  float: left;
+  width: 25%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.game {
 }
 
 
-.lines {
-  position: absolute;
-  top: 135px;
-  left: 896px;
+.gameinfo {
+  font-size: 16px;
+  color: grey;
+  margin-bottom: 30px;
 }
 
-.lines2{
-  position: absolute;
-  top: 328px;
-  left: 981px;
+.info {
+  line-height: 2px;
+  margin-left: 20px;
 }
 
-#here {
-  color: #A6C906;
-}
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+  }
 
-.frame2 {
-  position: relative;
-  width: 567px;
-  height:378px;
+.cart {
+  margin: 20px;
+  color: white;
+  background-color: #EE1925;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 7px 25px;
+  border-radius: 15px;
+  cursor: grabbing;
 }
-
-.lines3 h2 {
- color: black;
-}
-
-#buy {
-  color: #9859D0;
-}
-
-.lines3 {
   
-}
 
 /* footer info */
 
@@ -139,9 +145,8 @@ footer {
   justify-content: space-between;
 }
 
-#linkboy {
-  width: 50%;
-}
+
+
 
 /*
 .icons {

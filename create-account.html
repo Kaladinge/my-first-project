@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -64,26 +68,101 @@
           account
         </p>
         <p>or</p>
-        <p>Create a Game Hub Account</p>
-        <p>easily by using an existing account for:</p>
-        <button class="button1 buttons">Facebook</button>
-        <button class="button2 buttons">Google</button>
+        <div id="lines">
+          <p>Create a Game Hub Account</p>
+          <p>easily by using an existing account for:</p>
+        </div>
+        <img
+          src="images/facebook-button.png"
+          id="facebook"
+          alt="facebook button"
+        />
+        <img src="images/google-button.png" id="google" alt="google button" />
+
+        <!--<button class="button1 buttons">
+          <img src="images/facebook.png" id="facebook" alt="facebook" />
+          <div class="face">Facebook</div>
+        </button>
+        <button class="button2 buttons">Google</button>-->
+
         <hr />
         <p>or make one here:</p>
-        <img src="" alt="Profile Picture" />
-        <p>Add a profile picture by clicking on the circle</p>
-        <p>Nickname:</p>
-        <p>Gender:</p>
-        <p>Female</p>
-        <p>Male</p>
-        <p>Date of Birth:</p>
-        <p>Country:</p>
-        <p>E-mail address:</p>
-        <p>Password:</p>
-        <p>Confirm Password</p>
+        <div class="hi">
+          <img
+            src="images/circle-profile.png"
+            id="circle"
+            alt="profile picture circle"
+          />
+          <p id="profiletext">
+            Add a profile picture by clicking on the circle
+          </p>
+        </div>
+        <form id="hello">
+          <div class="form__input">
+            <label for="pickname">Nickname:</label>
+            <input type="text" name="nickname" id="pickname" />
+          </div>
+          <div class="form__input">
+            <label for="pickgender">Gender:</label>
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              id="female"
+            /><label for="female">Female</label>
+            <input type="radio" name="gender" value="male" id="male" /><label
+              for="male"
+              >Male</label
+            >
+
+            <input
+              type="radio"
+              name="gender"
+              value="undisclosed"
+              id="undisclosed"
+            /><label for="undisclosed">Undisclosed</label>
+          </div>
+          <div class="form__input">
+            <label for="pick_bday">Date of birth: </label>
+            <input
+              type="date"
+              name="bday"
+              id="pick_bday"
+              min="1920-01-01"
+              max="2020-10-09"
+            />
+          </div>
+          <div class="form__input">
+            <label for="pick_country">Country:</label>
+            <input list="countries" id="pick_country" name="country" />
+            <datalist id="countries">
+              <option value="U.S.A"></option>
+              <option value="Norway"></option>
+              <option value="South-Africa"></option>
+              <option value="Vietnam"></option>
+              <option value="Australia"></option>
+            </datalist>
+          </div>
+          <div class="form__input">
+            <label for="pick_email">E-mail address</label>
+            <input type="email" name="email" id="pick-email" />
+          </div>
+
+          <div class="form__input">
+            <label for="pick_password">Password:</label>
+            <input type="password" name="password" id="pick_password" />
+          </div>
+
+          <div class="form__input">
+            <label for="confirm_password">Confirm password:</label>
+            <input type="password" name="confirm" id="confirm_password" />
+          </div>
+        </form>
+
         <p>I agree to the <u>Game Hub user agreement.</u></p>
         <button>Creste and log in</button>
       </div>
+      <h2>hello</h2>
     </main>
     <footer>
       <p>Company Unformation</p>

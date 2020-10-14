@@ -1,0 +1,50 @@
+.frames {
+  border: 3px solid grey;
+}
+
+.frame1 {
+  position: relative;
+  width: 1340px;
+  height: 557px;
+}
+
+#link-black {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 634px;
+  height: 557px;
+}
+
+.lines {
+  position: absolute;
+  top: 135px;
+  left: 896px;
+}
+
+.lines2 {
+  position: absolute;
+  top: 328px;
+  left: 981px;
+}
+
+#here {
+  color: #a6c906;
+}
+
+.frame2 {
+  position: relative;
+  width: 567px;
+  height: 378px;
+}
+
+.lines3 h2 {
+  color: black;
+}
+
+#buy {
+  color: #9859d0;
+}
+
+.lines3 {
+}

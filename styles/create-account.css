@@ -59,6 +59,13 @@ main,
 footer {
   background: grey;
 }
+.sheet {
+  background: white;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid black;
+}
 
 #login {
   color: white;
@@ -72,17 +79,50 @@ footer {
 
 #firstline {
   margin-top: 76px;
+}
+
+#lines {
+  line-height: 15px;
+}
+
+#facebook {
+  width: 300px;
+  margin-right: 20px;
+}
+
+#google {
+  width: 300px;
+}
+
+.hi {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+#circle {
+  margin-right: 20px;
+  width: 100px;
+  vertical-align: middle;
+}
+
+#profiletext {
+  margin-left: 20px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+#hello {
+  display: inline-block;
   border: 1px solid black;
 }
 
-.sheet {
-  background: white;
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
+.form__input {
   border: 1px solid black;
+  margin: 50px auto 0 auto;
+  text-align: right;
 }
 
+/*
 .buttons {
   background-color: white;
   color: black;
@@ -90,4 +130,18 @@ footer {
   text-decoration: none;
   display: inline-block;
   border: 1px solid black;
+  font-size: 28px;
+  font-family: "PT Sans";
 }
+
+#facebook {
+  border: 1px solid blue;
+  display: inline-block;
+  margin-right: 20px;
+  width: 50px;
+}
+.face {
+  border: 1px solid blue;
+  display: inline-block;
+}
+*/

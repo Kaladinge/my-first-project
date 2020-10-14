@@ -1,21 +1,18 @@
- html {
+html {
   font-size: 20px;
   font-family: "PT Sans", verdana, sans-serif;
 }
 
-
 body {
   background-color: white;
   margin: 0px;
-  
 }
-
 
 h1 {
   font-family: "Russo One", verdana, sans-serif;
 }
 
-h2{
+h2 {
   color: black;
   font-family: "Russo One", verdana, sans-serif;
   text-align: left;
@@ -27,7 +24,7 @@ h2{
   margin-left: 29px;
   margin-top: 28px;
   margin-bottom: 7px;
-} 
+}
 
 header {
 }
@@ -48,14 +45,14 @@ nav ul {
   width: 50%;
 }
 /*
-.vertical {       Also possible to use this later if I want to adjust vertical icons (margin-top) manually.
-  display: flex;
-  margin: auto;
-}
-*/
+  .vertical {       Also possible to use this later if I want to adjust vertical icons (margin-top) manually.
+    display: flex;
+    margin: auto;
+  }
+  */
 
 #menuline {
-  border: 2px solid #1B203D;
+  border: 2px solid #1b203d;
   margin: 0;
 }
 
@@ -63,14 +60,14 @@ nav ul {
   display: block;
 }
 
- .vertical {
+.vertical {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   display: table-cell;
   width: 182px;
   border: 1px solid grey;
-  background-color: #1B203D;
+  background-color: #1b203d;
 }
 
 .icons {
@@ -84,13 +81,20 @@ nav ul {
 
 /* main info */
 
-#linkboy {
+.sheet {
+  width: 60vw;
+  border-right: 1px solid grey;
+  text-align: center;
+}
+
+.empty {
+  margin: 100px;
 }
 
 /* sidebar info */
 
 .sidebar {
-  width: 400px;
+  min-width: 400px;
   margin-left: 30px;
 }
 
@@ -110,10 +114,6 @@ nav ul {
   margin-right: 20px;
 }
 
-.game {
-}
-
-
 .gameinfo {
   font-size: 16px;
   color: grey;
@@ -129,7 +129,7 @@ nav ul {
   clear: both;
   content: "";
   display: table;
-  }
+}
 
 .clearfix {
   margin-top: 60px;
@@ -138,7 +138,7 @@ nav ul {
 .cart {
   margin: 20px;
   color: white;
-  background-color: #EE1925;
+  background-color: #ee1925;
   border: 1px solid black;
   text-decoration: none;
   padding: 7px 25px;
@@ -146,30 +146,17 @@ nav ul {
   cursor: grabbing;
 }
 
+.sheet {
+  grid-area: sheet;
+}
+.sidebar {
+  grid-area: sidebar;
+}
 
-.pictures {grid-area: pictures;}
-.sidebar {grid-area: sidebar;}
-  
 main {
   display: grid;
-  grid-template-areas:
-  'pictures sidebar';
-}
-
-#linkboy {
-  width: 100vw;
-}
-
-#pikachu {
-  width: 42vw;
-}
-
-#money {
-  width: 28vw;
-}
-
-#bowser {
-  width: 28vw;
+  /*grid-template-columns: auto auto;*/
+  grid-template-areas: "sheet sidebar";
 }
 
 body {
@@ -182,63 +169,7 @@ main {
   left: 184px;
 }
 
-/*#linkboy {
-  width: 90vw;
-}
-
-#pikachu {
-  width: 33vw;
-}
-
-#money {
-  width: 25vw;
-}
-
-#bowser {
-  width: 25vw;
-}*/
-
-/* footer info */
-
 footer {
   display: flex;
   justify-content: space-between;
-}
-
-
-
-
-/*
-.icons {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  height: 50%;
-}
-*/
-
-/* some properties for later use
-h1 {
-  font-size: 60px;
-  text-align: center;
-  margin: 0;
-  padding: 20px 0;
-  color: #a6c906;
-  text-shadow: 3px 3px 1px black;
-}
-
-p {
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
-}
-
-body {
-  width: 600px;
-  margin: 0 auto;
-  background-color: darkgreen;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
 }

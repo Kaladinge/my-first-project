@@ -87,10 +87,6 @@ nav ul {
   text-align: center;
 }
 
-.empty {
-  margin: 100px;
-}
-
 /* sidebar info */
 
 .sidebar {
@@ -112,6 +108,9 @@ nav ul {
   width: 25%;
   margin-bottom: 20px;
   margin-right: 20px;
+}
+
+.game {
 }
 
 .gameinfo {
@@ -146,28 +145,48 @@ nav ul {
   cursor: grabbing;
 }
 
-.sheet {
-  grid-area: sheet;
+/* Grid info */
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  margin-top: 200px;
 }
 .sidebar {
   grid-area: sidebar;
+  margin-top: 200px;
 }
-
-main {
-  display: grid;
-  /*grid-template-columns: auto auto;*/
-  grid-template-areas: "sheet sidebar";
+footer {
+  grid-area: footer;
 }
 
 body {
-  position: relative;
+  display: grid;
+  grid-template-areas:
+    "header main sidebar"
+    "header footer footer";
 }
 
-main {
-  position: absolute;
-  top: 147px;
-  left: 184px;
-}
+/*#linkboy {
+    width: 90vw;
+  }
+  
+  #pikachu {
+    width: 33vw;
+  }
+  
+  #money {
+    width: 25vw;
+  }
+  
+  #bowser {
+    width: 25vw;
+  }*/
+
+/* footer info */
 
 footer {
   display: flex;

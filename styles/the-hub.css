@@ -87,8 +87,6 @@ nav ul {
 
 main {
   border: 1px solid black;
-  min-width: 1000px;
-  max-width: 1100px;
 }
 
 nav {
@@ -96,16 +94,17 @@ nav {
   width: 182px;
 }
 
-.alltext::after {
+.allcontent1::after {
   clear: both;
   content: "";
   display: table;
 }
 
-.alltext {
+.allcontent1 {
   margin-left: 0px;
   border: 1px solid black;
   text-align: left;
+  width: 800px;
 }
 .paragraph {
   line-height: 10px;
@@ -116,7 +115,6 @@ nav {
   border: 3px solid grey;
   float: right;
   width: 230px;
-  margin-right: 100px;
 }
 
 #search {
@@ -127,12 +125,34 @@ nav {
 #holding {
   width: 250px;
   float: left;
+  margin-right: 30px;
 }
+
 
 .channel {
   display: inline;
   padding: 10px;
-  margin: 10px;
+  margin-left: 50px;
+}
+
+.line1 {
+  margin-top: 50px;
+}
+
+.alltext {
+  border: 1px solid black;
+  text-align: right;
+}
+
+.allcontent2 {
+  border: 1px solid black;
+  width: 800px;
+}
+
+.allcontent2::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 /* sidebar info */
@@ -156,9 +176,6 @@ nav {
   width: 25%;
   margin-bottom: 20px;
   margin-right: 20px;
-}
-
-.game {
 }
 
 .gameinfo {

@@ -1,71 +1,198 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Adventure Games</title>
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="This is a page for buying and selling games"
-    />
-    <meta name="viewport" content="width:device-width, initial-scale=1.0" />
-    <link href="styles/style.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="">Games</a></li>
-          <li><a href="search-results.html">Used Games</a></li>
-          <li><a href="the-hub.html">The Hub</a></li>
-          <li><a href="contact-us.html">Support</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>Adventure games</h1>
-      <div>
-        <h2>All</h2>
-        <h2>Nintendo</h2>
-        <h2>XBox</h2>
-        <h2>Playstation</h2>
-        <h2>Gameboy</h2>
+
+<head>
+  <title>My first page</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="This is a page for buying and selling games" />
+  <meta name="viewport" content="width:device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+  <link href="styles/adventure-games.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+
+    <a href="index.html"><img src="images/gamehub-logo.png" style="width: 161px; height: 101px" id="logo"
+        alt="Game Hub Logo" /></a>
+
+    <ul>
+      <span class="horizontal2">
+        <li>
+          <a href="empty-cart.html" class="horizontal"><img src="images/cart.png" style="width: 118px; height: 54.54px"
+              alt="shopping cart icon" /></a>
+        </li>
+        <li>
+          <a href="search-results.html" class="horizontal"><img src="images/search.png"
+              style="width: 336.77px; height: 46px" alt="search icon" /></a>
+        </li>
+        <li>
+          <a href="create-account.html" class="horizontal"><img src="images/sign-in.png"
+              style="width: 120.05px; height: 45.62px" alt="game symbol" /></a>
+        </li>
+      </span>
+    </ul>
+    <hr id="menuline" />
+  </header>
+  <nav>
+    <ul>
+      <div class="vertical-menu">
+        <li class="outer wrapper">
+          <a href="action-games.html" class="icons vertical"><img src="images/games.png"
+              style="width: 65px; height: 90px" alt="game symbol" /></a>
+        </li>
+        <li class="outer-wrapper">
+          <a href="search-results.html" class="icons vertical"><img src="images/used-games.png"
+              style="width: 110px; height: 90px" alt="Used games" /></a>
+        </li>
+        <li>
+          <a href="the-hub.html" class="icons vertical"><img src="images/the-hub.png"
+              style="width: 84.62px; height: 88.99px" alt="The Hub" /></a>
+        </li>
+        <li>
+          <a href="contact-us.html" class="icons vertical"><img src="images/support.png"
+              style="width: 71px; height: 83px" alt="support" /></a>
+        </li>
+        <li>
+          <a href="index.html" class="icons vertical"><img src="images/other-categories.png"
+              style="width: 52px; height: 14px" alt="Other Categories" /></a>
+        </li>
+        <li>
+          <div class="blank vertical"></div>
+        </li>
       </div>
-      <div>
-        <h3>Skyrim</h3>
-        <p>Console name - Release date - Genre</p>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="allcontent1">
+      <img src="images/search-hub.png" alt="search bar" id="search">
+      <h1><img src="images/star.png" alt="star content" id="star"><b>Action Games</b></h1>
+      <p class="category"><strong>All</strong></p>
+      <p class="category">Nintendo</p>
+      <p class="category">XBox</p>
+      <p class="category">Playstation</p>
+      <p class="category">Gameboy</p>
+    </div>
+
+
+
+    <div class="filter">
+      <h2 class="filterheaders">Filter 1</h2>
+      <form id="filter">
+        <div class="form__input">
+          <input type="checkbox" id="choice1" name="choice1" value="choice1">
+          <label for="choice1">Choice</label>
+        </div>
+        <div class="form__input">
+          <input type="checkbox" id="choice2" name="choice2" value="choice2">
+          <label for="choice2">Choice</label>
+        </div>
+        <div class="form__input">
+          <input type="checkbox" id="choice3" name="choice3" value="choice3">
+          <label for="choice3">Choice</label>
+        </div>
+        <div class="form__input">
+          <input type="checkbox" id="choice4" name="choice4" value="choice4">
+          <label for="choice4">Choice</label>
+        </div>
+        <div class="form__input">
+          <input type="checkbox" id="choice5" name="choice5" value="choice5">
+          <label for="choice5">Choice</label>
+        </div>
+        <div class="form__input">
+          <input type="checkbox" id="choice6" name="choice6" value="choice6">
+          <label for="choice6">Choice</label>
+        </div>
+
+
+        <h2 class="filterheaders">Filter 2</h2>
+
+        <div class="form__input">
+          <input type="checkbox" id="choice1" name="choice1" value="choice1">
+          <label for="choice1">Choice</label>
+        </div>
+        <div class="form__input">
+          <input type="checkbox" id="choice1" name="choice1" value="choice1">
+          <label for="choice1">Choice</label>
+        </div>
+        <div class="form__input">
+          <input type="checkbox" id="choice1" name="choice1" value="choice1">
+          <label for="choice1">Choice</label>
+        </div>
+
+
+        <h2 class="filterheaders">Filter 3</h2>
+
+        <div class="form__input">
+          <input type="checkbox" id="choice1" name="choice1" value="choice1">
+          <label for="choice1">Choice</label>
+        </div>
+        <div class="form__input">
+          <input type="checkbox" id="choice1" name="choice1" value="choice1">
+          <label for="choice1">Choice</label>
+        </div>
+        <div class="form__input">
+          <input type="checkbox" id="choice1" name="choice1" value="choice1">
+          <label for="choice1">Choice</label>
+        </div>
+      </form>
+    </div>
+
+
+
+    <div class="games">
+      <div class="clearfix">
+        <a href=""></a><img src="images/skyrim-logo.jpg" class="gamepicture" alt="Skyrim logo" /></a>
+        <p class="game info">Skyrim</p>
+        <p class="gameinfo info">Console name - Release date - Genre</p>
         <p>Information about the game. Information about the game.</p>
-        <p>Price</p>
-        <button>Put in Cart</button>
-      </div>
-      <div>
-        <h3>The Legend of Zelda: Breath of the Wild</h3>
-        <p>Console name - Release date - Genre</p>
-        <p>Information about the game. Information about the game.</p>
-        <p>Price</p>
-        <button>Put in Cart</button>
-      </div>
-      <div>
-        <h3>Super Mario Sunshine</h3>
-        <p>Console name - Release date - Genre</p>
-        <p>Information about the game. Information about the game.</p>
-        <p>Price</p>
-        <button>Put in Cart</button>
+        <p>Price<a href="" class="cart">Put in Cart</a></p>
       </div>
 
-      <p>Welcome to my first website.</p>
-    </main>
-    <footer>
-      <p>Company Unformation</p>
-      <p>Career</p>
-      <p>Website Privacy Policy</p>
-      <p>Terms of Sale</p>
-      <p>Support</p>
-      <p>Copyright &copy;</p>
-    </footer>
-    <script src="scripts/main.js"></script>
-  </body>
+      <div class="clearfix">
+        <a href=""><img src="images/mario-goomba.jpg" class="gamepicture" alt="Mario vs Goomba" /></a>
+        <p class="game info">Super Smash bros.</p>
+        <p class="gameinfo info">Console name - Release date - Genre</p>
+        <p>Information about the game. Information about the game.</p>
+        <p>Price<a href="" class="cart">Put in Cart</a></p>
+      </div>
+
+      <div class="clearfix">
+        <a href=""><img src="images/mario-kart.jpg" class="gamepicture" alt="Mario and Luigi" /></a>
+        <p class="game info">Mario Kart</p>
+        <p class="gameinfo info">Console name - Release date - Genre</p>
+        <p>Information about the game. Information about the game.</p>
+        <p>Price<a href="" class="cart">Put in Cart</a></p>
+        </p>
+      </div>
+
+      <div class="clearfix">
+        <a href=""><img src="images/legend-of-zelda.jpg" class="gamepicture" alt="Link" /></a>
+        <p class="game info">The Legend of Zelda: The Breath of the Wild</p>
+        <p class="gameinfo info">Console name - Release date - Genre</p>
+        <p>Information about the game. Information about the game.</p>
+        <p>Price<a href="" class="cart">Put in Cart</a></p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <div class="sidebar">
+
+  </div>
+
+  <footer>
+    <p>Company Unformation</p>
+    <p>Career</p>
+    <p>Website Privacy Policy</p>
+    <p>Terms of Sale</p>
+    <p>Support</p>
+    <p>Copyright &copy;</p>
+  </footer>
+  <script src="scripts/main.js"></script>
+</body>
+
 </html>

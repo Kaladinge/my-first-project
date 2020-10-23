@@ -57,7 +57,7 @@ html {
   
   #menuline {
     border: 2px solid #1b203d;
-    border: 2px solid #A6C906;
+    border: 2px solid #F1B000;
     margin: 0;
   }
   
@@ -111,7 +111,7 @@ html {
         margin-top: 100px;
   }
 
-  #leaf {
+  #star {
       width: 40px;
       margin-right: 10px;
   }
@@ -158,7 +158,7 @@ html {
   .cart {
     margin: 20px;
     color: white;
-    background-color: #A6C906;
+    background-color: #F1B000;
     border: 1px solid black;
     text-decoration: none;
     padding: 7px 25px;
@@ -179,10 +179,9 @@ html {
   .sidebar {
     width: 400px;
     margin-left: 0px;
-    background-image: url('../images/adventure-link.jpg');
+    background-image: url('../images/action-ryuu.jpg');
     background-size: cover;
   }
-  
   
   /* Grid info, sidebar */
   

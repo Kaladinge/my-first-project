@@ -1,74 +1,103 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Account</title>
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="This is a page for buying and selling games"
-    />
-    <meta name="viewport" content="width:device-width, initial-scale=1.0" />
-    <link href="styles/style.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="">Games</a></li>
-          <li><a href="search-results.html">Used Games</a></li>
-          <li><a href="the-hub.html">The Hub</a></li>
-          <li><a href="contact-us.html">Support</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>My Page</h1>
-      <img src="" alt="Game Hub logo" />
-      <div>
-        <img src="" alt="Profile Picture" />
-        <p>Account Name</p>
-        <p><u>Edit profile</u></p>
+
+<head>
+  <title>My first page</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="This is a page for buying and selling games" />
+  <meta name="viewport" content="width:device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+  <link href="styles/my-account.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+
+    <a href="index.html"><img src="images/gamehub-logo.png" style="width: 161px; height: 101px" id="logo"
+        alt="Game Hub Logo" /></a>
+
+    <ul>
+      <span class="horizontal2">
+        <li>
+          <a href="empty-cart.html" class="horizontal"><img src="images/cart.png" style="width: 118px; height: 54.54px"
+              alt="shopping cart icon" /></a>
+        </li>
+        <li>
+          <a href="search-results.html" class="horizontal"><img src="images/search.png"
+              style="width: 336.77px; height: 46px" alt="search icon" /></a>
+        </li>
+        <li>
+          <a href="create-account.html" class="horizontal"><img src="images/sign-in.png"
+              style="width: 120.05px; height: 45.62px" alt="game symbol" /></a>
+        </li>
+      </span>
+    </ul>
+    <hr id="menuline" />
+  </header>
+  <nav>
+    <ul>
+      <div class="vertical-menu">
+        <li class="outer wrapper">
+          <a href="action-games.html" class="icons vertical"><img src="images/games.png"
+              style="width: 65px; height: 90px" alt="game symbol" /></a>
+        </li>
+        <li class="outer-wrapper">
+          <a href="search-results.html" class="icons vertical"><img src="images/used-games.png"
+              style="width: 110px; height: 90px" alt="Used games" /></a>
+        </li>
+        <li>
+          <a href="the-hub.html" class="icons vertical"><img src="images/the-hub.png"
+              style="width: 84.62px; height: 88.99px" alt="The Hub" /></a>
+        </li>
+        <li>
+          <a href="contact-us.html" class="icons vertical"><img src="images/support.png"
+              style="width: 71px; height: 83px" alt="support" /></a>
+        </li>
+        <li>
+          <a href="index.html" class="icons vertical"><img src="images/other-categories.png"
+              style="width: 52px; height: 14px" alt="Other Categories" /></a>
+        </li>
+        <li>
+          <div class="blank vertical"></div>
+        </li>
       </div>
-      <div>
-        <button>
-          <img src="" alt="Join the Hub community" />
-          <p>Joim the hub and discuss games with fellow gamers</p>
-        </button>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="account-info">
+      <div class="my-page">
+        <h1>My Page</h1>
+        <a href="index.html"><img src="images/gamehub-logo.png" id="logo2" alt="Game Hub Logo" /></a>
       </div>
-      <div>
-        <button>
-          <img src="" alt="Reviews from fellow gamers" />
-          <p>Unsure what to play next?</p>
-          <p>Reviews from fellow gamers will help you out!</p>
-        </button>
+      <div class="profile-info">
+        <img src="images/account-picture.png" id="profile" alt="profile picture">
+        <p id="account-name">Account name</p>
+        <p>Edit profile</p>
+
       </div>
-      <div>
-        <button>
-          <img src="" alt="Sell games" />
-          <p>Games taking up too much space at home?</p>
-          <p>Sell them to us!</p>
-        </button>
-      </div>
-      <div>
-        <button>
-          <img src="" alt="Buy merchandise" />
-          <p>Got merch?</p>
-          <p>If not, head to the vault!</p>
-        </button>
-      </div>
-    </main>
-    <footer>
-      <p>Company Unformation</p>
-      <p>Career</p>
-      <p>Website Privacy Policy</p>
-      <p>Terms of Sale</p>
-      <p>Support</p>
-      <p>Copyright &copy;</p>
-    </footer>
-    <script src="scripts/main.js"></script>
-  </body>
+    </div>
+    <div class="pictures">
+      <a href="the-hub.html"><img src="images/couple-playing.jpg" class="picture"
+          alt="Button linking to the hub page" /></a>
+      <a href=""><img src="images/reviews.jpg" class="picture" alt="Button linking to reviews page" /></a>
+      <a href="sell-game.html"><img src="images/sell-game.jpg" class="picture"
+          alt="Button linking to sell game page" /></a>
+      <a href="the-vault.html"><img src="images/merch.jpg" class="picture" alt="Button linking to the merch page" /></a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Company Unformation</p>
+    <p>Career</p>
+    <p>Website Privacy Policy</p>
+    <p>Terms of Sale</p>
+    <p>Support</p>
+    <p>Copyright &copy;</p>
+  </footer>
+  <script src="scripts/main.js"></script>
+</body>
+
 </html>

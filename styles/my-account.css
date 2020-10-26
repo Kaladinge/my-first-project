@@ -1,0 +1,171 @@
+html {
+    font-size: 20px;
+    font-family: "PT Sans", verdana, sans-serif;
+  }
+  
+  body {
+    background-color: white;
+    margin: 0px;
+  }
+  
+  h1 {
+    font-family: "Russo One", verdana, sans-serif;
+  }
+  
+  h2 {
+    color: black;
+    font-family: "Russo One", verdana, sans-serif;
+    text-align: left;
+    font-size: 30px;
+    line-height: 20px;
+  }
+  
+  #logo {
+    margin-left: 29px;
+    margin-top: 28px;
+    margin-bottom: 7px;
+  }
+  
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .horizontal2 {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 55px;
+    margin-left: 48%;
+    width: 50%;
+  }
+  /*
+    .vertical {       Also possible to use this later if I want to adjust vertical icons (margin-top) manually.
+      display: flex;
+      margin: auto;
+    }
+    */
+  
+  #menuline {
+    border: 2px solid #1b203d;
+    margin: 0;
+  }
+  
+  .outer-wrapper {
+    display: block;
+  }
+  
+  .vertical {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+    width: 182px;
+    border: 1px solid grey;
+    background-color: #1b203d;
+  }
+  
+  .icons {
+    height: 134px;
+  }
+  
+  .blank {
+    width: 182px;
+    height: 134px;
+  }
+  
+  /* main info */
+  
+  main {
+    border: 1px solid black;
+  }
+  
+  nav {
+    border: 1px solid black;
+    width: 182px;
+  }
+  
+
+.account-info {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    border: 1px solid black;
+    margin: 20px auto;
+}
+
+#logo2 {
+    width: 161px;
+}
+
+#profile {
+    width: 161px;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+#account-name{
+    margin: 0;
+    font-style: italic;
+}
+
+.pictures {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.picture {
+    max-width: 350px;
+    min-width: 100px;
+    width: 100%;
+}
+
+  /* Grid info, body */
+  
+  header {
+    grid-area: header;
+  }
+  
+  nav {
+    grid-area: nav;
+  }
+  
+  main {
+    grid-area: main;
+    background-image: url('../images/purple-background.png');
+    background-size: auto;
+  }
+  
+  footer {
+    grid-area: footer;
+  }
+  
+  body {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "header header header"
+      "nav main main"
+      "footer footer footer";
+  }
+  
+  /* footer info */
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  

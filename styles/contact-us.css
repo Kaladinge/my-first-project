@@ -143,13 +143,38 @@ main {
   margin-bottom: 100px;
 }
 
+.hr-line {
+  margin-bottom: 0;
+}
+
 .picture {
   width: 500px;
   height: 300px;
   background-image: url('../images/playing-soccergame.jpg');
   background-size: cover;
+  border: 3px solid grey;
+  float: left;
+  margin-right: 60px;;
+}
+
+.cart {
+  color: white;
+  background-color: #9859D0;
   border: 1px solid black;
-  margin-top: 0;
+  text-decoration: none;
+  padding: 7px 25px;
+  border-radius: 15px;
+  cursor: grabbing;
+}
+
+.chat::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+.chat-text {
+  margin-top: 60px;
 }
 
 /* Grid info, main */
@@ -203,6 +228,7 @@ main {
       "footer footer footer";
   }
   
+/* footer info */
 
   footer {
     display: flex;

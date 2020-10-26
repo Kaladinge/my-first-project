@@ -1,0 +1,167 @@
+html {
+    font-size: 32px;
+    font-family: "PT Sans", verdana, sans-serif;
+  }
+  
+  body {
+    margin: 0px;
+  }
+
+  header {
+      background-color: white;
+  }
+  
+  h1 {
+    font-family: "Russo One", verdana, sans-serif;
+  }
+  
+  h2 {
+    color: black;
+    font-family: "Russo One", verdana, sans-serif;
+    text-align: left;
+    font-size: 30px;
+    line-height: 20px;
+  }
+  
+  #logo {
+    margin-left: 29px;
+    margin-top: 28px;
+    margin-bottom: 7px;
+  }
+  
+  header {
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .horizontal2 {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 55px;
+    margin-left: 1156px;
+    width: 50%;
+  }
+  /*
+    .vertical {       Also possible to use this later if I want to adjust vertical icons (margin-top) manually.
+      display: flex;
+      margin: auto;
+    }
+    */
+  
+  #menuline {
+    border: 2px solid #1b203d;
+    margin: 0;
+  }
+  body,
+  footer {
+    background: grey;
+  }
+  .sheet {
+    background: white;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid black;
+  }
+
+  .text {
+      margin: 0 auto;
+      text-align: left;
+      width: 80%;
+      border: 1px solid black;
+  }
+
+  #complete {
+      float: left;
+      padding-bottom: 80px;
+      margin-right: 20px;
+  }
+
+
+  .clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  #box {
+      width: 200px;
+      /*float: left;*/
+  }
+
+  .box1 {
+      border: 1px solid black;
+  }
+
+.product {
+    margin: 0;
+}
+
+.section {
+    font-weight: bold;
+}
+
+#login {
+    color: white;
+    background-color: #9859d0;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 10px;
+    cursor: grabbing;
+  }
+
+  .buttons {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+
+  }
+
+  /*.info-sections::after {
+        clear: both;
+        content: "";
+        display: table;
+      }*/
+
+
+    .flexing {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      
+  
+  /*
+  .buttons {
+    background-color: white;
+    color: black;
+    padding: 10px 100px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid black;
+    font-size: 28px;
+    font-family: "PT Sans";
+  }
+  
+  #facebook {
+    border: 1px solid blue;
+    display: inline-block;
+    margin-right: 20px;
+    width: 50px;
+  }
+  .face {
+    border: 1px solid blue;
+    display: inline-block;
+  }
+  */

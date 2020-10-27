@@ -79,7 +79,6 @@ nav ul {
 }
 
 .blank {
-  width: 182px;
   height: 134px;
 }
 
@@ -91,7 +90,6 @@ main {
 
 nav {
   border: 1px solid black;
-  width: 182px;
 }
 
 .allcontent1::after {
@@ -104,7 +102,6 @@ nav {
   margin-left: 0px;
   border: 1px solid black;
   text-align: left;
-  width: 800px;
 }
 .paragraph {
   line-height: 10px;
@@ -124,14 +121,13 @@ nav {
 
 #holding {
   width: 250px;
-  float: left;
-  margin-right: 30px;
+  margin-right: 0px;
 }
 
 
 .channel {
   display: inline;
-  padding: 10px;
+  padding: 5px;
   margin-left: 50px;
 }
 
@@ -141,15 +137,10 @@ nav {
 
 .alltext {
   border: 1px solid black;
-  text-align: right;
+  padding-right: 30px;
 }
 
-.allcontent2 {
-  border: 1px solid black;
-  width: 800px;
-}
-
-.allcontent2::after {
+.alltext::after {
   clear: both;
   content: "";
   display: table;
@@ -233,6 +224,7 @@ footer {
 body {
   display: grid;
   grid-gap: 0px;
+  grid-template-columns: auto 1fr auto;
   grid-template-areas:
     "header header header"
     "nav main sidebar"
@@ -260,4 +252,65 @@ body {
 footer {
   display: flex;
   justify-content: space-between;
+}
+
+
+
+/* media queries
+
+  /* small desktop styles */
+
+  @media only screen and (min-width: 1000px) and (max-width: 1279px) {
+    .pics3 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+ /* desktop styles */
+
+ @media only screen and (min-width: 550px) and (max-width: 999px) {
+    body {
+        display: grid;
+        grid-gap: 0;
+        grid-template-areas:
+        "header header"
+        "nav main"
+        "nav sidebar"
+        "footer footer"
+        }
+
+        .vertical {
+            width: 110px;
+        }
+
+        footer {
+            font-size: 0.6em;
+        }
+        
+
+}
+
+ /* small desktop styles */
+
+
+ @media only screen and (max-width: 549px) {
+
+    .sidebar, .vertical, .horizontal2 {
+        display: none;
+    }
+
+    #logo {
+        width: 80px;
+        height: 50px;
+    }
+
+    .pics3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        font-size: 0.6em;
+    }
 }

@@ -21,6 +21,8 @@ html {
   }
   
   #logo {
+    width: 161px;
+    height: 101px;
     margin-left: 29px;
     margin-top: 28px;
     margin-bottom: 7px;
@@ -80,7 +82,6 @@ html {
   }
   
   .blank {
-    width: 182px;
     height: 134px;
   }
   
@@ -93,7 +94,6 @@ html {
   
   nav {
     border: 1px solid black;
-    width: 182px;
   }
   
 
@@ -101,7 +101,6 @@ html {
     margin-left: 0px;
     border: 1px solid black;
     text-align: center;
-    width: 950px;
     border-bottom: 2px solid grey;
   }
   
@@ -140,7 +139,7 @@ html {
   }
   
   .info {
-    line-height: 2px;
+    line-height: 15px;
     margin-top: 10px;
   }
 
@@ -207,6 +206,7 @@ html {
   body {
     display: grid;
     grid-gap: 0;
+    grid-template-columns: auto 1fr auto;
     grid-template-areas:
       "header header header"
       "nav main sidebar"
@@ -246,3 +246,68 @@ html {
     justify-content: space-between;
   }
   
+
+  /* media queries
+
+  /* small desktop styles */
+
+  @media only screen and (min-width: 1000px) and (max-width: 1279px) {
+    .sidebar {
+      display: none;
+    }
+}
+
+ /* desktop styles */
+
+ @media only screen and (min-width: 550px) and (max-width: 999px) {
+        .sidebar {
+          display: none;
+        }
+
+        .vertical {
+            width: 110px;
+        }
+
+        main {
+          font-size: 0.8em;
+        }
+
+        #star {
+          width: 30px;
+        }
+
+        footer {
+            font-size: 0.6em;
+        }
+}
+
+ /* small desktop styles */
+
+
+ @media only screen and (max-width: 549px) {
+
+    .sidebar, .vertical, .horizontal2 {
+        display: none;
+    }
+
+    #logo {
+        width: 80px;
+        height: 50px;
+    }
+
+    .pics3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+      font-size: 0.6em;
+    }
+
+    #star {
+      width: 20px;
+    }
+    footer {
+        font-size: 0.6em;
+    }
+}

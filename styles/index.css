@@ -4,10 +4,13 @@ html {
   }
   
   body {
-    background-color: white;
     margin: 0px;
   }
   
+header {
+    background-color: white;
+}
+
   h1 {
     font-family: "Russo One", verdana, sans-serif;
   }
@@ -21,6 +24,8 @@ html {
   }
   
   #logo {
+    width: 161px;
+    height: 101px;
     margin-left: 29px;
     margin-top: 28px;
     margin-bottom: 7px;
@@ -73,13 +78,16 @@ html {
     border: 1px solid grey;
     background-color: #1b203d;
   }
+
+  .vertical:hover {
+      background-color: black;
+  }
   
   .icons {
     height: 134px;
   }
   
   .blank {
-    width: 182px;
     height: 134px;
   }
   
@@ -91,17 +99,38 @@ html {
   
   nav {
     border: 1px solid black;
-    width: 182px;
   }
+
   
+  .pics3 {
+      display: flex;
+  }
+
+  .pic2 {
+      flex: 9;
+      margin-right: 5px;
+  }   
+
+  .pic3 {
+      flex: 6;
+  }
+
+  .pic4 {
+      flex: 6;
+      margin-left: 5px;
+  }
+
+  picture {
+      padding: 10px;
+      margin: 10px;
+  }
   
   /* sidebar info */
   
   .sidebar {
     width: 400px;
-    margin-left: 30px;
+    margin-left: 20px;
     border: 1px solid black;
-    margin-left: 0;
   }
   
   .mainheader {
@@ -117,7 +146,7 @@ html {
     float: left;
     width: 25%;
     margin-bottom: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   
   .gameinfo {
@@ -151,34 +180,6 @@ html {
     border-radius: 15px;
     cursor: grabbing;
   }
-
-
-  
-  /* Grid info, main */
-
-  .pic1 {
-      grid-area: pic1;
-  }
-
-  .pic2 {
-    grid-area: pic2;
-}
-
-.pic3 {
-    grid-area: pic3;
-}
-
-.pic4 {
-    grid-area: pic4;
-}
-
-main {
-    display: grid;
-    grid-gap: 0;
-    grid-template-areas:
-      "pic1 pic1 pic1"
-      "pic2 pic3 pic4";
-}
 
 .picture {
     width: 100%;
@@ -221,3 +222,65 @@ main {
     justify-content: space-between;
   }
   
+
+
+  /* media queries
+
+  /* small desktop styles */
+
+  @media only screen and (min-width: 1000px) and (max-width: 1279px) {
+    .pics3 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+ /* desktop styles */
+
+ @media only screen and (min-width: 550px) and (max-width: 999px) {
+    body {
+        display: grid;
+        grid-gap: 0;
+        grid-template-areas:
+        "header header"
+        "nav main"
+        "nav sidebar"
+        "footer footer"
+        }
+
+        .vertical {
+            width: 110px;
+        }
+
+        footer {
+            font-size: 0.6em;
+        }
+        
+
+}
+
+ /* small desktop styles */
+
+
+ @media only screen and (max-width: 549px) {
+
+    .sidebar, .vertical, .horizontal2 {
+        display: none;
+    }
+
+    #logo {
+        width: 80px;
+        height: 50px;
+    }
+
+    .pics3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        font-size: 0.6em;
+    }
+
+
+}

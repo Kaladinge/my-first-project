@@ -21,6 +21,8 @@ h2 {
 }
 
 #logo {
+  width: 161px;
+  height: 101px;
   margin-left: 29px;
   margin-top: 28px;
   margin-bottom: 7px;
@@ -74,6 +76,10 @@ nav ul {
   background-color: #1b203d;
 }
 
+.vertical:hover {
+  background-color: black;
+}
+
 .icons {
   height: 134px;
 }
@@ -99,13 +105,16 @@ nav {
 }
 
 .allcontent1 {
-  margin-left: 0px;
-  border: 1px solid black;
   text-align: left;
+  border: 1px solid black;
+  width: 95%;
+  margin: 0 auto;
+  
 }
 .paragraph {
-  line-height: 10px;
   margin-top: 50px;
+  border: 1px solid black;
+  max-width: 750px;
 }
 
 #playing {
@@ -115,36 +124,31 @@ nav {
 }
 
 #search {
-  width: 450px;
+  width: 70%;
+  min-width: 200px;
   margin-top: 30px;
+}
+
+#popular {
+  margin-top: 50px;
+  text-align: center;
 }
 
 #holding {
   width: 250px;
+  height: 250px;
   margin-right: 0px;
 }
 
-
 .channel {
-  display: inline;
-  padding: 5px;
-  margin-left: 50px;
-}
-
-.line1 {
-  margin-top: 50px;
+  border: 1px solid black;
 }
 
 .alltext {
-  border: 1px solid black;
-  padding-right: 30px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.alltext::after {
-  clear: both;
-  content: "";
-  display: table;
-}
 
 /* sidebar info */
 
@@ -231,21 +235,7 @@ body {
     "footer footer footer";
 }
 
-/*#linkboy {
-    width: 90vw;
-  }
-  
-  #pikachu {
-    width: 33vw;
-  }
-  
-  #money {
-    width: 25vw;
-  }
-  
-  #bowser {
-    width: 25vw;
-  }*/
+
 
 /* footer info */
 
@@ -255,15 +245,13 @@ footer {
 }
 
 
-
 /* media queries
 
   /* small desktop styles */
 
   @media only screen and (min-width: 1000px) and (max-width: 1279px) {
-    .pics3 {
-        display: flex;
-        flex-direction: column;
+    #playing, #holding {
+      display: none;
     }
 }
 
@@ -278,6 +266,14 @@ footer {
         "nav main"
         "nav sidebar"
         "footer footer"
+        }
+
+        #playing {
+          width: 150px;
+        }
+
+        #holding {
+          display: none;
         }
 
         .vertical {
@@ -296,18 +292,13 @@ footer {
 
  @media only screen and (max-width: 549px) {
 
-    .sidebar, .vertical, .horizontal2 {
+    .sidebar, .vertical, .horizontal2, #playing, #holding {
         display: none;
     }
 
     #logo {
         width: 80px;
         height: 50px;
-    }
-
-    .pics3 {
-        display: flex;
-        flex-direction: column;
     }
 
     footer {

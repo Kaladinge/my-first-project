@@ -21,6 +21,8 @@ html {
   }
   
   #logo {
+    width: 161px;
+    height: 101px;
     margin-left: 29px;
     margin-top: 28px;
     margin-bottom: 7px;
@@ -73,13 +75,16 @@ html {
     border: 1px solid grey;
     background-color: #1b203d;
   }
+
+  .vertical:hover {
+    background-color: black;
+}
   
   .icons {
     height: 134px;
   }
   
   .blank {
-    width: 182px;
     height: 134px;
   }
   
@@ -87,11 +92,6 @@ html {
   
   main {
     border: 1px solid black;
-  }
-  
-  nav {
-    border: 1px solid black;
-    width: 182px;
   }
   
   .allcontent1::after {
@@ -104,11 +104,14 @@ html {
     margin-left: 0px;
     border: 1px solid black;
     text-align: left;
-    width: 800px;
+    width: 95%;
+    margin: 0 auto;
   }
+
   .paragraph {
-    line-height: 10px;
     margin-top: 50px;
+    border: 1px solid black;
+    max-width: 750px;
   }
   
   #mario {
@@ -118,10 +121,17 @@ html {
   }
   
   #search {
-    width: 450px;
+    width: 70%;
+    min-width: 200px;
     margin-top: 30px;
   }
   
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+
   .yellow {
       position: relative;
       max-width: 1000px;
@@ -217,27 +227,13 @@ html {
   body {
     display: grid;
     grid-gap: 0;
+    grid-template-columns: auto 1fr auto;
     grid-template-areas:
       "header header header"
       "nav main sidebar"
       "footer footer footer";
   }
   
-  /*#linkboy {
-      width: 90vw;
-    }
-    
-    #pikachu {
-      width: 33vw;
-    }
-    
-    #money {
-      width: 25vw;
-    }
-    
-    #bowser {
-      width: 25vw;
-    }*/
   
   /* footer info */
   
@@ -246,3 +242,62 @@ html {
     justify-content: space-between;
   }
   
+
+  /* media queries
+
+  /* small desktop styles */
+
+  @media only screen and (min-width: 1000px) and (max-width: 1279px) {
+    #mario {
+      display: none;
+    }
+}
+
+ /* desktop styles */
+
+ @media only screen and (min-width: 550px) and (max-width: 999px) {
+    body {
+        display: grid;
+        grid-gap: 0;
+        grid-template-areas:
+        "header header"
+        "nav main"
+        "nav sidebar"
+        "footer footer"
+        }
+
+        #mario {
+          width: 150px;
+        }
+
+        .vertical {
+            width: 110px;
+        }
+
+        footer {
+            font-size: 0.6em;
+        }
+}
+
+
+ /* small desktop styles */
+
+ @media only screen and (max-width: 549px) {
+
+    .sidebar, .vertical, .horizontal2 {
+        display: none;
+    }
+
+    #logo {
+        width: 80px;
+        height: 50px;
+    }
+
+    #mario {
+      display: none;
+    }
+
+    footer {
+        font-size: 0.6em;
+    }
+}

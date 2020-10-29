@@ -1,8 +1,7 @@
- html {
+html {
   font-size: 20px;
   font-family: "PT Sans", verdana, sans-serif;
 }
-
 
 body {
   margin: 0px;
@@ -16,7 +15,7 @@ h1 {
   font-family: "Russo One", verdana, sans-serif;
 }
 
-h2{
+h2 {
   color: black;
   font-family: "Russo One", verdana, sans-serif;
   text-align: left;
@@ -30,7 +29,14 @@ h2{
   margin-left: 29px;
   margin-top: 28px;
   margin-bottom: 7px;
-} 
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
 nav ul {
   list-style-type: none;
@@ -47,15 +53,9 @@ nav ul {
   margin-left: 48%;
   width: 50%;
 }
-/*
-.vertical {       Also possible to use this later if I want to adjust vertical icons (margin-top) manually.
-  display: flex;
-  margin: auto;
-}
-*/
 
 #menuline {
-  border: 2px solid #1B203D;
+  border: 2px solid #1b203d;
   margin: 0;
 }
 
@@ -63,14 +63,18 @@ nav ul {
   display: block;
 }
 
- .vertical {
+.vertical {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   display: table-cell;
   width: 182px;
   border: 1px solid grey;
-  background-color: #1B203D;
+  background-color: #1b203d;
+}
+
+.vertical:hover {
+    background-color: black;
 }
 
 .icons {
@@ -78,20 +82,49 @@ nav ul {
 }
 
 .blank {
-  width: 182px;
   height: 134px;
 }
 
 /* main info */
 
-#linkboy {
+main {
+  border: 1px solid black;
+}
+
+nav {
+  border: 1px solid black;
+}
+
+
+.pics3 {
+    display: flex;
+}
+
+.pic2 {
+    flex: 9;
+    margin-right: 5px;
+}   
+
+.pic3 {
+    flex: 6;
+}
+
+.pic4 {
+    flex: 6;
+    margin-left: 5px;
+}
+
+picture {
+    padding: 10px;
+    margin: 10px;
 }
 
 /* sidebar info */
 
 .sidebar {
   width: 400px;
-  margin-left: 30px;
+  margin-left: 20px;
+  border: 1px solid black;
 }
 
 .mainheader {
@@ -107,7 +140,7 @@ nav ul {
   float: left;
   width: 25%;
   margin-bottom: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .gameinfo {
@@ -125,7 +158,7 @@ nav ul {
   clear: both;
   content: "";
   display: table;
-  }
+}
 
 .clearfix {
   margin-top: 60px;
@@ -134,7 +167,7 @@ nav ul {
 .cart {
   margin: 20px;
   color: white;
-  background-color: #EE1925;
+  background-color: #ee1925;
   border: 1px solid black;
   text-decoration: none;
   padding: 7px 25px;
@@ -142,57 +175,39 @@ nav ul {
   cursor: grabbing;
 }
 
+.picture {
+  width: 100%;
+}
 
-.pictures {grid-area: pictures;}
-.sidebar {grid-area: sidebar;}
-  
+/* Grid info, body */
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
 main {
-  display: grid;
-  grid-template-areas:
-  'pictures sidebar';
+  grid-area: main;
 }
-
-#linkboy {
-  width: 100vw;
+.sidebar {
+  grid-area: sidebar;
 }
-
-#pikachu {
-  width: 42vw;
-}
-
-#money {
-  width: 28vw;
-}
-
-#bowser {
-  width: 28vw;
+footer {
+  grid-area: footer;
 }
 
 body {
-  position: relative;
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:
+    "header header header"
+    "nav main sidebar"
+    "footer footer footer";
 }
-
-main {
-  position: absolute;
-  top: 147px;
-  left: 184px;
-}
-
-/*#linkboy {
-  width: 90vw;
-}
-
-#pikachu {
-  width: 33vw;
-}
-
-#money {
-  width: 25vw;
-}
-
-#bowser {
-  width: 25vw;
-}*/
 
 /* footer info */
 
@@ -203,38 +218,67 @@ footer {
 
 
 
+/* media queries
 
-/*
-.icons {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  height: 50%;
-}
-*/
+/* small desktop styles */
 
-/* some properties for later use
-h1 {
-  font-size: 60px;
-  text-align: center;
-  margin: 0;
-  padding: 20px 0;
-  color: #a6c906;
-  text-shadow: 3px 3px 1px black;
+@media only screen and (min-width: 1000px) and (max-width: 1279px) {
+  .pics3 {
+      display: flex;
+      flex-direction: column;
+  }
 }
 
-p {
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
+/* desktop styles */
+
+@media only screen and (min-width: 550px) and (max-width: 999px) {
+  body {
+      display: grid;
+      grid-gap: 0;
+      grid-template-areas:
+      "header header"
+      "nav main"
+      "nav sidebar"
+      "footer footer"
+      }
+
+      .vertical {
+          width: 110px;
+      }
+
+      footer {
+          font-size: 0.6em;
+      }
+      
+
 }
 
-body {
-  width: 600px;
-  margin: 0 auto;
-  background-color: darkgreen;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
+/* Smart phone styles */
+
+
+@media only screen and (max-width: 549px) {
+
+  .sidebar, .horizontal2 {
+      display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #hamburger-menu:checked 
+
+  #logo {
+      width: 80px;
+      height: 50px;
+  }
+
+  .pics3 {
+      display: flex;
+      flex-direction: column;
+  }
+
+  footer {
+      font-size: 0.6em;
+  }
 }

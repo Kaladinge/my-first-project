@@ -59,6 +59,23 @@ nav ul {
   margin: 0;
 }
 
+header, nav {
+  position: fixed;
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+}
+
+main, footer {
+  margin-left: 184px;
+}
+
+nav, main, .sidebar {
+  margin-top: 147px;
+}
+
 .outer-wrapper {
   display: block;
 }
@@ -223,9 +240,8 @@ body {
   grid-gap: 0;
   grid-template-columns: auto 1fr auto;
   grid-template-areas:
-    "header header header"
-    "nav main sidebar"
-    "footer footer footer";
+    "main sidebar"
+    "footer footer";
 }
 
 /* footer info */
@@ -270,11 +286,20 @@ footer {
       display: grid;
       grid-gap: 0;
       grid-template-areas:
-      "header header"
-      "nav main"
-      "nav sidebar"
-      "footer footer"
+      "main"
+      "sidebar"
+      "footer"
       }
+
+  main {
+    margin-left:
+    111px;
+  }
+
+  .sidebar {
+    margin-top: 0;
+    margin-left: 114px;
+  }
 
       .vertical {
           width: 110px;
@@ -287,6 +312,8 @@ footer {
      #hamburger-menu, .fas {
       display: none;
     }
+
+    
 }
 
 /* Smart phone styles */
@@ -310,34 +337,20 @@ footer {
 
   footer {
       font-size: 0.6em;
+      margin-left: 0;
   }
 
   nav {
     display: none;
+    position: fixed;
   }
 
-  #hamburger-menu {
-    display: none;
+  main, nav {
+    margin-top: 96px;
+    margin-left: 0;
   }
 
-  .fas{
-    position: absolute;
-    top: 40px;
-    right: 30px;
-  }
 
-  #hamburger-menu:checked ~ nav {
-    display:block;
-  }
-
- header {
-   
- }
-
-  nav {
-    position: absolute;
-    top: 97px;
-  }
 
   .vertical {
   width: 100px;
@@ -355,6 +368,23 @@ footer {
   #icon3 {
     width: 50%;
   }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  .fas{
+    position: fixed;
+    z-index: 1;
+    top: 40px;
+    right: 40px;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display:block;
+  }
+
+  
 
   
 

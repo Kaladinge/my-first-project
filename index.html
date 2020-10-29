@@ -2,124 +2,132 @@
 <html>
 
 <head>
-    <title>My first page</title>
-    <meta charset="utf-8" />
-    <meta name="description" content="This is a page for buying and selling games" />
-    <meta name="viewport" content="width:device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
-    <link href="styles/index.css" rel="stylesheet" />
+  <title>My first page</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="This is a page for buying and selling games" />
+  <meta name="viewport" content="width:device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+  <link href="styles/style.css" rel="stylesheet" />
+
 </head>
 
 <body>
-    <header>
 
-        <a href="index.html"><img src="images/gamehub-logo.png" id="logo" alt="Game Hub Logo" /></a>
+  <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+  <input type="checkbox" id="hamburger-menu" />
 
-        <ul>
-            <span class="horizontal2">
-                <li>
-                    <a href="empty-cart.html" class="horizontal"><img src="images/cart.png"
-                            style="width: 118px; height: 54.54px" alt="shopping cart icon" /></a>
-                </li>
-                <li>
-                    <a href="search-results.html" class="horizontal"><img src="images/search.png"
-                            style="width: 336.77px; height: 46px" alt="search icon" /></a>
-                </li>
-                <li>
-                    <a href="create-account.html" class="horizontal"><img src="images/sign-in.png"
-                            style="width: 120.05px; height: 45.62px" alt="sign up/log in icon" /></a>
-                </li>
-            </span>
-        </ul>
-        <hr id="menuline" />
-    </header>
-    <nav>
-        <ul>
-            <div class="vertical-menu">
-                <li class="outer wrapper">
-                    <a href="action-games.html" class="icons vertical"><img src="images/games.png"
-                            style="width: 65px; height: 90px" alt="game symbol" /></a>
-                </li>
-                <li class="outer-wrapper">
-                    <a href="search-results.html" class="icons vertical"><img src="images/used-games.png"
-                            style="width: 110px; height: 90px" alt="Used games" /></a>
-                </li>
-                <li>
-                    <a href="the-hub.html" class="icons vertical"><img src="images/the-hub.png"
-                            style="width: 84.62px; height: 88.99px" alt="The Hub" /></a>
-                </li>
-                <li>
-                    <a href="contact-us.html" class="icons vertical"><img src="images/support.png"
-                            style="width: 71px; height: 83px" alt="support" /></a>
-                </li>
-                <li>
-                    <a href="index.html" class="icons vertical"><img src="images/other-categories.png"
-                            style="width: 52px; height: 14px" alt="Other Categories" /></a>
-                </li>
-                <li>
-                    <div class="blank vertical"></div>
-                </li>
-            </div>
-        </ul>
-    </nav>
 
-    <main>
+  <header>
 
-        <a href="checkout.html" class="pic1"><img src="images/link-button.jpg" alt="Button linking to checkout page"
-                class="picture" /></a>
-        <div class="pics3">
-            <a href="search-results.html" class="pic2">
-                <img src="images/pikachu-buy.jpg" alt="Button linking to the 'buy used games page'"
-                    class="picture pikachu" /></a>
+    <a href="index.html"><img src="images/gamehub-logo.png" id="logo" alt="Game Hub Logo" /></a>
 
-            <a href="sell-game.html" class="pic3">
-                <img src="images/sell-game.jpg" alt="Button linking to the 'sell games page'" class="picture" /></a>
 
-            <a href="the-vault.html" class="pic4">
-                <img src="images/bowser-merch.jpg" alt="Button linking to the 'merch page'" class="picture" /></a>
-        </div>
 
-    </main>
-    <div class="sidebar">
-        <h2 class="mainheader">Cheap used games</h2>
-        <p class="subheader">Games that we recently bought from</p>
-        <p class="subheader">your fellow game hubbers are on sale</p>
-        <div class="clearfix">
-            <a href=""><img src="images/skyrim-logo.jpg" class="gamepicture" alt="Skyrim logo" /></a>
-            <p class="game info">Skyrim</p>
-            <p class="gameinfo info">Console name - Release date - Genre</p>
-            <a href="" class="cart">Put in Cart</a>
-        </div>
-        <div class="clearfix">
-            <a href=""><img src="images/mario-goomba.jpg" class="gamepicture" alt="Mario vs Goomba" /></a>
-            <p class="game info">Super Smash bros.</p>
-            <p class="gameinfo info">Console name - Release date - Genre</p>
-            <a href="" class="cart">Put in Cart</a>
-        </div>
-        <div class="clearfix">
-            <a href=""><img src="images/mario-kart.jpg" class="gamepicture" alt="Mario and Luigi" /></a>
-            <p class="game info">Mario Kart</p>
-            <p class="gameinfo info">Console name - Release date - Genre</p>
-            <p><a href="" class="cart">Put in Cart</a></p>
-        </div>
-        <div class="clearfix">
-            <a href=""><img src="images/legend-of-zelda.jpg" class="gamepicture" alt="Link" /></a>
-            <p class="game info">The Legend of Zelda:</p>
-            <p class="game info"></p>The Breath of the Wild</p>
-            <p class="gameinfo info">Console name - Release date - Genre</p>
-            <a href="" class="cart">Put in Cart</a>
-        </div>
+    <ul>
+      <span class="horizontal2">
+        <li>
+          <a href="empty-cart.html" class="horizontal"><img src="images/cart.png" style="width: 118px; height: 54.54px"
+              alt="shopping cart icon" /></a>
+        </li>
+        <li>
+          <a href="search-results.html" class="horizontal"><img src="images/search.png"
+              style="width: 336.77px; height: 46px" alt="search icon" /></a>
+        </li>
+        <li>
+          <a href="create-account.html" class="horizontal"><img src="images/sign-in.png"
+              style="width: 120.05px; height: 45.62px" alt="sign up/log in icon" /></a>
+        </li>
+      </span>
+    </ul>
+
+    <hr id="menuline" />
+
+  </header>
+  <nav>
+    <ul>
+      <div class="vertical-menu">
+        <li class="outer wrapper">
+          <a href="action-games.html" class="vertical"><img src="images/games.png" id="icon1" alt="game symbol" /></a>
+        </li>
+        <li class="outer-wrapper">
+          <a href="search-results.html" class="vertical"><img src="images/used-games.png" id="icon2"
+              alt="Used games" /></a>
+        </li>
+        <li>
+          <a href="the-hub.html" class="vertical"><img src="images/the-hub.png" id="icon3" alt="The Hub" /></a>
+        </li>
+        <li>
+          <a href="contact-us.html" class="vertical"><img src="images/support.png" id="icon4" alt="support" /></a>
+        </li>
+        <li>
+          <a href="index.html" class="vertical"><img src="images/other-categories.png" id="icon5"
+              alt="Other Categories" /></a>
+        </li>
+        <li>
+          <div class="blank vertical"></div>
+        </li>
+      </div>
+    </ul>
+  </nav>
+
+  <main>
+
+    <a href="checkout.html" class="pic1"><img src="images/link-button.jpg" alt="Button linking to checkout page"
+        class="picture" /></a>
+    <div class="pics3">
+      <a href="search-results.html" class="pic2">
+        <img src="images/pikachu-buy.jpg" alt="Button linking to the 'buy used games page'"
+          class="picture pikachu" /></a>
+
+      <a href="sell-game.html" class="pic3">
+        <img src="images/sell-game.jpg" alt="Button linking to the 'sell games page'" class="picture" /></a>
+
+      <a href="the-vault.html" class="pic4">
+        <img src="images/bowser-merch.jpg" alt="Button linking to the 'merch page'" class="picture" /></a>
     </div>
-    <footer>
-        <p>Company Unformation</p>
-        <p>Career</p>
-        <p>Website Privacy Policy</p>
-        <p>Terms of Sale</p>
-        <p>Support</p>
-        <p>Copyright &copy;</p>
-    </footer>
-    <script src="scripts/main.js"></script>
+
+  </main>
+  <div class="sidebar">
+    <h2 class="mainheader">Cheap used games</h2>
+    <p class="subheader">Games that we recently bought from</p>
+    <p class="subheader">your fellow game hubbers are on sale</p>
+    <div class="clearfix">
+      <a href=""><img src="images/skyrim-logo.jpg" class="gamepicture" alt="Skyrim logo" /></a>
+      <p class="game info">Skyrim</p>
+      <p class="gameinfo info">Console name - Release date - Genre</p>
+      <a href="" class="cart">Put in Cart</a>
+    </div>
+    <div class="clearfix">
+      <a href=""><img src="images/mario-goomba.jpg" class="gamepicture" alt="Mario vs Goomba" /></a>
+      <p class="game info">Super Smash bros.</p>
+      <p class="gameinfo info">Console name - Release date - Genre</p>
+      <a href="" class="cart">Put in Cart</a>
+    </div>
+    <div class="clearfix">
+      <a href=""><img src="images/mario-kart.jpg" class="gamepicture" alt="Mario and Luigi" /></a>
+      <p class="game info">Mario Kart</p>
+      <p class="gameinfo info">Console name - Release date - Genre</p>
+      <p><a href="" class="cart">Put in Cart</a></p>
+    </div>
+    <div class="clearfix">
+      <a href=""><img src="images/legend-of-zelda.jpg" class="gamepicture" alt="Link" /></a>
+      <p class="game info">The Legend of Zelda:</p>
+      <p class="game info"></p>The Breath of the Wild</p>
+      <p class="gameinfo info">Console name - Release date - Genre</p>
+      <a href="" class="cart">Put in Cart</a>
+    </div>
+  </div>
+  <footer>
+    <p>Company Unformation</p>
+    <p>Career</p>
+    <p>Website Privacy Policy</p>
+    <p>Terms of Sale</p>
+    <p>Support</p>
+    <p>Copyright &copy;</p>
+  </footer>
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>

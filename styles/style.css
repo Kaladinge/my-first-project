@@ -301,15 +301,15 @@ footer {
     margin-left: 114px;
   }
 
-      .vertical {
+  .vertical {
           width: 110px;
       }
 
-      footer {
+  footer {
           font-size: 0.6em;
       }
     
-     #hamburger-menu, .fas {
+  #hamburger-menu, .fas {
       display: none;
     }
 
@@ -340,17 +340,10 @@ footer {
       margin-left: 0;
   }
 
-  nav {
-    display: none;
-    position: fixed;
-  }
-
   main, nav {
     margin-top: 96px;
     margin-left: 0;
   }
-
-
 
   .vertical {
   width: 100px;
@@ -367,6 +360,11 @@ footer {
   
   #icon3 {
     width: 50%;
+  }
+
+  nav {
+    display: none;
+    position: fixed;
   }
 
   #hamburger-menu {

@@ -1,177 +1,121 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Create Account</title>
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="This is a page for buying and selling games"
-    />
-    <meta name="viewport" content="width:device-width, initial-scale=1.0" />
-    <link href="styles/create-account.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <span>
-        <a href="index.html"
-          ><img
-            src="images/gamehub-logo.png"
-            style="width: 161px; height: 101px"
-            id="logo"
-            alt="Game Hub Logo"
-        /></a>
-      </span>
-      <nav>
-        <ul>
-          <span class="horizontal2">
-            <li>
-              <a href="empty-cart.html" class="horizontal"
-                ><img
-                  src="images/cart.png"
-                  style="width: 118px; height: 54.54px"
-                  alt="shopping cart icon"
-              /></a>
-            </li>
-            <li>
-              <a href="search-results.html" class="horizontal"
-                ><img
-                  src="images/search.png"
-                  style="width: 336.77px; height: 46px"
-                  alt="search icon"
-              /></a>
-            </li>
-            <li>
-              <a href="create-account.html" class="horizontal"
-                ><img
-                  src="images/sign-in.png"
-                  style="width: 120.05px; height: 45.62px"
-                  alt="game symbol"
-              /></a>
-            </li>
-          </span>
-          <hr id="menuline" />
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="sheet">
-        <p id="firstline">
-          <a href="my-account.html" id="login">Log In</a> if you already have an
-          account
-        </p>
-        <p>or</p>
-        <div id="lines">
-          <p>Create a Game Hub Account</p>
-          <p>easily by using an existing account for:</p>
-        </div>
-        <img
-          src="images/facebook-button.png"
-          id="facebook"
-          alt="facebook button"
-        />
-        <img src="images/google-button.png" id="google" alt="google button" />
 
-        <!--<button class="button1 buttons">
-          <img src="images/facebook.png" id="facebook" alt="facebook" />
-          <div class="face">Facebook</div>
-        </button>
-        <button class="button2 buttons">Google</button>-->
+<head>
+  <title>Create Account</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="This is a page for buying and selling games" />
+  <meta name="viewport" content="width:device-width, initial-scale=1.0" />
+  <link href="styles/create-account.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+</head>
 
-        <hr />
-        <p>or make one here:</p>
-        <div class="hi">
-          <img
-            src="images/circle-profile.png"
-            id="circle"
-            alt="profile picture circle"
-          />
-          <p id="profiletext">
-            Add a profile picture by clicking on the circle
-          </p>
-        </div>
-        <form id="hello">
-          <div class="form__input">
-            <label for="pickname">Nickname:</label>
-            <input type="text" name="nickname" id="pickname" />
-          </div>
-          <div class="form__input">
-            <label for="pickgender">Gender:</label>
-            <input
-              type="radio"
-              name="gender"
-              value="female"
-              id="female"
-            /><label for="female">Female</label>
-            <input type="radio" name="gender" value="male" id="male" /><label
-              for="male"
-              >Male</label
-            >
-
-            <input
-              type="radio"
-              name="gender"
-              value="undisclosed"
-              id="undisclosed"
-            /><label for="undisclosed">Undisclosed</label>
-          </div>
-          <div class="form__input">
-            <label for="pick_bday">Date of birth: </label>
-            <input
-              type="date"
-              name="bday"
-              id="pick_bday"
-              min="1920-01-01"
-              max="2020-10-09"
-            />
-          </div>
-          <div class="form__input">
-            <label for="pick_country">Country:</label>
-            <input list="countries" id="pick_country" name="country" />
-            <datalist id="countries">
-              <option value="U.S.A"></option>
-              <option value="Norway"></option>
-              <option value="South-Africa"></option>
-              <option value="Vietnam"></option>
-              <option value="Australia"></option>
-            </datalist>
-          </div>
-          <div class="form__input">
-            <label for="pick_email">E-mail address</label>
-            <input type="email" name="email" id="pick-email" />
-          </div>
-
-          <div class="form__input">
-            <label for="pick_password">Password:</label>
-            <input type="password" name="password" id="pick_password" />
-          </div>
-
-          <div class="form__input">
-            <label for="confirm_password">Confirm password:</label>
-            <input type="password" name="confirm" id="confirm_password" />
-          </div>
-        </form>
-
-        <p>I agree to the <u>Game Hub user agreement.</u></p>
-        <button>Creste and log in</button>
+<body>
+  <header>
+    <span>
+      <a href="index.html"><img src="images/gamehub-logo.png" id="logo" alt="Game Hub Logo" /></a>
+    </span>
+    <nav>
+      <ul>
+        <span class="horizontal2">
+          <li>
+            <a href="empty-cart.html" class="horizontal"><img src="images/cart.png"
+                style="width: 118px; height: 54.54px" alt="shopping cart icon" /></a>
+          </li>
+          <li>
+            <a href="search-results.html" class="horizontal"><img src="images/search.png"
+                style="width: 336.77px; height: 46px" alt="search icon" /></a>
+          </li>
+          <li>
+            <a href="create-account.html" class="horizontal"><img src="images/sign-in.png"
+                style="width: 120.05px; height: 45.62px" alt="game symbol" /></a>
+          </li>
+        </span>
+        <hr id="menuline" />
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="sheet">
+      <p id="firstline">
+        <a href="my-account.html" class="button">Log In</a> if you already have an
+        account
+      </p>
+      <p>or</p>
+      <div id="lines">
+        <p>Create a Game Hub Account</p>
+        <p>easily by using an existing account for:</p>
       </div>
-      <h2>hello</h2>
-    </main>
-    <footer>
-      <p>Company Unformation</p>
-      <p>Career</p>
-      <p>Website Privacy Policy</p>
-      <p>Terms of Sale</p>
-      <p>Support</p>
-      <p>Copyright &copy;</p>
-    </footer>
-    <script src="scripts/main.js"></script>
-  </body>
+      <img src="images/facebook-button.png" id="facebook" alt="facebook button" />
+      <img src="images/google-button.png" id="google" alt="google button" />
+
+      <hr />
+
+      <p>or make one here:</p>
+      <div class="hi">
+        <img src="images/circle-profile.png" id="circle" alt="profile picture circle" />
+        <p id="profiletext">
+          Add a profile picture by clicking on the circle
+        </p>
+      </div>
+      <form id="container">
+        <div class="form__input">
+          <label for="pickname">Nickname:</label>
+          <input type="text" name="nickname" id="pickname" />
+        </div>
+        <div class="form__input">
+          <label for="pickgender">Gender:</label>
+          <input type="radio" name="gender" value="female" id="female" /><label for="female">Female</label>
+          <input type="radio" name="gender" value="male" id="male" /><label for="male">Male</label>
+
+          <input type="radio" name="gender" value="undisclosed" id="undisclosed" /><label
+            for="undisclosed">Undisclosed</label>
+        </div>
+        <div class="form__input">
+          <label for="pick_bday">Date of birth: </label>
+          <input type="date" name="bday" id="pick_bday" min="1920-01-01" max="2020-10-09" />
+        </div>
+        <div class="form__input">
+          <label for="pick_country">Country:</label>
+          <input list="countries" id="pick_country" name="country" />
+          <datalist id="countries">
+            <option value="U.S.A"></option>
+            <option value="Norway"></option>
+            <option value="South-Africa"></option>
+            <option value="Vietnam"></option>
+            <option value="Australia"></option>
+          </datalist>
+        </div>
+        <div class="form__input">
+          <label for="pick_email">E-mail address:</label>
+          <input type="email" name="email" id="pick-email" />
+        </div>
+
+        <div class="form__input">
+          <label for="pick_password">Password:</label>
+          <input type="password" name="password" id="pick_password" />
+        </div>
+
+        <div class="form__input">
+          <label for="confirm_password">Confirm password:</label>
+          <input type="password" name="confirm" id="confirm_password" />
+        </div>
+      </form>
+
+      <p>I agree to the <u>Game Hub user agreement.</u></p>
+      <a href="my-account.html" class="button">Create and log in</a>
+    </div>
+  </main>
+  <footer class="sheet">
+    <p>Company Unformation</p>
+    <p>Career</p>
+    <p>Website Privacy Policy</p>
+    <p>Terms of Sale</p>
+    <p>Support</p>
+    <p>Copyright &copy;</p>
+  </footer>
+  <script src="scripts/main.js"></script>
+</body>
+
 </html>

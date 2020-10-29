@@ -83,7 +83,7 @@ html {
     justify-content: space-between;
     width: 95%;
     margin: 20px auto;
-    border: 1px solid black;;
+    border: 1px solid black;
 }
 
 #logo2 {
@@ -92,10 +92,6 @@ html {
 
 #profile {
     width: 100px;
-}
-
-.profile-info {
-    text-align:
 }
 
 #account-name {

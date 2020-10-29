@@ -21,6 +21,8 @@ html {
   }
   
   #logo {
+    width: 161px;
+    height: 101px;
     margin-left: 29px;
     margin-top: 28px;
     margin-bottom: 7px;
@@ -48,12 +50,6 @@ html {
     margin-left: 48%;
     width: 50%;
   }
-  /*
-    .vertical {       Also possible to use this later if I want to adjust vertical icons (margin-top) manually.
-      display: flex;
-      margin: auto;
-    }
-    */
   
   #menuline {
     border: 2px solid #1b203d;
@@ -79,7 +75,6 @@ html {
   }
   
   .blank {
-    width: 182px;
     height: 134px;
   }
   
@@ -99,7 +94,7 @@ main {
   .text {
     margin: 20px auto;
     text-align: left;
-    width: 50%;
+    width: 70%;
     border: 1px solid black;
 }
 
@@ -108,7 +103,6 @@ main {
   margin-right: 20px;
   width: 60px;
   vertical-align: middle;
-
 }
 
 .question {
@@ -148,13 +142,13 @@ main {
 }
 
 .picture {
-  width: 500px;
+  width: 50%;
   height: 300px;
   background-image: url('../images/playing-soccergame.jpg');
   background-size: cover;
   border: 3px solid grey;
   float: left;
-  margin-right: 60px;;
+  margin-right: 20px;
 }
 
 .cart {
@@ -193,7 +187,7 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
   "cat1 cat2"
-  "cat3 cat4"
+  "cat3 cat4";
 }
 
   /* Grid info, body */
@@ -235,3 +229,65 @@ main {
     justify-content: space-between;
   }
   
+
+  /* media queries
+
+ 
+ /* Tablet styles */
+
+ @media only screen and (min-width: 550px) and (max-width: 999px) {
+  .categories {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "cat1"
+    "cat2"
+    "cat3"
+    "cat4";
+  }
+
+  .category1, .category2, .category3, .category4 {
+   width: 95%;
+  }
+  
+   .vertical {
+            width: 110px;
+        }
+
+        footer {
+            font-size: 0.6em;
+        }
+        
+
+}
+
+ /* Smart phone styles */
+
+
+ @media only screen and (max-width: 549px) {
+
+    .categories {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "cat1"
+      "cat2"
+      "cat3"
+      "cat4";
+    }
+
+    .sidebar, .vertical, .horizontal2 {
+        display: none;
+    }
+
+    #logo {
+        width: 80px;
+        height: 50px;
+    }
+
+    footer {
+        font-size: 0.6em;
+    }
+}

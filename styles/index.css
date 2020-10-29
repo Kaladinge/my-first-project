@@ -53,12 +53,6 @@ header {
     margin-left: 48%;
     width: 50%;
   }
-  /*
-    .vertical {       Also possible to use this later if I want to adjust vertical icons (margin-top) manually.
-      display: flex;
-      margin: auto;
-    }
-    */
   
   #menuline {
     border: 2px solid #1b203d;

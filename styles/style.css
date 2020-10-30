@@ -257,6 +257,8 @@ footer {
 
 /* media queries */
 
+/* Desktop styles */
+
 @media only screen and (min-width: 1280px) {
   #hamburger-menu, .fas {
     display: none;
@@ -307,6 +309,7 @@ footer {
 
   footer {
           font-size: 0.6em;
+          margin-left: 111px;
       }
     
   #hamburger-menu, .fas {

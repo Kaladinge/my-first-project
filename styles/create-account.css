@@ -16,9 +16,9 @@ h1 {
 }
 
 h2 {
-  color: white;
+  color: black;
   font-family: "Russo One", verdana, sans-serif;
-  text-align: center;
+  text-align: left;
   font-size: 30px;
   line-height: 20px;
 }
@@ -31,6 +31,12 @@ h2 {
   margin-bottom: 7px;
 }
 
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
 nav ul {
   list-style-type: none;
@@ -47,12 +53,73 @@ nav ul {
   margin-left: 48%;
   width: 50%;
 }
-/*
-  .vertical {       Also possible to use this later if I want to adjust vertical icons (margin-top) manually.
-    display: flex;
-    margin: auto;
-  }
-  */
+
+#menuline {
+  border: 2px solid #1b203d;
+  margin: 0;
+}
+
+header, nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+main, footer {
+  z-index: -1;
+}
+
+nav, main {
+  margin-top: 147px;
+}
+
+.outer-wrapper {
+  display: block;
+}
+
+.vertical {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+  width: 182px;
+  height: 134px;
+  border: 1px solid grey;
+  background-color: #1b203d;
+}
+
+#icon1 {
+  width: 65px;
+}
+
+#icon2 {
+  width: 110px;
+}
+
+#icon3 {
+  width: 85px;
+}
+
+#icon4 {
+  width: 71px;
+}
+
+#icon5 {
+  width: 52px;
+}
+
+.vertical:hover {
+    background-color: black;
+}
+
+.blank {
+  height: 134px;
+}
+
+
+/* */
+
+/* */
 
 #menuline {
   border: 2px solid #1b203d;
@@ -152,6 +219,10 @@ footer {
         #container {
           width: 65%;
         }
+
+        .sheet {
+          width: 100%;
+        }
 }
 
  /* small desktop styles */
@@ -173,4 +244,14 @@ footer {
     footer {
         font-size: 0.5em;
     }
+
+    main {
+      margin-top: 96px;
+      font-size: 0.8em;
+    }
+
+    .sheet {
+      width: 100%;
+    }
+
 }

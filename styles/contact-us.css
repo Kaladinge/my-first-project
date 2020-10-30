@@ -1,82 +1,124 @@
 html {
-    font-size: 20px;
-    font-family: "PT Sans", verdana, sans-serif;
-  }
-  
-  body {
-    background-color: white;
-    margin: 0px;
-  }
-  
-  h1 {
-    font-family: "Russo One", verdana, sans-serif;
-  }
-  
-  h2 {
-    color: black;
-    font-family: "Russo One", verdana, sans-serif;
-    text-align: left;
-    font-size: 30px;
-    line-height: 20px;
-  }
-  
-  #logo {
-    width: 161px;
-    height: 101px;
-    margin-left: 29px;
-    margin-top: 28px;
-    margin-bottom: 7px;
-  }
-  
-  header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  .horizontal2 {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 55px;
-    margin-left: 48%;
-    width: 50%;
-  }
-  
-  #menuline {
-    border: 2px solid #1b203d;
-    margin: 0;
-  }
-  
-  .outer-wrapper {
-    display: block;
-  }
-  
-  .vertical {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    display: table-cell;
-    width: 182px;
-    border: 1px solid grey;
-    background-color: #1b203d;
-  }
-  
-  .icons {
-    height: 134px;
-  }
-  
-  .blank {
-    height: 134px;
-  }
+  font-size: 20px;
+  font-family: "PT Sans", verdana, sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+header {
+  background-color: white;
+}
+
+h1 {
+  font-family: "Russo One", verdana, sans-serif;
+}
+
+h2 {
+  color: black;
+  font-family: "Russo One", verdana, sans-serif;
+  text-align: left;
+  font-size: 30px;
+  line-height: 20px;
+}
+
+#logo {
+  width: 161px;
+  height: 101px;
+  margin-left: 29px;
+  margin-top: 28px;
+  margin-bottom: 7px;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.horizontal2 {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 55px;
+  margin-left: 48%;
+  width: 50%;
+}
+
+#menuline {
+  border: 2px solid #1b203d;
+  margin: 0;
+}
+
+header, nav {
+  position: fixed;
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+}
+
+main, footer {
+  margin-left: 184px;
+  z-index: -1;
+}
+
+nav, main, .sidebar {
+  margin-top: 147px;
+}
+
+.outer-wrapper {
+  display: block;
+}
+
+.vertical {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+  width: 182px;
+  height: 134px;
+  border: 1px solid grey;
+  background-color: #1b203d;
+}
+
+#icon1 {
+  width: 65px;
+}
+
+#icon2 {
+  width: 110px;
+}
+
+#icon3 {
+  width: 85px;
+}
+
+#icon4 {
+  width: 71px;
+}
+
+#icon5 {
+  width: 52px;
+}
+
+.vertical:hover {
+    background-color: black;
+}
+
+.blank {
+  height: 134px;
+}
   
   /* main info */
 
@@ -230,9 +272,17 @@ main {
   }
   
 
-  /* media queries
+  
 
- 
+
+  /* media queries */
+
+  @media only screen and (min-width: 550px) and (max-width: 999px) {
+  #hamburger-menu, .fas {
+    display: none;
+  }
+}
+
  /* Tablet styles */
 
  @media only screen and (min-width: 550px) and (max-width: 999px) {
@@ -247,8 +297,17 @@ main {
     "cat4";
   }
 
+  .sheet {
+    width: 100%;
+  }
+
   .category1, .category2, .category3, .category4 {
    width: 95%;
+  }
+
+  main {
+    font-size: 0.8em;
+    margin-left: 111px;
   }
   
    .vertical {
@@ -257,6 +316,11 @@ main {
 
         footer {
             font-size: 0.6em;
+            margin-left: 111px;
+        }
+
+        #hamburger-menu, .fas {
+          display: none;
         }
         
 
@@ -278,8 +342,12 @@ main {
       "cat4";
     }
 
-    .sidebar, .vertical, .horizontal2 {
+    .sidebar, .horizontal2 {
         display: none;
+    }
+
+    .sheet {
+      width: 100%;
     }
 
     #logo {
@@ -287,7 +355,52 @@ main {
         height: 50px;
     }
 
+    main, nav {
+      font-size: 0.8em;
+      margin-top: 96px;
+      margin-left: 0;
+    }
+
+    .vertical {
+      width: 100px;
+      height: 100px;
+    }
+    
+      #icon1, #icon4, #icon5 {
+        width: 45%;
+      }
+      
+      #icon2 {
+        width: 70%;
+      }
+      
+      #icon3 {
+        width: 50%;
+      }
+
     footer {
         font-size: 0.6em;
+        margin-left: 0;
     }
+
+    nav {
+      display: none;
+      position: fixed;
+    }
+  
+    #hamburger-menu {
+      display: none;
+    }
+  
+    .fas{
+      position: fixed;
+      z-index: 1;
+      top: 40px;
+      right: 40px;
+    }
+  
+    #hamburger-menu:checked ~ nav {
+      display:block;
+    }
+
 }

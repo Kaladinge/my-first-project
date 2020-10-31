@@ -2,14 +2,14 @@
 <html>
 
 <head>
-  <title>My first page</title>
+  <title>GameHub | Home</title>
   <meta charset="utf-8" />
   <meta name="description" content="This is a page for buying and selling games" />
   <meta name="viewport" content="width:device-width, initial-scale=1.0" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
-  <link href="styles/style.css" rel="stylesheet" />
+  <link href="styles/index.css" rel="stylesheet" />
 
 </head>
 
@@ -26,18 +26,27 @@
 
 
     <ul>
-      <span class="horizontal2">
+      <span class="horizontal-menu">
         <li>
-          <a href="empty-cart.html" class="horizontal"><img src="images/cart.png" style="width: 118px; height: 54.54px"
-              alt="shopping cart icon" /></a>
+          <a href="empty-cart.html" class="horizontal hor1"><img src="images/cart-icon.png" id="cart"
+              alt="shopping cart icon" />
+            <p class="horizontal-text">To
+              Cart</p>
+          </a>
         </li>
         <li>
-          <a href="search-results.html" class="horizontal"><img src="images/search.png"
-              style="width: 336.77px; height: 46px" alt="search icon" /></a>
+          <a href="search-results.html" class="horizontal"><img src="images/search-icon.png" id="mag-glass"
+              alt="search icon" />
+            <p class="used-games horizontal-text">Used
+              games</p>
+          </a>
         </li>
         <li>
-          <a href="create-account.html" class="horizontal"><img src="images/sign-in.png"
-              style="width: 120.05px; height: 45.62px" alt="sign up/log in icon" /></a>
+          <a href="create-account.html" class="horizontal"><img src="images/person-icon.png" id="person"
+              alt="sign up/log in icon" />
+            <p class="horizontal-text">Sign
+              In</p>
+          </a>
         </li>
       </span>
     </ul>
@@ -48,10 +57,15 @@
   <nav>
     <ul>
       <div class="vertical-menu">
-        <li class="outer wrapper">
-          <a href="action-games.html" class="vertical"><img src="images/games.png" id="icon1" alt="game symbol" /></a>
+        <li class="outer-wrapper dropdown">
+          <button class="vertical drop-button"><img src="images/games.png" id="icon1" alt="game symbol" /></button>
+          <div class="dropdown-content">
+            <a href="action-games.html">Action Games</a>
+            <a href="adventure-games.html">Adventure Games</a>
+            <a href="sports-games.html">Sports Games</a>
+          </div>
         </li>
-        <li class="outer-wrapper">
+        <li class="">
           <a href="search-results.html" class="vertical"><img src="images/used-games.png" id="icon2"
               alt="Used games" /></a>
         </li>

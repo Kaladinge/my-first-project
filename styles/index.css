@@ -1,5 +1,9 @@
 @import "imports/header-nav.css";
 
+.dropdown-content a {
+  display: block;
+
+}
 
 /* main info */
 
@@ -97,14 +101,6 @@ picture {
 
 /* Grid info, body */
 
-header {
-  grid-area: header;
-}
-
-nav {
-  grid-area: nav;
-}
-
 main {
   grid-area: main;
 }
@@ -118,7 +114,7 @@ footer {
 body {
   display: grid;
   grid-gap: 0;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr auto;
   grid-template-areas:
     "main sidebar"
     "footer footer";
@@ -130,10 +126,6 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-
-
-
-
 
 /* media queries */
 

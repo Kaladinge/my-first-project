@@ -82,6 +82,10 @@ input {
   text-align: right;
 }
 
+#agreement {
+  text-decoration: underline;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -91,7 +95,7 @@ footer {
 /* media queries
 
 
- /* desktop styles */
+ /* Smaller desktop styles */
 
  @media only screen and (min-width: 550px) and (max-width: 999px) {
    footer {

@@ -115,7 +115,7 @@ html {
   
   main, footer {
     margin-left: 184px;
-    z-index: -1;
+    /*z-index: -1;*/
   }
   
   nav, main, .sidebar {
@@ -136,6 +136,49 @@ html {
     border: 1px solid grey;
     background-color: #1b203d;
   }
+
+  .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1b203d;
+  left: 186px;
+  top: 0;
+  text-align: center;
+  min-width: 186px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border: 1px solid white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+  color: red;
+}
+
+#adventure:hover {
+  color: #A6C906;
+}
+
+#sports:hover {
+  color: #9859D0;
+}
+
   
   #icon1 {
     width: 65px;

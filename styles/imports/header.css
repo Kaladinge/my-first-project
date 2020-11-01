@@ -68,6 +68,10 @@ html {
     text-decoration: none;
 }
 
+.horizontal-text {
+      color: black;
+  }
+
 .horizontal:hover {
   color: #BAC5CF;
 }

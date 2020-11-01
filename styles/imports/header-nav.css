@@ -115,7 +115,7 @@ html {
   
   main, footer {
     margin-left: 184px;
-    /*z-index: -1;*/
+    z-index: -1;
   }
   
   nav, main, .sidebar {
@@ -146,10 +146,10 @@ html {
   display: none;
   position: absolute;
   background-color: #1b203d;
-  left: 186px;
+  left: 182px;
   top: 0;
   text-align: center;
-  min-width: 186px;
+  min-width: 210px;
   z-index: 1;
 }
 
@@ -179,6 +179,10 @@ html {
   color: #9859D0;
 }
 
+.drop-icon {
+  width: 15px;
+  padding-right: 5px;
+}
   
   #icon1 {
     width: 65px;
@@ -215,7 +219,12 @@ html {
     .horizontal-text {
         display: none;
     }
+
+.dropdown-content {
+  left: 111px;
  }
+ }
+
     /* Smart phone styles */
 
 
@@ -234,4 +243,9 @@ html {
          margin-left: 67%;
          width: 20%;
      }
+
+        .dropdown-content {
+  left: 100px;
  }
+}
+ 

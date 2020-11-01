@@ -59,6 +59,10 @@ footer {
            font-size: 0.6em;
        }
 
+       #arrow {
+      margin-top: -5px;
+  }
+
        .sheet {
          width: 100%;
        }
@@ -92,6 +96,10 @@ footer {
 
     footer {
       font-size: 0.5em;
+  }
+
+  #arrow {
+      margin-top: -5px;
   }
 
   .sheet {

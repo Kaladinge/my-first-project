@@ -1,5 +1,6 @@
 @import "imports/header-nav.css";
 
+@import "imports/sidebar.css";
 
 
 /* main info */
@@ -21,75 +22,6 @@
     flex: 6;
     margin-left: 5px;
 }
-
-picture {
-    padding: 10px;
-    margin: 10px;
-}
-
-
-/* sidebar info */
-
-.sidebar {
-  width: 400px;
-  margin-left: 20px;
-  border: 1px solid black;
-}
-
-.mainheader {
-  margin-bottom: 30px;
-}
-
-.subheader {
-  margin: 0;
-  color: grey;
-}
-
-.gamepicture {
-  float: left;
-  width: 25%;
-  margin-bottom: 20px;
-  margin-right: 10px;
-}
-
-.gameinfo {
-  font-size: 16px;
-  color: grey;
-  margin-bottom: 30px;
-}
-
-.info {
-  line-height: 2px;
-  margin-left: 20px;
-}
-
-.clearfix::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.clearfix {
-  margin-top: 60px;
-}
-
-.cart {
-  margin: 20px;
-  color: white;
-  background-color: #ee1925;
-  border: 1px solid black;
-  text-decoration: none;
-  padding: 7px 25px;
-  border-radius: 15px;
-  cursor: grabbing;
-   position: relative;
-    z-index: 100;
-  }
-
-  .cart:hover {
-    background-color: #B10C26;
-  }
-
 
 .picture {
   width: 100%;
@@ -131,12 +63,9 @@ footer {
   #hamburger-menu, .fas {
     display: none;
   }
-
-  
 }
 
-
-/* small desktop styles */
+/* Small desktop styles */
 
 @media only screen and (min-width: 1000px) and (max-width: 1279px) {
   .pics3 {
@@ -149,7 +78,7 @@ footer {
   }
 }
 
-/* desktop styles */
+/* Tablet styles */
 
 @media only screen and (min-width: 550px) and (max-width: 999px) {
   body {
@@ -183,8 +112,6 @@ footer {
   #hamburger-menu, .fas {
       display: none;
     }
-
-    
 }
 
 /* Smart phone styles */
@@ -210,7 +137,6 @@ footer {
       font-size: 0.6em;
       margin-left: 0;
   }
-
 
   main, nav {
     margin-top: 96px;

@@ -1,11 +1,9 @@
 @import "imports/header-nav.css";
 
+@import "imports/sidebar.css";
+
 
 /* main info */
-
-main {
-  border: 1px solid black;
-}
 
 nav {
   border: 1px solid black;
@@ -19,14 +17,12 @@ nav {
 
 .allcontent1 {
   text-align: left;
-  border: 1px solid black;
   width: 95%;
   margin: 0 auto;
   
 }
 .paragraph {
   margin-top: 50px;
-  border: 1px solid black;
   max-width: 750px;
 }
 
@@ -62,68 +58,6 @@ nav {
   justify-content: space-around;
 }
 
-
-/* sidebar info */
-
-.sidebar {
-  width: 400px;
-  margin-left: 30px;
-}
-
-.mainheader {
-  margin-bottom: 30px;
-}
-
-.subheader {
-  margin: 0;
-  color: grey;
-}
-
-.gamepicture {
-  float: left;
-  width: 25%;
-  margin-bottom: 20px;
-  margin-right: 20px;
-}
-
-.gameinfo {
-  font-size: 16px;
-  color: grey;
-  margin-bottom: 30px;
-}
-
-.info {
-  line-height: 2px;
-  margin-left: 20px;
-}
-
-.clearfix::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.clearfix {
-  margin-top: 60px;
-}
-
-.cart {
-  margin: 20px;
-  color: white;
-  background-color: #ee1925;
-  border: 1px solid black;
-  text-decoration: none;
-  padding: 7px 25px;
-  border-radius: 15px;
-  position: relative;
-  cursor: grabbing;
-   z-index: 100;
-  }
-
-  .cart:hover {
-    background-color: #B10C26;
-  }
-
 /* Grid info */
 
 header {
@@ -154,15 +88,12 @@ body {
     "footer footer footer";
 }
 
-
-
 /* footer info */
 
 footer {
   display: flex;
   justify-content: space-between;
 }
-
 
 /* media queries
 
@@ -174,7 +105,7 @@ footer {
   }
 }
 
-  /* small desktop styles */
+  /* Small desktop styles */
 
   @media only screen and (min-width: 1000px) and (max-width: 1279px) {
     #playing, #holding {
@@ -186,9 +117,9 @@ footer {
     }
 }
 
- /* desktop styles */
+ /* Tablet styles */
 
- @media only screen and (min-width: 550px) and (max-width: 999px) {
+  @media only screen and (min-width: 550px) and (max-width: 999px) {
     body {
         display: grid;
         grid-gap: 0;
@@ -197,6 +128,10 @@ footer {
         "nav main"
         "nav sidebar"
         "footer footer"
+        }
+
+        .sidebar {
+          margin-left: 186px;;
         }
 
         #playing {
@@ -229,7 +164,7 @@ footer {
 
 }
 
- /* small desktop styles */
+ /* Smart phone styles */
 
 
  @media only screen and (max-width: 549px) {
@@ -290,5 +225,4 @@ footer {
     #hamburger-menu:checked ~ nav {
       display:block;
     }
-
 }

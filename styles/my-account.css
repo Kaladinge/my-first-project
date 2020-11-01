@@ -1,13 +1,12 @@
 @import "imports/header-nav.css";
   
-  /* main info */
+/* main info */
 
 .account-info {
     display: flex;
     justify-content: space-between;
     width: 95%;
     margin: 20px auto;
-    border: 1px solid black;
 }
 
 #logo2 {
@@ -33,7 +32,6 @@
     min-width: 50px;
     width: 95%;
     margin: 10px;
-
 }
 
   /* Grid info, body */
@@ -73,8 +71,6 @@
     justify-content: space-between;
   }
   
-
-
   /* media queries
 
   /* Desktop styles */
@@ -83,8 +79,6 @@
   #hamburger-menu, .fas {
     display: none;
   }
-
-  
 }
 
   /* small desktop styles */
@@ -103,7 +97,6 @@
       display: none;
     }
   }
-
 
  /* desktop styles */
 
@@ -135,10 +128,9 @@
         #hamburger-menu, .fas {
           display: none;
         }
-}
+  }
 
  /* small desktop styles */
-
 
  @media only screen and (max-width: 549px) {
     .pictures {
@@ -168,7 +160,7 @@
     .vertical {
     width: 100px;
     height: 100px;
-  }
+    }
   
     #icon1, #icon4, #icon5 {
       width: 45%;
@@ -201,5 +193,4 @@
     #hamburger-menu:checked ~ nav {
       display:block;
     }
-  
 }

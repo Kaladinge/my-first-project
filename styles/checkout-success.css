@@ -1,24 +1,8 @@
 @import "imports/header.css";
 
+@import "imports/checkout.css";
+
 /* Main */
-
-  body,
-  footer {
-    background: grey;
-  }
-  .sheet {
-    background: white;
-    width: 90%;
-    margin: 0 auto;
-    border: 1px solid black;
-  }
-
-  .text {
-      margin: 0 auto;
-      text-align: left;
-      width: 80%;
-      border: 1px solid black;
-  }
 
   #complete {
       float: left;
@@ -26,39 +10,15 @@
       margin-right: 20px;
   }
 
-
   .clearfix::after {
     clear: both;
     content: "";
     display: table;
   }
 
-  #box {
-      width: 200px;
-      /*float: left;*/
-  }
-
-  .box1 {
-      border: 1px solid black;
-  }
-
-.product {
-    margin: 0;
-}
-
 .section {
     font-weight: bold;
 }
-
-#login {
-    color: white;
-    background-color: #9859d0;
-    border: 1px solid black;
-    text-decoration: none;
-    padding: 10px 50px;
-    border-radius: 10px;
-    cursor: grabbing;
-  }
 
   #login {
     padding: 10px 30px;
@@ -68,69 +28,6 @@
       display: flex;
       justify-content: space-around;
       width: 80%;
-
   }
-
-    .flexing {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    footer {
-        display: flex;
-        justify-content: space-between;
-      }
       
-      /* Media queries */
-
- /* desktop styles */
-
- @media only screen and (min-width: 550px) and (max-width: 999px) {
-  
-  main {
-    font-size: 0.8em;
-  }
-  
-  footer {
-           font-size: 0.6em;
-       }
-
-       .sheet {
-         width: 100%;
-       }
-
-       .text {
-         width: 95%;
-       }
-}
       
-      /* Smart phone styles */
-
-  @media only screen and (max-width: 549px) {
-    .horizontal2 {
-           display: none;
-       }
-
-       #logo {
-        width: 80px;
-        height: 50px;
-    }
-
-    main {
-      margin-top: 96px;
-      font-size: 0.8em;
-    }
-
-    .flexing {
-      flex-direction: column;
-    }
-
-    footer {
-      font-size: 0.5em;
-  }
-
-  .sheet {
-    width: 100%;
-  }
-    
-      }

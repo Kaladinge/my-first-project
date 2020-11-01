@@ -4,15 +4,6 @@
 
 /* main info */
 
-main {
-  border: 1px solid black;
-}
-
-nav {
-  border: 1px solid black;
-}
-
-
 .pics3 {
     display: flex;
 }
@@ -35,6 +26,7 @@ picture {
     padding: 10px;
     margin: 10px;
 }
+
 
 /* sidebar info */
 
@@ -90,7 +82,14 @@ picture {
   padding: 7px 25px;
   border-radius: 15px;
   cursor: grabbing;
-}
+   position: relative;
+    z-index: 100;
+  }
+
+  .cart:hover {
+    background-color: #B10C26;
+  }
+
 
 .picture {
   width: 100%;
@@ -212,6 +211,7 @@ footer {
       margin-left: 0;
   }
 
+
   main, nav {
     margin-top: 96px;
     margin-left: 0;
@@ -237,6 +237,7 @@ footer {
   nav {
     display: none;
     position: fixed;
+    z-index: 2000;
   }
 
   #hamburger-menu {
@@ -245,7 +246,7 @@ footer {
 
   .fas{
     position: fixed;
-    z-index: 1;
+    z-index: 300;
     top: 40px;
     right: 40px;
   }
@@ -253,11 +254,4 @@ footer {
   #hamburger-menu:checked ~ nav {
     display:block;
   }
-
-  
-
-  
-
-
-
 }

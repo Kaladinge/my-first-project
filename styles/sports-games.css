@@ -1,294 +1,55 @@
 @import "imports/header-nav.css";
 
-/**/
+@import "imports/games.css";
 
 #menuline {
   border: 2px solid #9859D0;
 }
-  /* main info */
-  
-  main {
-    border: 1px solid black;
-    position: relative;
-  }
-  
-  nav {
-    border: 1px solid black;
-  }
-  
 
-  .allcontent1 {
+.sidebar {
+    width: 400px;
     margin-left: 0px;
-    border: 1px solid black;
-    text-align: center;
-    border-bottom: 2px solid grey;
-  }
-  
-  
-  #search {
-         max-width: 450px;
-        margin-top: 100px;
-        width: 75%;
+    background-image: url('../images/sports-mariokart.jpg');
+    background-size: cover;
   }
 
   #pocal {
       width: 40px;
       margin-right: 10px;
   }
-  
- .category {
-     display: inline;
-     padding: 10px;
-     margin: 10px;
- }
-
- .filterheaders {
-     margin-bottom: 20px;
- }
-
- .gamepicture {
-    float: left;
-    width: 130px;
-    padding-left: 20px;
-    margin: 0 20px 30px 0;
-  }
-
-  .gameinfo {
-    font-size: 16px;
-    color: grey;
-    margin-bottom: 30px;
-  }
-  
-  .info {
-    line-height: 15px;
-    margin-top: 10px;
-  }
-
-  .clearfix::after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .clearfix {
-    margin-top: 30px;
-    border: 1px solid black;
-  }
 
   .cart {
-    margin: 20px;
-    color: white;
     background-color: #9859D0;
-    border: 1px solid black;
-    text-decoration: none;
-    padding: 7px 25px;
-    border-radius: 15px;
-    cursor: grabbing;
   }
 
- .filter {
-     border: 1px solid red;
- }
-  
- .games {
-     border: 1px solid red;
- }
-  
-  /* sidebar info */
-  
-  .sidebar {
-    width: 400px;
-    margin-left: 0px;
-    background-image: url('../images/sports-mariokart.jpg');
-    background-size: cover;
-  }
-  
-  
-  /* Grid info, sidebar */
-  
-  header {
-    grid-area: header;
-  }
-  
-  nav {
-    grid-area: nav;
-  }
-  
-  main {
-    grid-area: main;
-  }
-  .sidebar {
-    grid-area: sidebar;
-  }
-  footer {
-    grid-area: footer;
-  }
-  
-  body {
-    display: grid;
-    grid-gap: 0;
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas:
-      "header header header"
-      "nav main sidebar"
-      "footer footer footer";
-  }
-  
-  /* Grid info, main */
-
-  .allcontent1 {
-      grid-area: search;
+  .cart:hover {
+    background-color: #7A4EA0;
   }
 
   .filter {
-      grid-area: filter;
-      padding: 10px;
-  }
-
-  .games {
-      grid-area: games;
-      padding: 0;
-  }
-
-  main {
-      display: grid;
-      grid-gap: 0;
-      grid-template-rows: auto 1fr;
-      grid-template-columns: auto 1fr;
-      grid-template-areas: 
-      "search search"
-      "filter games";
-  }
-
-  /* footer info */
+     border-top: 1px solid #9859D0;
+ }
   
-  footer {
-    display: flex;
-    justify-content: space-between;
-  }
+ .games {
+     border: 1px solid #9859D0;
+ }
   
 
-   /* media queries
+  /* media queries
 
-   /* media queries */
-
-@media only screen and (min-width: 1280px) {
-  #hamburger-menu, .fas {
-    display: none;
-  }
-}
-
-  /* small desktop styles */
-
-  @media only screen and (min-width: 1000px) and (max-width: 1279px) {
-    .sidebar {
-      display: none;
-    }
-
-    #hamburger-menu, .fas {
-      display: none;
-    }
-}
-
- /* desktop styles */
+ /* Smaller desktop styles */
 
  @media only screen and (min-width: 550px) and (max-width: 999px) {
-        .sidebar {
-          display: none;
-        }
 
-        .vertical {
-            width: 110px;
+    #pocal {
+      width: 30px;
         }
-
-        main {
-          font-size: 0.8em;
-          margin-left: 111px;
-        }
-
-        #star {
-          width: 30px;
-        }
-
-        footer {
-            font-size: 0.6em;
-            margin-left: 111px;
-        }
-
-        #hamburger-menu, .fas {
-          display: none;
-        }
-    
-
 }
 
- /* small desktop styles */
-
+ /* Smart phone styles */
 
  @media only screen and (max-width: 549px) {
-
-    .sidebar, .horizontal2, .filter {
-        display: none;
-    }
-
-    #logo {
-        width: 80px;
-        height: 50px;
-    }
-
-    .pics3 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    main, nav {
-      font-size: 0.8em;
-      margin-top: 96px;
-      margin-left: 0;
-    }
-
-    .vertical {
-      width: 100px;
-      height: 100px;
-    }
-    
-      #icon1, #icon4, #icon5 {
-        width: 45%;
-      }
-      
-      #icon2 {
-        width: 70%;
-      }
-      
-      #icon3 {
-        width: 50%;
-      }
-
     #pocal {
       width: 20px;
     }
-    footer {
-      font-size: 0.6em;
-      margin-left: 0;
   }
-
-  nav {
-    display: none;
-    position: fixed;
-  }
-
-  #hamburger-menu {
-    display: none;
-  }
-
-  .fas{
-    position: fixed;
-    z-index: 1;
-    top: 40px;
-    right: 40px;
-  }
-
-  #hamburger-menu:checked ~ nav {
-    display:block;
-  }
-}

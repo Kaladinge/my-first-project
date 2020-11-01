@@ -193,7 +193,7 @@
   
     .fas{
       position: fixed;
-      z-index: 1;
+      z-index: 300;
       top: 40px;
       right: 40px;
     }

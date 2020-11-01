@@ -1,89 +1,53 @@
-@import "imports/header-nav.css";
-  
+/**/
+
+#menuline {
+  border: 2px solid #ee1925;
+}
+
   /* main info */
-  
+
+
   main {
-    border: 1px solid black;
+    position: relative;
   }
   
-  .allcontent1::after {
-    clear: both;
-    content: "";
-    display: table;
+  nav {
+    z-index: 100;
   }
   
   .allcontent1 {
     margin-left: 0px;
-    border: 1px solid black;
-    text-align: left;
-    width: 95%;
-    margin: 0 auto;
-  }
-
-  .paragraph {
-    margin-top: 50px;
-    border: 1px solid black;
-    max-width: 750px;
-  }
-  
-  #mario {
-    border: 3px solid grey;
-    float: right;
-    width: 230px;
+    text-align: center;
   }
   
   #search {
-    width: 70%;
-    min-width: 200px;
-    margin-top: 30px;
+        max-width: 450px;
+        margin-top: 100px;
+        width: 75%;
+  }
+
+  #star {
+      width: 40px;
+      margin-right: 10px;
   }
   
-.container {
-  width: 95%;
-  margin: 0 auto;
-}
+ .category {
+     display: inline;
+     padding: 10px;
+     margin: 10px;
+ }
 
+ .filterheaders {
+     margin-bottom: 20px;
+ }
 
-  .yellow {
-      position: relative;
-      max-width: 1000px;
-      height: 350px;
-      background-image: url('../images/yellow-block.png');
-      background-size: cover;
-      }
- 
-    #logo2 {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 161px;
-        height: 101px;
-      }
-
-
-  /* sidebar info */
-  
-  .sidebar {
-    width: 400px;
-    margin-left: 30px;
-  }
-  
-  .mainheader {
-    margin-bottom: 30px;
-  }
-  
-  .subheader {
-    margin: 0;
-    color: grey;
-  }
-  
-  .gamepicture {
+ .gamepicture {
     float: left;
-    width: 25%;
-    margin-bottom: 20px;
-    margin-right: 20px;
+    width: 130px;
+    padding-left: 20px;
+    margin: 0 20px 30px 0;
   }
-  
+
   .gameinfo {
     font-size: 16px;
     color: grey;
@@ -91,10 +55,10 @@
   }
   
   .info {
-    line-height: 2px;
-    margin-left: 20px;
+    line-height: 15px;
+    margin-top: 10px;
   }
-  
+
   .clearfix::after {
     clear: both;
     content: "";
@@ -102,9 +66,9 @@
   }
   
   .clearfix {
-    margin-top: 60px;
+    margin-top: 30px;
   }
-  
+
   .cart {
     margin: 20px;
     color: white;
@@ -121,9 +85,26 @@
   .cart:hover {
     background-color: #B10C26;
   }
+
+ .filter {
+     border-top: 1px solid red;
+ }
+  
+ .games {
+     border: 1px solid red;
+ }
+  
+  /* sidebar info */
+  
+  .sidebar {
+    width: 400px;
+    margin-left: 0px;
+    background-image: url('../images/action-ryuu.jpg');
+    background-size: cover;
+  }
   
   
-  /* Grid info */
+  /* Grid info, sidebar */
   
   header {
     grid-area: header;
@@ -148,12 +129,36 @@
     grid-gap: 0;
     grid-template-columns: auto 1fr auto;
     grid-template-areas:
-      "header header header"
       "nav main sidebar"
       "footer footer footer";
   }
   
-  
+  /* Grid info, main */
+
+  .allcontent1 {
+      grid-area: search;
+  }
+
+  .filter {
+      grid-area: filter;
+      padding: 10px;
+  }
+
+  .games {
+      grid-area: games;
+      padding: 0;
+  }
+
+  main {
+      display: grid;
+      grid-gap: 0;
+      grid-template-rows: auto 1fr;
+      grid-template-columns: auto 1fr;
+      grid-template-areas: 
+      "search search"
+      "filter games";
+  }
+
   /* footer info */
   
   footer {
@@ -162,11 +167,11 @@
   }
   
 
-  /* media queries
+   /* media queries
 
- /* Desktop styles */
+   /* media queries */
 
- @media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
   #hamburger-menu, .fas {
     display: none;
   }
@@ -175,45 +180,33 @@
   /* small desktop styles */
 
   @media only screen and (min-width: 1000px) and (max-width: 1279px) {
-    #mario {
+    .sidebar {
       display: none;
     }
 
     #hamburger-menu, .fas {
       display: none;
     }
-
 }
 
  /* desktop styles */
 
  @media only screen and (min-width: 550px) and (max-width: 999px) {
-    body {
-        display: grid;
-        grid-gap: 0;
-        grid-template-areas:
-        "header header"
-        "nav main"
-        "nav sidebar"
-        "footer footer"
-        }
-
-        main {
-          font-size: 0.8em;
-          margin-left: 111px;
-        }
-
-        #mario {
-          width: 150px;
+        .sidebar {
+          display: none;
         }
 
         .vertical {
             width: 110px;
         }
+        
+        main {
+          font-size: 0.8em;
+          margin-left: 111px;
+        }
 
-        .sidebar {
-          margin-top: 0;
-          margin-left: 114px;
+        #star {
+          width: 30px;
         }
 
         footer {
@@ -226,18 +219,23 @@
         }
 }
 
-
  /* small desktop styles */
+
 
  @media only screen and (max-width: 549px) {
 
-    .sidebar, .horizontal2 {
+    .sidebar, .horizontal2, .filter {
         display: none;
     }
 
     #logo {
         width: 80px;
         height: 50px;
+    }
+
+    .pics3 {
+        display: flex;
+        flex-direction: column;
     }
 
     main, nav {
@@ -263,33 +261,31 @@
         width: 50%;
       }
 
-    #mario {
-      display: none;
+    #star {
+      width: 20px;
     }
-
     footer {
-        font-size: 0.6em;
-        margin-left: 0;
-    }
+      font-size: 0.6em;
+      margin-left: 0;
+  }
 
-    nav {
-      display: none;
-      position: fixed;
-    }
-  
-    #hamburger-menu {
-      display: none;
-    }
-  
-    .fas{
-      position: fixed;
-      z-index: 300;
-      top: 40px;
-      right: 40px;
-    }
-  
-    #hamburger-menu:checked ~ nav {
-      display:block;
-    }
+  nav {
+    display: none;
+    position: fixed;
+  }
 
+  #hamburger-menu {
+    display: none;
+  }
+
+  .fas{
+    position: fixed;
+    z-index: 300;
+    top: 40px;
+    right: 40px;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display:block;
+  }
 }

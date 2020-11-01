@@ -115,8 +115,14 @@ nav {
   text-decoration: none;
   padding: 7px 25px;
   border-radius: 15px;
+  position: relative;
   cursor: grabbing;
-}
+   z-index: 100;
+  }
+
+  .cart:hover {
+    background-color: #B10C26;
+  }
 
 /* Grid info */
 
@@ -276,7 +282,7 @@ footer {
   
     .fas{
       position: fixed;
-      z-index: 1;
+      z-index: 300;
       top: 40px;
       right: 40px;
     }

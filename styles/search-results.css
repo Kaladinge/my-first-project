@@ -3,33 +3,33 @@
 @import "imports/games.css";
 
 #menuline {
-  border: 2px solid #F1B000;
+  border: 2px solid #f1b000;
 }
 
 .sidebar {
-    width: 400px;
-    margin-left: 0px;
-    background-image: url('../images/used-ghost.jpg');
-    background-size: cover;
-  }
+  width: 400px;
+  margin-left: 0px;
+  background-image: url("../images/used-ghost.jpg");
+  background-size: cover;
+}
 
-  #pocal {
-      width: 40px;
-      margin-right: 10px;
-  }
+#pocal {
+  width: 40px;
+  margin-right: 10px;
+}
 
-  .cart {
-    background-color: #F1B000;
-  }
+.cart {
+  background-color: #f1b000;
+}
 
-  .cart:hover {
-    background-color:  #BA8801;
-  }
+.cart:hover {
+  background-color: #ba8801;
+}
 
-  filter {
-     border-top: 1px solid #F1B000;
- }
-  
- .games {
-     border: 1px solid #F1B000;
- }
+filter {
+  border-top: 1px solid #f1b000;
+}
+
+.games {
+  border: 1px solid #f1b000;
+}

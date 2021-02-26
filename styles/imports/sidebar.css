@@ -49,10 +49,10 @@
   padding: 7px 25px;
   border-radius: 15px;
   cursor: grabbing;
-   position: relative;
-    z-index: 100;
-  }
+  position: relative;
+  z-index: 100;
+}
 
-  .cart:hover {
-    background-color: #B10C26;
-  }
+.cart:hover {
+  background-color: #b10c26;
+}

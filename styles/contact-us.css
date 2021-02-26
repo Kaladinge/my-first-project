@@ -4,12 +4,14 @@
 
 main {
   background-color: grey;
+  margin-top: 120px;
 }
 
 .sheet {
   background: white;
   margin-right: 100px;
   margin-right: 10%;
+  border: 1px solid white;
 }
 
 .text {

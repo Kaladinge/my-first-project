@@ -74,6 +74,7 @@ nav ul {
 
 #cart {
   width: 55px;
+  position: relative;
 }
 
 #mag-glass {

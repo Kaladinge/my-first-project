@@ -68,7 +68,9 @@ input {
   width: 55%;
 }
 
-#female, #male, #undisclosed {
+#female,
+#male,
+#undisclosed {
   width: 5%;
   margin-left: 10px;
 }
@@ -87,52 +89,61 @@ footer {
   justify-content: space-between;
 }
 
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+#required {
+  color: red;
+}
 
 /* media queries
 
  /* Smaller desktop styles */
 
- @media only screen and (min-width: 550px) and (max-width: 999px) {
+@media only screen and (min-width: 550px) and (max-width: 999px) {
   footer {
     font-size: 0.6em;
-        }
+  }
 
   #container {
     width: 65%;
-        }
+  }
 
   .sheet {
     width: 100%;
-        }
+  }
 }
 
- /* Tablet styles */
+/* Tablet styles */
 
- @media only screen and (max-width: 549px) {
- .horizontal2 {
+@media only screen and (max-width: 549px) {
+  .horizontal2 {
     display: none;
-    }
+  }
 
   #logo {
     width: 80px;
     height: 50px;
-    }
-    
+  }
+
   #container {
     width: 90%;
-    }
+  }
 
   footer {
     font-size: 0.5em;
-    }
+  }
 
   main {
     margin-top: 96px;
     font-size: 0.8em;
-    }
+  }
 
   .sheet {
     width: 100%;
-    }
-
+  }
 }

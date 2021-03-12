@@ -77,6 +77,10 @@ nav ul {
   position: relative;
 }
 
+#cart2 {
+  display: none;
+}
+
 #mag-glass {
   width: 50px;
 }

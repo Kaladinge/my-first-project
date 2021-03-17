@@ -22,7 +22,7 @@ header {
   display: none;
 }
 
-.buttons {
+.flexing {
   display: flex;
   justify-content: space-evenly;
 }
@@ -70,14 +70,8 @@ h4 {
   margin-bottom: 7px;
 }
 
-header > a:hover {
-  box-shadow: 10px 10px 30px black;
-  padding-top: 100px;
-}
-
-.horizontal:hover {
-  box-shadow: 10px 10px 30px black;
-  padding: 20px 0;
+.horizontal-text:hover {
+  color: grey;
 }
 
 header ul {
@@ -296,28 +290,53 @@ main,
   .dropdown-content {
     left: 111px;
   }
+
+  .quantity {
+    right: 8px;
+  }
 }
 
 /* Smart phone styles */
 
 @media only screen and (max-width: 549px) {
-  .horizontal-text,
+  /*.horizontal-text,
   .hor1 {
+    display: none;
+  }*/
+
+  header {
+    font-size: 0.7rem;
+  }
+
+  .horizontal-text {
     display: none;
   }
 
   #mag-glass,
-  #person {
-    width: 55%;
+  #person,
+  #cart {
+    width: 30px;
   }
 
   .horizontal-menu {
-    justify-content: end;
+    justify-content: space-between;
     top: 38px;
-    width: 20%;
+    width: 30%;
+    margin-left: 38%;
+  }
+
+  .quantity {
+    right: 7px;
+    top: -12px;
+    width: 20px;
+    height: 20px;
   }
 
   .dropdown-content {
     left: 100px;
+  }
+
+  #cart-box {
+    top: 90px;
   }
 }

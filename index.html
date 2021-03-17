@@ -37,13 +37,6 @@
     <ul>
       <span class="horizontal-menu">
         <li>
-          <a href="empty-cart.html" class="horizontal hor1"><img src="images/cart-icon.png" id="cart"
-              alt="shopping cart icon" />
-            <p class="horizontal-text">To
-              Cart</p>
-          </a>
-        </li>
-        <li>
           <a href="search-results.html" class="horizontal"><img src="images/search-icon.png" id="mag-glass"
               alt="search icon" />
             <p class="used-games horizontal-text">Used
@@ -57,8 +50,23 @@
               In</p>
           </a>
         </li>
+        <li>
+          <a href="empty-cart.html" class="horizontal hor1"><img src="images/cart-icon.png" id="cart"
+              alt="shopping cart icon" />
+            <p class="horizontal-text">To
+              Cart</p>
+              <div class="quantity">1</div>
+          </a>
+        </li>
       </span>
     </ul>
+    <div id="cart-box"><h4>Shopping Cart</h4>
+      <div class="cart-details"></div>
+      <div class="total"></div>
+      <div class="flexing">
+        <a href ="" class="button keep-shopping">Keep Shopping</a><a href="checkout.html" class="button">To Checkout</a>
+      </div>
+    </div>
 
     <hr id="menuline" />
 
@@ -115,7 +123,7 @@
     </div>
 
   </main>
-  <div class="sidebar">
+  <div class="sidebar click-area">
     <h2 class="mainheader">Cheap used games</h2>
     <p class="subheader">Games that we recently bought from</p>
     <p class="subheader">your fellow game hubbers are on sale</p>
@@ -123,26 +131,26 @@
       <a href=""><img src="images/skyrim-logo.jpg" class="gamepicture" alt="Skyrim logo" /></a>
       <p class="game info">Skyrim</p>
       <p class="gameinfo info">Console name - Release date - Genre</p>
-      <a href="checkout.html" class="cart">Put in Cart</a>
+      <a href="" class="cart cart1">Put in Cart</a>
     </div>
     <div class="clearfix">
       <a href=""><img src="images/mario-goomba.jpg" class="gamepicture" alt="Mario vs Goomba" /></a>
       <p class="game info">Super Smash bros.</p>
       <p class="gameinfo info">Console name - Release date - Genre</p>
-      <a href="checkout.html" class="cart">Put in Cart</a>
+      <a href="" class="cart cart2">Put in Cart</a>
     </div>
     <div class="clearfix">
       <a href=""><img src="images/mario-kart.jpg" class="gamepicture" alt="Mario and Luigi" /></a>
       <p class="game info">Mario Kart</p>
       <p class="gameinfo info">Console name - Release date - Genre</p>
-      <p><a href="checkout.html" class="cart">Put in Cart</a></p>
+      <p><a href="" class="cart cart2">Put in Cart</a></p>
     </div>
     <div class="clearfix">
       <a href=""><img src="images/legend-of-zelda.jpg" class="gamepicture" alt="Link" /></a>
       <p class="game info">The Legend of Zelda:</p>
       <p class="game info"></p>The Breath of the Wild</p>
       <p class="gameinfo info">Console name - Release date - Genre</p>
-      <a href="checkout.html" class="cart">Put in Cart</a>
+      <a href="" class="cart cart4">Put in Cart</a>
     </div>
   </div>
   <footer>
@@ -153,7 +161,7 @@
     <p>Support</p>
     <p>Copyright &copy;</p>
   </footer>
-  <script src="scripts/main.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

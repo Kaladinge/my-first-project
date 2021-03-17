@@ -5,6 +5,7 @@ const cartMenu = document.querySelector(".hor1");
 const cartBox = document.querySelector("#cart-box");
 const cartDetails = document.querySelector(".cart-details");
 const keepShopping = document.querySelector(".keep-shopping");
+const cartTotal = document.querySelector(".total");
 
 let x = 1;
 function addToCart(event) {
@@ -24,6 +25,10 @@ function addToCart(event) {
                             <p class="cart-info">Qty: 1</p>
                             <p class="cart-info">Prize: xxxx</p>
                             </div>`
+
+    
+    cartTotal.innerHTML = `<div class="flexing"><p>${x} products</p><p>Total: xxxx</p></div>`
+    
     x = x + 1;
 }
 

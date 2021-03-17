@@ -34,6 +34,7 @@ function addToCart(event) {
 
 
 function removeCartDetails() {
+    event.preventDefault()
     cartBox.style.display = "none";
 }
 

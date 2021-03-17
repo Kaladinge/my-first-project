@@ -89,16 +89,43 @@
       <hr>
       <div class="text">
         <h4>Shipping Information</h4>
-        <div class="shipping">
-          <p class="inform">Delivery Method <img src="images/arrow-down.png" id="arrow" alt="drop down arrow"></p>
-          <p class="inform">Delivery Address <img src="images/arrow-down.png" id="arrow" alt="drop down arrow">
-          </p>
-        </div>
+          <div class="flexing">
+            <label for="pickdelivery">Delivery Method:</label>
+            <div class="delivery-box"><input type="radio" name="delivery" value="partial" id="partial" />
+              <label class="delivery" for="partial"> Partial Delivery
+                <p>We'll send your wares as soon as they are in stock, in separate delivieries if need be.</p></label>
+            </div>
+            <div  class="delivery-box"><input type="radio" name="delivery" value="full" id="full" />
+              <label class="delivery" for="full"> Full Delivery<p>We'll send your wares in one delivery as soon as the last product is in stock. This is our green alternative.</p></label></div>
+          </div>
+          <div class="flexing address-fields">
+            <label id="address" for="picknumber">Delivery Address<span id="required">*</span>:</label>
+            <input type="text" name="address" id="picknumber" /><input type="text" name="address" id="pickname" />
+            <!--<div class="form-error" id="nameError">Please enter a nickname</div>-->
+          </div>
+
+          <!--<p class="inform">Delivery Method <img src="images/arrow-down.png" id="arrow" alt="drop down arrow"></p>
+
+
+          <p class="inform">Delivery Address <img src="images/arrow-down.png" id="arrow" alt="drop down arrow">-->
+        
 
       </div>
       <hr>
       <div class="text">
         <h4>Payment Information</h4>
+        <div class="flexing">
+          <label for="pickdelivery">Delivery Method:</label>
+          <div class="delivery-box"><input type="radio" name="delivery" value="partial" id="partial" />
+            <label class="delivery" for="partial"> Partial Delivery
+              <p>We'll send your wares as soon as they are in stock, in separate delivieries if need be.</p>
+            </label>
+          </div>
+          <div class="delivery-box"><input type="radio" name="delivery" value="full" id="full" />
+            <label class="delivery" for="full"> Full Delivery<p>We'll send your wares in one delivery as soon as the last
+                product is in stock. This is our green alternative.</p></label>
+          </div>
+        </div>
         <p class="inform">Payment Method <img src="images/arrow-down.png" id="arrow" alt="drop down arrow"></p>
       </div>
       <hr>

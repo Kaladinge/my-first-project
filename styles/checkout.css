@@ -42,3 +42,28 @@
     display: inline-block;
     font-size: 20px;
   }
+
+  .delivery {
+    float: right;
+    max-width: 200px;
+    margin-left: 10px;
+  }
+
+  .delivery-box {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  #required {
+  color: red;
+}
+
+#address {
+  margin-right: 50px;
+}
+
+.address-fields {
+  display: flex;
+  justify-content: start;
+}

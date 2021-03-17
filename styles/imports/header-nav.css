@@ -338,5 +338,6 @@ main,
 
   #cart-box {
     top: 90px;
+    width: 100%;
   }
 }

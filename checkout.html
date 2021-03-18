@@ -90,47 +90,43 @@
       <div class="text">
         <h4>Shipping Information</h4>
           <div class="flexing">
-            <label for="pickdelivery">Delivery Method:</label>
+            <label for="pickdelivery">Delivery Method<span id="required">*</span>:</label>
             <div class="delivery-box"><input type="radio" name="delivery" value="partial" id="partial" />
               <label class="delivery" for="partial"> Partial Delivery
                 <p>We'll send your wares as soon as they are in stock, in separate delivieries if need be.</p></label>
             </div>
             <div  class="delivery-box"><input type="radio" name="delivery" value="full" id="full" />
-              <label class="delivery" for="full"> Full Delivery<p>We'll send your wares in one delivery as soon as the last product is in stock. This is our green alternative.</p></label></div>
+              <label class="delivery" for="full"> Full Delivery<p>We'll send your wares in one delivery as soon as the last product is in stock. This is our green alternative.</p></label>
+            </div>
           </div>
+          <div class="form-error" id="deliveryError">Please select one of the options</div>
           <div class="flexing address-fields">
             <label id="address" for="picknumber">Delivery Address<span id="required">*</span>:</label>
-            <input type="text" name="address" id="picknumber" /><input type="text" name="address" id="pickname" />
-            <!--<div class="form-error" id="nameError">Please enter a nickname</div>-->
+            <input type="text" name="address" id="picknumber" placeholder="number (min. 4)" />
+            <input type="text" name="address" id="pickname" placeholder="street address" />
           </div>
-
-          <!--<p class="inform">Delivery Method <img src="images/arrow-down.png" id="arrow" alt="drop down arrow"></p>
-
-
-          <p class="inform">Delivery Address <img src="images/arrow-down.png" id="arrow" alt="drop down arrow">-->
-        
+          <div class="form-error" id="numberError">Please enter a number</div>
+          <div class="form-error" id="nameError">Please enter a street address</div>
 
       </div>
       <hr>
       <div class="text">
         <h4>Payment Information</h4>
         <div class="flexing">
-          <label for="pickdelivery">Delivery Method:</label>
-          <div class="delivery-box"><input type="radio" name="delivery" value="partial" id="partial" />
-            <label class="delivery" for="partial"> Partial Delivery
-              <p>We'll send your wares as soon as they are in stock, in separate delivieries if need be.</p>
-            </label>
+          <label for="pickpayment">Delivery Method<span id="required">*</span>:</label>
+          <div class="payment-box"><input type="radio" name="payment-boxes" value="debit" id="debit" />
+            <label class="payment" for="debit">Debit card</label>
           </div>
-          <div class="delivery-box"><input type="radio" name="delivery" value="full" id="full" />
-            <label class="delivery" for="full"> Full Delivery<p>We'll send your wares in one delivery as soon as the last
-                product is in stock. This is our green alternative.</p></label>
+          <div class="payment-box"><input type="radio" name="payment-boxes" class="" value="debit" id="credit" />
+            <label class="payment" for="credit">Credit card</label>
           </div>
         </div>
-        <p class="inform">Payment Method <img src="images/arrow-down.png" id="arrow" alt="drop down arrow"></p>
+        <div class="form-error" id="paymentError">Please select one of the options</div>
+
       </div>
       <hr>
-      <div class="text">
-        <a href="checkout-success.html" id="login"> Checkout</a>
+      <div class="text button">
+        <a href="" id="login"> Validate</a>
       </div>
     </div>
   </main>
@@ -142,7 +138,7 @@
     <p>Support</p>
     <p>Copyright &copy;</p>
   </footer>
-  <script src="scripts/main.js"></script>
+  <script src="js/checkout.js"></script>
 </body>
 
 </html>

@@ -4,58 +4,57 @@
 
 /* main */
 
-#arrow {
-        float: right;
-        width: 42px;
-    }
-  
-  #firstline {
-    margin-top: 76px;
-  }
-  
-  #lines {
-    line-height: 15px;
-  }
-  
-  #facebook {
-    width: 300px;
-    margin-right: 20px;
-  }
-  
-  #google {
-    width: 300px;
-  }
-  
-  .inform {
-    border-bottom: 1px solid black;
-    width: 300px;
-  }
-  
-  #circle {
-    margin-right: 20px;
-    width: 100px;
-    vertical-align: middle;
-  }
-  
-  #profiletext {
-    margin-left: 20px;
-    display: inline-block;
-    font-size: 20px;
-  }
+#firstline {
+  margin-top: 76px;
+}
 
-  .delivery {
-    float: right;
-    max-width: 200px;
-    margin-left: 10px;
-  }
+#lines {
+  line-height: 15px;
+}
 
-  .delivery-box {
-    border: 1px solid black;
-    margin: 5px;
-    padding: 5px;
-  }
+#facebook {
+  width: 300px;
+  margin-right: 20px;
+}
 
-  #required {
+#google {
+  width: 300px;
+}
+
+.inform {
+  border-bottom: 1px solid black;
+  width: 300px;
+}
+
+#circle {
+  margin-right: 20px;
+  width: 100px;
+  vertical-align: middle;
+}
+
+#profiletext {
+  margin-left: 20px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.delivery {
+  float: right;
+  max-width: 200px;
+  margin-left: 10px;
+}
+
+.delivery-box,
+.payment-box {
+  margin: 5px;
+  padding: 5px;
+}
+
+.delivery-box {
+  border: 1px solid black;
+}
+
+#required {
   color: red;
 }
 
@@ -66,4 +65,34 @@
 .address-fields {
   display: flex;
   justify-content: start;
+  margin-top: 30px;
+}
+
+#picknumber {
+  width: 30%;
+}
+
+#pickname {
+  width: 40%;
+}
+
+#picknumber,
+#pickname {
+  padding: 10px;
+}
+
+#login {
+  margin-top: 300px;
+}
+
+.button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 2px;
 }

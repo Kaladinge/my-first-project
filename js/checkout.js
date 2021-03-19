@@ -30,17 +30,29 @@ function pickPayment(event) {
     var getDelivery = document.querySelector('input[name="delivery"]:checked');
     var getPayment = document.querySelector('input[name="payment-boxes"]:checked');
 
-if (validateRadio(getDelivery) === true) {
-    deliveryError.style.display = "none";
-} else {
-    deliveryError.style.display = "block";
-}
+    if (validateRadio(getDelivery) === true) {
+        deliveryError.style.display = "none";
+    } else {
+        deliveryError.style.display = "block";
+    }
 
-if (validateRadio(getPayment) === true) {
-    paymentError.style.display = "none";
-} else {
-    paymentError.style.display = "block";
-}
+    if (validateRadio(getPayment) === true) {
+        paymentError.style.display = "none";
+    } else {
+        paymentError.style.display = "block";
+    }
+
+    if (lenCheck(number.value, 3) === true && !isNaN(number.value)) {
+            errorNumber.style.display = "none";
+        } else {
+            errorNumber.style.display = "block";
+        }
+
+    if (lenCheck(address.value, 8) === true) {
+        errorAddress.style.display = "none";
+    } else {
+        errorAddress.style.display = "block";
+    }
 
 
 if (validateRadio(getDelivery) === true && validateRadio(getPayment) === true && lenCheck(address.value, 8) === true && lenCheck(number.value, 3) && !isNaN(number.value)) {

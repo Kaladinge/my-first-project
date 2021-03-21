@@ -1,0 +1,202 @@
+@import "imports/header-nav.css";
+
+@import "imports/sidebar.css";
+
+
+/* main info */
+
+.pics3 {
+    display: flex;
+}
+
+.pic2 {
+    flex: 9;
+    margin-right: 5px;
+}   
+
+.pic3 {
+    flex: 6;
+}
+
+.pic4 {
+    flex: 6;
+    margin-left: 5px;
+}
+
+.picture {
+  width: 100%;
+}
+
+/* Grid info, body */
+
+main {
+  grid-area: main;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+footer {
+  grid-area: footer;
+}
+
+body {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "main sidebar"
+    "footer footer";
+}
+
+/* footer info */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* media queries */
+
+/* Desktop styles */
+
+@media only screen and (min-width: 1280px) {
+  #hamburger-menu, .fas {
+    display: none;
+  }
+
+  .pic2, .pic3, .pic4 {
+    z-index: 10;
+  }
+}
+
+/* Small desktop styles */
+
+@media only screen and (min-width: 1000px) and (max-width: 1279px) {
+  .pics3 {
+      display: flex;
+      flex-direction: column;
+  }
+
+.pic2, .pic4 {
+  margin: 0;
+}
+
+.pic2, .pic3, .pic4 {
+    z-index: 10;
+  }
+
+  #hamburger-menu, .fas {
+    display: none;
+  }
+}
+
+/* Tablet styles */
+
+@media only screen and (min-width: 550px) and (max-width: 999px) {
+  body {
+      display: grid;
+      grid-gap: 0;
+      grid-template-areas:
+      "main"
+      "sidebar"
+      "footer"
+      }
+
+  main {
+    margin-left: 111px;
+  }
+
+  .sidebar {
+    margin-top: 0;
+    margin-left: 114px;
+  }
+
+  .pic2, .pic3, .pic4 {
+    z-index: 10;
+  }
+
+  .vertical {
+          width: 110px;
+      }
+
+  footer {
+          font-size: 0.6em;
+          margin-left: 111px;
+      }
+    
+  #hamburger-menu, .fas {
+      display: none;
+    }
+}
+
+/* Smart phone styles */
+
+
+@media only screen and (max-width: 549px) {
+
+  .sidebar, .horizontal2 {
+      display: none;
+  }
+
+  #logo {
+      width: 80px;
+      height: 50px;
+  }
+
+  .pics3 {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .pic2, .pic4 {
+  margin: 0;
+}
+
+  footer {
+      font-size: 0.6em;
+      margin-left: 0;
+  }
+
+  main, nav {
+    margin-top: 96px;
+    margin-left: 0;
+  }
+
+  .vertical {
+  width: 100px;
+  height: 100px;
+}
+
+  #icon1, #icon4, #icon5 {
+    width: 45%;
+  }
+  
+  #icon2 {
+    width: 70%;
+  }
+  
+  #icon3 {
+    width: 50%;
+  }
+
+  nav {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  .fas{
+    position: fixed;
+    z-index: 300;
+    top: 40px;
+    right: 40px;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display:block;
+  }
+}

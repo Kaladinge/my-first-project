@@ -35,7 +35,6 @@ header {
   margin-bottom: 10px;
 }
 
-
 .product-line {
   display: flex;
   justify-content: space-evenly;
@@ -111,7 +110,7 @@ nav ul {
   right: 70px;
   width: 25px;
   height: 25px;
-  border-radius: 50%;;
+  border-radius: 50%;
   background-color: #ee1925;
   color: white;
   text-align: center;
@@ -168,10 +167,6 @@ header {
   z-index: 200;
 }
 
-nav {
-  position: fixed;
-}
-
 main,
 footer {
   margin-left: 184px;
@@ -219,7 +214,6 @@ main,
   top: 0;
   text-align: center;
   min-width: 210px;
-  z-index: 1;
 }
 
 .dropdown-content a {
@@ -277,7 +271,7 @@ main,
 }
 
 .blank {
-  height: 134px;
+  height: 300px;
 }
 
 /* desktop styles */

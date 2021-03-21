@@ -2,29 +2,118 @@
 
 @import "imports/sidebar.css";
 
-
 /* main info */
 
-.pics3 {
-    display: flex;
+.link-image {
+  position: relative;
+  z-index: -10;
 }
 
-.pic2 {
-    flex: 9;
-    margin-right: 5px;
-}   
-
-.pic3 {
-    flex: 6;
+.link-text {
+  position: absolute;
+  width: 33%;
+  top: 6%;
+  left: 66%;
 }
 
-.pic4 {
-    flex: 6;
-    margin-left: 5px;
+.text {
+  color: white;
+  font-size: 25px;
+}
+
+.text3,
+.text4,
+.text7,
+.text8 {
+  color: black;
+}
+
+.text2 {
+  text-align: center;
+}
+
+#green {
+  color: #a6c906;
+}
+
+.flex-images {
+  display: flex;
+}
+
+.sell-games-image,
+.bowser-image {
+  width: 100%;
+}
+
+.sell-games-image {
+  position: relative;
+}
+
+.sell-games-text {
+  position: absolute;
+  width: 90%;
+  top: 6%;
+  left: 5%;
+}
+
+.text3 {
+  width: 40%;
+  font-size: 25px;
+}
+
+.text4 {
+  text-align: right;
+  font-size: 25px;
+}
+
+.purple {
+  color: #9859d0;
+}
+
+.bowser-image {
+  position: relative;
+}
+
+.bowser-text {
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+
+.text5,
+.text6 {
+  color: white;
+}
+
+.text6 {
+  width: 60%;
+}
+
+#gold {
+  color: #f1b000;
+}
+
+.pikachu-image {
+  position: relative;
+}
+
+.pikachu-text {
+  position: absolute;
+  top: 5%;
+  left: 64%;
+  width: 25%;
+}
+
+.text8 {
+  text-align: right;
 }
 
 .picture {
   width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Grid info, body */
@@ -60,32 +149,37 @@ footer {
 /* Desktop styles */
 
 @media only screen and (min-width: 1280px) {
-  #hamburger-menu, .fas {
+  #hamburger-menu,
+  .fas {
     display: none;
-  }
-
-  .pic2, .pic3, .pic4 {
-    z-index: 10;
   }
 }
 
 /* Small desktop styles */
 
 @media only screen and (min-width: 1000px) and (max-width: 1279px) {
-  .pics3 {
-      display: flex;
-      flex-direction: column;
+  body {
+    display: grid;
+    grid-gap: 0;
+    grid-template-areas:
+      "main"
+      "sidebar"
+      "footer";
   }
 
-.pic2, .pic4 {
-  margin: 0;
-}
-
-.pic2, .pic3, .pic4 {
-    z-index: 10;
+  .sidebar {
+    width: 80%;
+    margin-left: 200px;
+    margin-top: 0;
   }
 
-  #hamburger-menu, .fas {
+  .flex-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #hamburger-menu,
+  .fas {
     display: none;
   }
 }
@@ -94,13 +188,17 @@ footer {
 
 @media only screen and (min-width: 550px) and (max-width: 999px) {
   body {
-      display: grid;
-      grid-gap: 0;
-      grid-template-areas:
+    display: grid;
+    grid-gap: 0;
+    grid-template-areas:
       "main"
       "sidebar"
-      "footer"
-      }
+      "footer";
+  }
+
+  .text {
+    font-size: 18px;
+  }
 
   main {
     margin-left: 111px;
@@ -111,70 +209,80 @@ footer {
     margin-left: 114px;
   }
 
-  .pic2, .pic3, .pic4 {
+  .pic2,
+  .pic3,
+  .pic4 {
     z-index: 10;
   }
 
   .vertical {
-          width: 110px;
-      }
+    width: 110px;
+  }
 
   footer {
-          font-size: 0.6em;
-          margin-left: 111px;
-      }
-    
-  #hamburger-menu, .fas {
-      display: none;
-    }
+    font-size: 0.6em;
+    margin-left: 111px;
+  }
+
+  #hamburger-menu,
+  .fas {
+    display: none;
+  }
 }
 
 /* Smart phone styles */
 
-
 @media only screen and (max-width: 549px) {
-
-  .sidebar, .horizontal2 {
-      display: none;
+  .sidebar,
+  .horizontal2 {
+    display: none;
   }
 
   #logo {
-      width: 80px;
-      height: 50px;
+    width: 80px;
+    height: 50px;
+  }
+
+  .text {
+    font-size: 15px;
   }
 
   .pics3 {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
-  .pic2, .pic4 {
-  margin: 0;
-}
+  .pic2,
+  .pic4 {
+    margin: 0;
+  }
 
   footer {
-      font-size: 0.6em;
-      margin-left: 0;
+    font-size: 0.6em;
+    margin-left: 0;
   }
 
-  main, nav {
+  main,
+  nav {
     margin-top: 96px;
     margin-left: 0;
   }
 
   .vertical {
-  width: 100px;
-  height: 100px;
-}
+    width: 100px;
+    height: 100px;
+  }
 
-  #icon1, #icon4, #icon5 {
+  #icon1,
+  #icon4,
+  #icon5 {
     width: 45%;
   }
-  
+
   #icon2 {
     width: 70%;
   }
-  
+
   #icon3 {
     width: 50%;
   }
@@ -189,7 +297,7 @@ footer {
     display: none;
   }
 
-  .fas{
+  .fas {
     position: fixed;
     z-index: 300;
     top: 40px;
@@ -197,6 +305,6 @@ footer {
   }
 
   #hamburger-menu:checked ~ nav {
-    display:block;
+    display: block;
   }
 }

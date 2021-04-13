@@ -10,4 +10,6 @@ async function gameList() {
     catch(error) {
         console.log(error);
     }
-} 
+}
+
+gameList();

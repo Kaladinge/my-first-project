@@ -2,10 +2,9 @@
 
 @import "imports/games.css";
 
-
 .sidebar {
-    width: 400px;
-    margin-left: 0px;
-    background-image: url('../images/action-ryuu.jpg');
-    background-size: cover;
-  }
+  width: 400px;
+  margin-left: 0px;
+  background-image: url("../images/action-ryuu.jpg");
+  background-size: cover;
+}

@@ -210,10 +210,10 @@ main,
   display: none;
   position: absolute;
   background-color: #1b203d;
-  left: 184px;
-  top: 0;
+  left: 0px;
+  top: 134px;
   text-align: center;
-  min-width: 210px;
+  min-width: 182px;
 }
 
 .dropdown-content a {

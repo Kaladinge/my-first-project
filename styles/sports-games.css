@@ -3,53 +3,56 @@
 @import "imports/games.css";
 
 #menuline {
-  border: 2px solid #9859D0;
+  border: 2px solid #9859d0;
 }
 
 .sidebar {
-    width: 400px;
-    margin-left: 0px;
-    background-image: url('../images/sports-mariokart.jpg');
-    background-size: cover;
-  }
+  width: 400px;
+  margin-left: 0px;
+  background-image: url("../images/sports-mariokart.jpg");
+  background-size: cover;
+}
 
-  #pocal {
-      width: 40px;
-      margin-right: 10px;
-  }
+#pocal {
+  width: 40px;
+  margin-right: 10px;
+}
 
-  .cart {
-    background-color: #9859D0;
-  }
+.cart {
+  background-color: #9859d0;
+}
 
-  .cart:hover {
-    background-color: #7A4EA0;
-  }
+.cart:hover {
+  background-color: #7a4ea0;
+}
 
-  .filter {
-     border-top: 1px solid #9859D0;
- }
-  
- .games {
-     border: 1px solid #9859D0;
- }
-  
+.filter {
+  border-top: 1px solid #9859d0;
+}
 
-  /* media queries
+.games {
+  border: 1px solid #9859d0;
+}
+
+.loader {
+  border: 16px solid #9859d0;
+  border-top: 16px solid black;
+}
+
+/* media queries
 
  /* Smaller desktop styles */
 
- @media only screen and (min-width: 550px) and (max-width: 999px) {
-
-    #pocal {
-      width: 30px;
-        }
+@media only screen and (min-width: 550px) and (max-width: 999px) {
+  #pocal {
+    width: 30px;
+  }
 }
 
- /* Smart phone styles */
+/* Smart phone styles */
 
- @media only screen and (max-width: 549px) {
-    #pocal {
-      width: 20px;
-    }
+@media only screen and (max-width: 549px) {
+  #pocal {
+    width: 20px;
   }
+}

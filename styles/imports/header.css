@@ -1,83 +1,83 @@
 html {
-    font-size: 20px;
-    font-family: "PT Sans", verdana, sans-serif;
-  }
-  
-  body {
-    margin: 0px;
-  }
-  
-  header {
-    background-color: white;
-  }
-  
-  h1 {
-    font-family: "Russo One", verdana, sans-serif;
-  }
-  
-  h2 {
-    color: black;
-    font-family: "Russo One", verdana, sans-serif;
-    text-align: left;
-    font-size: 30px;
-    line-height: 20px;
-  }
-  
-  #logo {
-    width: 161px;
-    height: 101px;
-    margin-left: 29px;
-    margin-top: 28px;
-    margin-bottom: 7px;
-  }
+  font-size: 20px;
+  font-family: "PT Sans", verdana, sans-serif;
+}
 
-  header > a:hover {
-    box-shadow: 10px 10px 30px black;
-    padding-top: 100px;
-  }
+body {
+  margin: 0px;
+}
 
-  .horizontal:hover {
-    box-shadow: 10px 10px 30px black;
-    padding: 20px 0;
-  }
-  
-  header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  .horizontal-menu {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 55px;
-    margin-left: 48%;
-    width: 50%;
-  }
+header {
+  background-color: white;
+}
 
-  .horizontal {
-    text-decoration: none;
+h1 {
+  font-family: "Russo One", verdana, sans-serif;
+}
+
+h2 {
+  color: black;
+  font-family: "Russo One", verdana, sans-serif;
+  text-align: left;
+  font-size: 30px;
+  line-height: 20px;
+}
+
+#logo {
+  width: 161px;
+  height: 101px;
+  margin-left: 29px;
+  margin-top: 28px;
+  margin-bottom: 7px;
+}
+
+header > a:hover {
+  box-shadow: 10px 10px 30px black;
+  padding-top: 100px;
+}
+
+.horizontal:hover {
+  box-shadow: 10px 10px 30px black;
+  padding: 20px 0;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.horizontal-menu {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 55px;
+  margin-left: 48%;
+  width: 50%;
+}
+
+.horizontal {
+  text-decoration: none;
 }
 
 .horizontal-text {
-      color: black;
-  }
+  color: black;
+}
 
 .horizontal:hover {
-  color: #BAC5CF;
+  color: #bac5cf;
 }
 
 #cart {
-    width: 55px;
+  width: 55px;
 }
 
 #mag-glass {
@@ -94,7 +94,9 @@ html {
   width: 45px;
 }
 
-#cart, #mag-glass, #person {
+#cart,
+#mag-glass,
+#person {
   vertical-align: middle;
   margin-right: 5px;
 }
@@ -102,49 +104,46 @@ html {
 .horizontal-text {
   display: inline;
 }
-  
-  #menuline {
-    border: 2px solid #1b203d;
-    margin: 0;
-  }
-  
-  header, nav {
-    top: 0;
-    position: fixed;
-    width: 100%;
-  }
-  
-  main, footer {
-    z-index: -1;
-  }
-  
-  main {
-    margin-top: 147px;
-  }
 
+#menuline {
+  border: 2px solid #1b203d;
+  margin: 0;
+}
 
-  /* desktop styles */
+header,
+nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
 
- @media only screen and (min-width: 550px) and (max-width: 999px) {
+main {
+  margin-top: 147px;
+}
+
+/* desktop styles */
+
+@media only screen and (min-width: 550px) and (max-width: 999px) {
   .horizontal-text {
-      display: none;
+    display: none;
   }
 }
-  /* Smart phone styles */
-
+/* Smart phone styles */
 
 @media only screen and (max-width: 549px) {
-   .horizontal-text, .hor1 {
-      display: none;
-   }
+  .horizontal-text,
+  .hor1 {
+    display: none;
+  }
 
-   #mag-glass, #person{
-       width: 55%;
-   }
+  #mag-glass,
+  #person {
+    width: 55%;
+  }
 
-   .horizontal-menu {
-       justify-content: end;
-       top: 38px;
-       width: 20%;
-   }
+  .horizontal-menu {
+    justify-content: end;
+    top: 38px;
+    width: 20%;
+  }
 }

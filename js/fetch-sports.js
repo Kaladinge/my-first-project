@@ -1,5 +1,4 @@
 const games = document.querySelector(".games");
-const buy = document.querySelector(".buy");
 const url = "http://larsingeprojects.one/gamehub/wp-json/wc/store/products";
 
 async function gameList() {
@@ -11,7 +10,7 @@ async function gameList() {
         games.innerHTML = "";
 
         for (let i = 0; i < 8; i++) {
-            if (results[i].categories[0].name != "Action") {
+            if (results[i].categories[0].name != "Sports") {
                 continue;
             } 
                 createHTML(results[i]);
@@ -25,21 +24,11 @@ async function gameList() {
 gameList();
 
 function createHTML(results) {
-        games.innerHTML += `<div class="clearfix click-area">
-                                    <a href="index.html"><img src="${results.images[0].src}" class="gamepicture" alt="Mass effect logo" /></a>
+        games.innerHTML += `<div class="clearfix">
+                                    <a href=""></a><img src="${results.images[0].src}" class="gamepicture" alt="Mass effect logo" /></a>
                                     <h3 class="game info">${results.name}</h3>
                                     <p class="gameinfo info">Console name - Release date - Genre</p>
                                     <p>Information about the game.</p>
-                                    <p>${results.prices.price} kr</p>
+                                    <p>${results.prices.price} kr<a href="" class="cart">Put in Cart</a></p>
                                    </div>`
-
-
-        buy.innerHTML += `<div class="buy-button">
-                                <a href="" class="cart">Put in Cart</a>
-                        </div>`
-        
         }
-        const cart = document.querySelectorAll(".cart");
-        
-
-

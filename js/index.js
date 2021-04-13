@@ -1,6 +1,5 @@
-const cart = document.querySelectorAll(".cart");
 const quantity = document.querySelector(".quantity");
-const sidebar = document.querySelector(".click-area");
+const sidebar = document.querySelector(".click-area2");
 const cartMenu = document.querySelector(".hor1");
 const cartBox = document.querySelector("#cart-box");
 const cartDetails = document.querySelector(".cart-details");

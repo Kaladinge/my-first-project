@@ -2,14 +2,14 @@
 <html>
 
 <head>
-  <title>GameHub | Action Games</title>
+  <title>GameHub | Sports Games</title>
   <meta charset="utf-8" />
   <meta name="description" content="Page for buying action games" />
   <meta name="viewport" content="width:device-width, initial-scale=1.0" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
-  <link href="styles/action-games.css" rel="stylesheet" />
+  <link href="styles/sports-games.css" rel="stylesheet" />
   <!-- Hotjar Tracking Code for https://kaladinge-my-first-project.netlify.app/ -->
   <script>
     (function (h, o, t, j, a, r) {
@@ -66,24 +66,28 @@
         <a href="" class="button keep-shopping">Keep Shopping</a><a href="checkout.html" class="button">To Checkout</a>
       </div>
     </div>
-
     <hr id="menuline" />
+
   </header>
+
   <nav>
+
     <ul>
       <div class="vertical-menu">
         <li class="outer-wrapper dropdown">
-          <button class="vertical active drop-button"><img src="images/games.png" id="icon1" alt="game symbol" /></button>
+          <button class="vertical drop-button active"><img src="images/games.png" id="icon1"
+              alt="game symbol" /></button>
           <div class="dropdown-content">
             <a href="action-games.html" id="action"><img src="images/star.png" alt="Action Star" class="drop-icon">
               Action Games </a>
             <a href="adventure-games.html" id="adventure"><img src="images/leaf.png" alt="Adventure Leaf"
                 class="drop-icon">Adventure Games</a>
             <a href="sports-games.html" id="sports"><img src="images/pocal.png" alt="Sports Pocal"
-                class="drop-icon">Sports Games</a>
+                class="drop-icon">Sports
+              Games</a>
           </div>
         </li>
-        <li>
+        <li class="outer-wrapper">
           <a href="search-results.html" class="vertical"><img src="images/used-games.png" id="icon2"
               alt="Used games" /></a>
         </li>
@@ -102,14 +106,12 @@
         </li>
       </div>
     </ul>
-
   </nav>
 
   <main>
-
     <div class="allcontent1">
       <img src="images/search-hub.png" alt="search bar" id="search">
-      <h1><img src="images/star.png" alt="star content" id="star">Action Games</h1>
+      <h1><img src="images/pocal.png" alt="pocal icon" id="pocal">Sports Games</h1>
       <p class="category all">All</p>
       <p class="category">Nintendo</p>
       <p class="category">XBox</p>
@@ -178,11 +180,40 @@
     </div>
 
     <div class="games click-area">
-      <div class="loader"></div>
-    </div>
-    <div class="buy click-area2">
-    </div>
+      <div class="clearfix">
+        <a href=""></a><img src="images/fifa2021.jpg" class="gamepicture" alt="Pocal and football" /></a>
+        <h3 class="game info">Fifa 2021</h3>
+        <p class="gameinfo info">Console name - Release date - Genre</p>
+        <p>Information about the game. Information about the game.</p>
+        <p>Price<a href="" class="cart">Put in Cart</a></p>
+      </div>
 
+      <div class="clearfix">
+        <a href=""><img src="images/mario-kart2.jpg" class="gamepicture" alt="Mario vs Luigi" /></a>
+        <h3 class="game info">Mario Kart</h3>
+        <p class="gameinfo info">Console name - Release date - Genre</p>
+        <p>Information about the game. Information about the game.</p>
+        <p>Price<a href="" class="cart">Put in Cart</a></p>
+      </div>
+
+      <div class="clearfix">
+        <a href=""><img src="images/tennis-pro2021.jpg" class="gamepicture" alt="Tennis ball" /></a>
+        <h3 class="game info">Tennis Pro 2021</h3>
+        <p class="gameinfo info">Console name - Release date - Genre</p>
+        <p>Information about the game. Information about the game.</p>
+        <p>Price<a href="" class="cart">Put in Cart</a></p>
+        </p>
+      </div>
+
+      <div class="clearfix">
+        <a href=""><img src="images/fifa2021.jpg" class="gamepicture" alt="Pocal and football" /></a>
+        <h3 class="game info">Fifa 2021</h3>
+        <p class="gameinfo info">Console name - Release date - Genre</p>
+        <p>Information about the game. Information about the game.</p>
+        <p>Price<a href="" class="cart">Put in Cart</a></p>
+      </div>
+
+    </div>
 
   </main>
 
@@ -198,7 +229,6 @@
     <p>Support</p>
     <p>Copyright &copy;</p>
   </footer>
-  <script src="js/fetch-action.js"></script>
   <script src="js/index.js"></script>
 </body>
 

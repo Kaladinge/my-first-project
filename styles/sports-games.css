@@ -27,11 +27,13 @@
 }
 
 .filter {
-  border-top: 1px solid #9859d0;
+  border-right: 1px solid #9859d0;
 }
 
-.games {
-  border: 1px solid #9859d0;
+.games,
+.buy,
+.filter {
+  border-top: 1px solid #9859d0;
 }
 
 .loader {

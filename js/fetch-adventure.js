@@ -1,6 +1,6 @@
 const games = document.querySelector(".games");
 const buy = document.querySelector(".buy");
-const url = "http://larsingeprojects.one/gamehub/wp-json/wc/store/products";
+const url = "https://larsingeprojects.one/gamehub/wp-json/wc/store/products";
 
 async function gameList() {
     try {

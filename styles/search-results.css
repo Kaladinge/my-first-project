@@ -26,10 +26,17 @@
   background-color: #ba8801;
 }
 
-filter {
+.filter {
+  border-top: 1px solid #f1b000;
+  border-right: 1px solid #f1b000;
+}
+
+.games,
+.buy {
   border-top: 1px solid #f1b000;
 }
 
-.games {
-  border: 1px solid #f1b000;
+.loader {
+  border: 16px solid #f1b000;
+  border-top: 16px solid black;
 }

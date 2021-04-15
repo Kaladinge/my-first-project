@@ -2,7 +2,6 @@
 
 @import "imports/sidebar.css";
 
-
 /* main info */
 
 nav {
@@ -19,7 +18,6 @@ nav {
   text-align: left;
   width: 95%;
   margin: 0 auto;
-  
 }
 .paragraph {
   margin-top: 50px;
@@ -49,13 +47,33 @@ nav {
   margin-right: 0px;
 }
 
-.channel {
-  border: 1px solid black;
-}
-
 .alltext {
   display: flex;
   justify-content: space-around;
+}
+
+.search-form {
+  margin-top: 50px;
+  position: relative;
+  width: 500px;
+}
+
+.search-button {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#search-icon {
+  width: 30px;
+}
+
+input[type="text"] {
+  width: 470px;
+  padding: 10px;
+  font-size: 14px;
 }
 
 /* Grid info */
@@ -99,130 +117,151 @@ footer {
 
  /* Desktop styles */
 
- @media only screen and (min-width: 1280px) {
-  #hamburger-menu, .fas {
+@media only screen and (min-width: 1280px) {
+  #hamburger-menu,
+  .fas {
     display: none;
   }
 }
 
-  /* Small desktop styles */
+/* Small desktop styles */
 
-  @media only screen and (min-width: 1000px) and (max-width: 1279px) {
-    #playing, #holding {
-      display: none;
-    }
+@media only screen and (min-width: 1000px) and (max-width: 1279px) {
+  #playing,
+  #holding {
+    display: none;
+  }
 
-    #hamburger-menu, .fas {
-      display: none;
-    }
+  #hamburger-menu,
+  .fas {
+    display: none;
+  }
 }
 
- /* Tablet styles */
+/* Tablet styles */
 
-  @media only screen and (min-width: 550px) and (max-width: 999px) {
-    body {
-        display: grid;
-        grid-gap: 0;
-        grid-template-areas:
-        "header header"
-        "nav main"
-        "nav sidebar"
-        "footer footer"
-        }
+@media only screen and (min-width: 550px) and (max-width: 999px) {
+  body {
+    display: grid;
+    grid-gap: 0;
+    grid-template-areas:
+      "header header"
+      "nav main"
+      "nav sidebar"
+      "footer footer";
+  }
 
-        .sidebar {
-          margin-left: 186px;
-        }
+  .sidebar {
+    margin-left: 186px;
+  }
 
-        #playing {
-          width: 150px;
-        }
+  #playing {
+    width: 150px;
+  }
 
-        #holding {
-          display: none;
-        }
+  #holding {
+    display: none;
+  }
 
-        .vertical {
-            width: 110px;
-        }
+  .vertical {
+    width: 110px;
+  }
 
-        main {
-          font-size: 0.8em;
-          margin-left: 111px;
-        }
+  main {
+    font-size: 0.8em;
+    margin-left: 111px;
+  }
 
-        footer {
-            font-size: 0.6em;
-            margin-left: 111px;
-        }
+  input[type="text"] {
+    width: 350px;
+  }
 
-        #hamburger-menu, .fas {
-          display: none;
-          
-        }
-        
+  .search-form {
+    width: 380px;
+  }
 
+  footer {
+    font-size: 0.6em;
+    margin-left: 111px;
+  }
+
+  #hamburger-menu,
+  .fas {
+    display: none;
+  }
 }
 
- /* Smart phone styles */
+/* Smart phone styles */
 
+@media only screen and (max-width: 549px) {
+  .sidebar,
+  .horizontal2,
+  #playing,
+  #holding {
+    display: none;
+  }
 
- @media only screen and (max-width: 549px) {
+  #logo {
+    width: 80px;
+    height: 50px;
+  }
 
-    .sidebar, .horizontal2, #playing, #holding {
-        display: none;
-    }
+  main,
+  nav {
+    font-size: 0.8em;
+    margin-top: 96px;
+    margin-left: 0;
+  }
 
-    #logo {
-        width: 80px;
-        height: 50px;
-    }
+  .vertical {
+    width: 100px;
+    height: 100px;
+  }
 
-    main, nav {
-      font-size: 0.8em;
-      margin-top: 96px;
-      margin-left: 0;
-    }
+  #icon1,
+  #icon4,
+  #icon5 {
+    width: 45%;
+  }
 
-    .vertical {
-      width: 100px;
-      height: 100px;
-    }
-    
-      #icon1, #icon4, #icon5 {
-        width: 45%;
-      }
-      
-      #icon2 {
-        width: 70%;
-      }
-      
-      #icon3 {
-        width: 50%;
-      }
+  #icon2 {
+    width: 70%;
+  }
 
-    footer {
-        font-size: 0.6em;
-        margin-left: 0;
-    }
+  #icon3 {
+    width: 50%;
+  }
 
-    nav {
-      display: none;
-      position: fixed;
-    }
-  
-    #hamburger-menu {
-      display: none;
-    }
-  
-    .fas{
-      position: fixed;
-      z-index: 300;
-      top: 40px;
-      right: 40px;
-    }
-  
-    #hamburger-menu:checked ~ nav {
-      display:block;
-    }
+  footer {
+    font-size: 0.6em;
+    margin-left: 0;
+  }
+
+  input[type="text"] {
+    width: 350px;
+  }
+
+  .search-form {
+    width: 380px;
+  }
+
+  nav {
+    display: none;
+    position: fixed;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  .fas {
+    position: fixed;
+    z-index: 300;
+    top: 40px;
+    right: 40px;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
 }

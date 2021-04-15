@@ -26,10 +26,10 @@ gameList();
 
 function createHTML(results) {
         games.innerHTML += `<div class="clearfix click-area">
-                                    <a href="products-specific.html?id=${results.id}"><img src="${results.images[0].src}" class="gamepicture" alt="Mass effect logo" /></a>
+                                    <a href="products-specific.html?id=${results.id}"><img src="${results.images[0].src}" class="gamepicture" alt="Mass effect logo" />
                                     <h3 class="game info">${results.name}</h3>
                                     <p class="gameinfo info">Console name - Release date - Genre</p>
-                                    <p>Information about the game.</p>
+                                    <p>Information about the game.</p></a>
                                     <p>${results.prices.price} kr</p>
                                    </div>`
 

@@ -64,6 +64,11 @@ main {
   margin-top: 30px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .buy-button {
   margin: 60px;
   height: 145px;

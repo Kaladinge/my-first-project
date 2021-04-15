@@ -10,10 +10,8 @@ async function gameList() {
 
         games.innerHTML = "";
 
-        for (let i = 0; i < 20; i++) {
-            if (results[i].categories[0].name != "Action") {
-                continue;
-            } 
+        for (let i = 0; i < 5; i++) {
+            
                 createHTML(results[i]);
         }
     }
@@ -41,5 +39,3 @@ function createHTML(results) {
         }
         const cart = document.querySelectorAll(".cart");
         
-
-

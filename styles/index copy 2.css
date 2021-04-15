@@ -10,21 +10,23 @@
 
 .link-text {
   position: absolute;
-  width: 33%;
-  top: 6%;
-  left: 66%;
+  right: 2%;
+  top: 25px;
+  width: 30%;
+}
+
+.text1,
+.text2 {
+  font-size: 3vw;
 }
 
 .text {
-  color: white;
-  font-size: 25px;
+  color: black;
 }
 
-.text3,
-.text4,
-.text7,
-.text8 {
-  color: black;
+.text1,
+.text2 {
+  color: white;
 }
 
 .text2 {
@@ -36,12 +38,16 @@
 }
 
 .flex-images {
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .sell-games-image,
 .bowser-image {
-  width: 100%;
+  width: 40%;
+  border: 1px solid black;
 }
 
 .sell-games-image {
@@ -51,22 +57,22 @@
 .sell-games-text {
   position: absolute;
   width: 90%;
-  top: 6%;
+  top: 5px;
   left: 5%;
 }
 
 .text3 {
   width: 40%;
-  font-size: 25px;
+  font-size: 2vw;
 }
 
 .text4 {
   text-align: right;
-  font-size: 25px;
+  font-size: 2vw;
 }
 
 .purple {
-  color: #9859d0;
+  color: #4e0291;
 }
 
 .bowser-image {
@@ -75,21 +81,17 @@
 
 .bowser-text {
   position: absolute;
-  top: 0;
+  top: 6px;
   left: 5%;
 }
 
 .text5,
 .text6 {
-  color: white;
+  font-size: 2vw;
 }
 
 .text6 {
   width: 60%;
-}
-
-#gold {
-  color: #f1b000;
 }
 
 .pikachu-image {
@@ -98,13 +100,15 @@
 
 .pikachu-text {
   position: absolute;
-  top: 5%;
-  left: 64%;
-  width: 25%;
+  top: 20px;
+  right: 5%;
+  width: 30%;
 }
 
+.text7,
 .text8 {
   text-align: right;
+  font-size: 3vw;
 }
 
 .picture {
@@ -166,12 +170,6 @@ footer {
       "footer";
   }
 
-  .sidebar {
-    width: 80%;
-    margin-left: 200px;
-    margin-top: 0;
-  }
-
   .flex-sidebar {
     display: flex;
     flex-wrap: wrap;
@@ -193,10 +191,6 @@ footer {
       "main"
       "sidebar"
       "footer";
-  }
-
-  .text {
-    font-size: 18px;
   }
 
   main {
@@ -234,10 +228,6 @@ footer {
   #logo {
     width: 80px;
     height: 50px;
-  }
-
-  .text {
-    font-size: 15px;
   }
 
   .pics3 {

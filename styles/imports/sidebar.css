@@ -50,7 +50,6 @@
   border-radius: 15px;
   cursor: grabbing;
   position: relative;
-  z-index: 100;
 }
 
 .cart:hover {

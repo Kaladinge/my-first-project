@@ -213,7 +213,7 @@ main,
   left: 0px;
   top: 124px;
   text-align: center;
-  min-width: 182px;
+  width: 182px;
 }
 
 .dropdown-content a {
@@ -282,7 +282,8 @@ main,
   }
 
   .dropdown-content {
-    left: 111px;
+    left: 0px;
+    width: 112px;
   }
 
   .quantity {

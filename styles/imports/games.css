@@ -312,6 +312,7 @@ footer {
   nav {
     display: none;
     position: fixed;
+    z-index: 2000;
   }
 
   #hamburger-menu {

@@ -51,10 +51,10 @@ async function findInfo() {
 
         container2.innerHTML += `
                                 <div class="flex">
-                                <img src="${results2[i].images[0].src}" class="image2" alt="">
+                                <a href="products-specific.html"><img src="${results2[i].images[0].src}" class="image2" alt="">
                                 <h3>${results2[i].name}</h3>
                                 <p>${results2[i].short_description}</p>
-                                <h3>${results2[i].prices.price} kr</h3>
+                                <h3>${results2[i].prices.price} kr</h3></a>
                                 </div>`;
 
     x = x + 1;

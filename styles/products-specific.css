@@ -12,6 +12,36 @@
 .image {
   float: left;
   width: 300px;
+}
+
+.image2 {
+  width: 50%;
+}
+
+.image,
+.image2 {
+  margin-top: 30px;
+  border: 1px solid black;
+}
+
+.container2 {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  margin-top: 0px;
+}
+
+.header-sale {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.yellow {
+  background-color: #f1b000;
   margin-top: 30px;
 }
 
@@ -30,6 +60,25 @@
 
 .description {
   margin-top: 60px;
+}
+
+.loader {
+  margin: 30px auto;
+  border: 16px solid #ee1925;
+  border-top: 16px solid black;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Grid info, body */

@@ -2,6 +2,10 @@
 
 @import "imports/sidebar.css";
 
+.sheet {
+  height: 72vh;
+}
+
 /* main info */
 
 main {
@@ -10,7 +14,7 @@ main {
 }
 
 /* Grid info, body */
-  
+
 header {
   grid-area: header;
 }
@@ -52,7 +56,8 @@ footer {
 /* Desktop styles */
 
 @media only screen and (min-width: 1280px) {
-  #hamburger-menu, .fas {
+  #hamburger-menu,
+  .fas {
     display: none;
   }
 }
@@ -60,68 +65,70 @@ footer {
 /* Small desktop styles */
 
 @media only screen and (min-width: 1000px) and (max-width: 1279px) {
-#hamburger-menu, .fas {
-  display: none;
-}
+  #hamburger-menu,
+  .fas {
+    display: none;
+  }
 }
 
- /* Tablet styles */
+/* Tablet styles */
 
- @media only screen and (min-width: 550px) and (max-width: 999px) {
+@media only screen and (min-width: 550px) and (max-width: 999px) {
   body {
-      display: grid;
-      grid-gap: 0;
-      grid-template-areas:
+    display: grid;
+    grid-gap: 0;
+    grid-template-areas:
       "header header"
       "nav main"
       "nav sidebar"
-      "footer footer"
-      }
+      "footer footer";
+  }
 
-      .vertical {
-          width: 110px;
-      }
+  .vertical {
+    width: 110px;
+  }
 
-      main {
-        font-size: 0.8em;
-        margin-left: 111px;
-      }
+  main {
+    font-size: 0.8em;
+    margin-left: 111px;
+  }
 
-      .sidebar {
-        margin-top: 0;
-        margin-left: 114px;
-      }
+  .sidebar {
+    margin-top: 0;
+    margin-left: 114px;
+  }
 
-      footer {
-          font-size: 0.6em;
-          margin-left: 111px;
-      }
+  footer {
+    font-size: 0.6em;
+    margin-left: 111px;
+  }
 
-      #hamburger-menu, .fas {
-        display: none;
-      }
+  #hamburger-menu,
+  .fas {
+    display: none;
+  }
 }
 
 /* Smart phone styles */
 
-
 @media only screen and (max-width: 549px) {
-
-  .sidebar, .horizontal2 {
-      display: none;
+  .sidebar,
+  .horizontal2 {
+    display: none;
   }
 
   #logo {
-      width: 80px;
-      height: 50px;
+    width: 80px;
+    height: 50px;
   }
 
   .pics3 {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
-  main, nav {
+  main,
+  nav {
     font-size: 0.8em;
     margin-top: 96px;
     margin-left: 0;
@@ -131,22 +138,24 @@ footer {
     width: 100px;
     height: 100px;
   }
-  
-    #icon1, #icon4, #icon5 {
-      width: 45%;
-    }
-    
-    #icon2 {
-      width: 70%;
-    }
-    
-    #icon3 {
-      width: 50%;
-    }
+
+  #icon1,
+  #icon4,
+  #icon5 {
+    width: 45%;
+  }
+
+  #icon2 {
+    width: 70%;
+  }
+
+  #icon3 {
+    width: 50%;
+  }
 
   footer {
-      font-size: 0.6em;
-      margin-left: 0;
+    font-size: 0.6em;
+    margin-left: 0;
   }
 
   nav {
@@ -158,7 +167,7 @@ footer {
     display: none;
   }
 
-  .fas{
+  .fas {
     position: fixed;
     z-index: 300;
     top: 40px;
@@ -166,8 +175,6 @@ footer {
   }
 
   #hamburger-menu:checked ~ nav {
-    display:block;
+    display: block;
   }
-
-
 }

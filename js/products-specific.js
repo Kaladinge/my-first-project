@@ -8,7 +8,7 @@ const nameValue = params.get("id");
 
 console.log(nameValue);
 
-const url = "http://larsingeprojects.one/gamehub/wp-json/wc/store/products/" + nameValue;
+const url = "https://larsingeprojects.one/gamehub/wp-json/wc/store/products/" + nameValue;
 
 async function findInfo() {
     const response = await fetch(url);

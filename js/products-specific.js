@@ -50,8 +50,8 @@ async function findInfo() {
         
 
         container2.innerHTML += `
-                                <div class="flex">
-                                <a href="products-specific.html"><img src="${results2[i].images[0].src}" class="image2" alt="">
+                                <div>
+                                <a href="products-specific.html?id=${results2[i].id}" class="suggestions"><img src="${results2[i].images[0].src}" class="image2" alt="">
                                 <h3>${results2[i].name}</h3>
                                 <p>${results2[i].short_description}</p>
                                 <h3>${results2[i].prices.price} kr</h3></a>

@@ -38,8 +38,8 @@ function createHTML(results) {
                                 <a href="" class="cart">Put in Cart</a>
                         </div>`
         
-        }
-        const cart = document.querySelectorAll(".cart");
+}
+const cart = document.querySelectorAll(".cart");
         
 
 

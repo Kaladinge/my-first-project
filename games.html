@@ -115,9 +115,42 @@
 
     <main>
       
-        <div class="action-games"></div>
-        <div class="adventure-games"></div>
-        <div class="sports-games"></div>
+    <div class="allcontent1">
+        <img src="images/search-hub.png" alt="search bar" id="search">
+
+        <form>
+            <label for="filter">Choose by prize:</label>
+            <select name="filter" id="filter">
+                <option value="all prizes">All prizes</option>
+                <option value="over 350 kr">Over 350 kr</option>
+                <option value="below 350 kr">Below 350 kr</option>
+            </select>
+        </form>
+    
+    
+        <h1><img src="images/star.png" alt="star content" id="star">Action Games</h1>
+    </div>
+    <div class="action-games click-area">
+        <div class="loader"></div>
+    </div>
+
+    <div id="prize-container"></div>
+
+    <div class="allcontent1">
+        <h1><img src="images/leaf.png" alt="star content" id="leaf">Adventure Games</h1>
+    </div>
+    <div class="adventure-games click-area">
+        <div class="loader adventure-loader"></div>
+    </div>
+
+    <div class="allcontent1">
+    <h1><img src="images/pocal.png" alt="pocal icon" id="pocal">Sports Games</h1>
+    </div>
+    <div class="sports-games click-area">
+        <div class="loader sports-loader"></div>
+    </div>
+    
+    
 
     </main>
   
@@ -130,8 +163,9 @@
         <p>Support</p>
         <p>Copyright &copy;</p>
     </footer>
-    <script src="js/games.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/games.js"></script>
+
 </body>
 
 </html>

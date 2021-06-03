@@ -1,0 +1,312 @@
+/**/
+
+/* main info */
+
+main {
+  position: relative;
+}
+
+.allcontent1 {
+  margin-left: 180px;
+}
+
+#search {
+  max-width: 450px;
+  margin-top: 100px;
+  width: 75%;
+}
+
+#star {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.category {
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+}
+
+.filterheaders {
+  margin-bottom: 20px;
+}
+
+.gamepicture {
+  width: 200px;
+  margin: 0;
+  border: 1px solid black;
+}
+
+.gameinfo {
+  font-size: 16px;
+  color: grey;
+  margin-bottom: 30px;
+}
+
+.info {
+  line-height: 15px;
+  margin-top: 10px;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.clearfix {
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.buy-button {
+  margin: 0;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+#price {
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.cart {
+  margin: 0px;
+  color: white;
+  background-color: #ee1925;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 7px 25px;
+  border-radius: 15px;
+  cursor: grabbing;
+  position: relative;
+  z-index: 100;
+}
+
+.cart:hover {
+  background-color: #b10c26;
+}
+
+.action-games {
+  border-top: 1px solid #ee1925;
+}
+
+.adventure-games {
+  border-top: 1px solid #a6c906;
+}
+
+.sports-games {
+  border-top: 1px solid #9859d0;
+}
+
+.loader {
+  margin: 30px auto;
+  border: 16px solid #ee1925;
+  border-top: 16px solid black;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* sidebar info */
+
+.sidebar {
+  width: 400px;
+  margin-left: 0px;
+  background-image: url("../images/action-ryuu.jpg");
+  background-size: cover;
+}
+
+/* Grid info, sidebar */
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+footer {
+  grid-area: footer;
+}
+
+body {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:
+    "nav main sidebar"
+    "footer footer footer";
+}
+
+.all {
+  font-weight: bold;
+}
+
+.action-games,
+.adventure-games,
+.sports-games {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* footer info */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* media queries
+
+   /* media queries */
+
+@media only screen and (min-width: 1280px) {
+  #hamburger-menu,
+  .fas {
+    display: none;
+  }
+}
+
+/* small desktop styles */
+
+@media only screen and (min-width: 1000px) and (max-width: 1279px) {
+  .sidebar {
+    display: none;
+  }
+
+  #hamburger-menu,
+  .fas {
+    display: none;
+  }
+}
+
+/* desktop styles */
+
+@media only screen and (min-width: 550px) and (max-width: 999px) {
+  .sidebar,
+  .filter {
+    display: none;
+  }
+
+  .vertical {
+    width: 110px;
+  }
+
+  main {
+    font-size: 0.8em;
+    margin-left: 111px;
+  }
+
+  #star {
+    width: 30px;
+  }
+
+  footer {
+    font-size: 0.6em;
+    margin-left: 111px;
+  }
+
+  #hamburger-menu,
+  .fas {
+    display: none;
+  }
+}
+
+/* small desktop styles */
+
+@media only screen and (max-width: 549px) {
+  .sidebar,
+  .horizontal2,
+  .filter {
+    display: none;
+  }
+
+  #logo {
+    width: 80px;
+    height: 50px;
+  }
+
+  .pics3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buy-button {
+    margin-right: 0;
+  }
+
+  main,
+  nav {
+    font-size: 0.7em;
+    margin-top: 96px;
+    margin-left: 0;
+  }
+
+  .vertical {
+    width: 100px;
+    height: 100px;
+  }
+
+  #icon1,
+  #icon4,
+  #icon5 {
+    width: 45%;
+  }
+
+  #icon2 {
+    width: 70%;
+  }
+
+  #icon3 {
+    width: 50%;
+  }
+
+  #star {
+    width: 20px;
+  }
+
+  footer {
+    font-size: 0.6em;
+    margin-left: 0;
+  }
+
+  nav {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  .fas {
+    position: fixed;
+    z-index: 300;
+    top: 40px;
+    right: 40px;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+}

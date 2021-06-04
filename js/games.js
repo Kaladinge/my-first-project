@@ -3,11 +3,13 @@ const adventureGames = document.querySelector(".adventure-games");
 const sportsGames = document.querySelector(".sports-games");
 
 const selectPrize = document.getElementById("filter");
+const headers = document.querySelectorAll("h2");
 
 const prizeContainer = document.getElementById("prize-container");
 
 const buy = document.querySelector(".buy");
 const url = "https://larsingeprojects.one/gamehub/wp-json/wc/store/products";
+
 
 async function gameList() {
     try {
@@ -18,6 +20,13 @@ async function gameList() {
         actionGames.innerHTML = "";
         adventureGames.innerHTML = "";
         sportsGames.innerHTML = "";
+        prizeContainer.innerHTML = "";
+
+         for (i = 0; i < 3; i++) {
+                    headers[i].style.display = "block";
+                }
+
+                
 
         for (let i = 0; i < 20; i++) {
             if (results[i].categories[0].name == "Action") {
@@ -31,7 +40,13 @@ async function gameList() {
             if (results[i].categories[0].name == "Sports") {
                 createHTML(results[i],sportsGames);
             } 
+           
+           const buttons = document.querySelectorAll(".buy-button");
+           
+        
         }
+         
+
     }
     catch(error) {
         console.log(error);
@@ -51,8 +66,10 @@ function createHTML(results,gamecategory) {
                                     <div class="buy-button">
                                         <a href="" class="cart">Put in Cart</a>
                                     </div>
-                            </div>`     
+                            </div>`  
+                            
 }
+
 
 function filterPrize(event) {
 
@@ -71,6 +88,11 @@ function filterPrize(event) {
                 actionGames.innerHTML = "";
                 adventureGames.innerHTML = "";
                 sportsGames.innerHTML = "";
+                
+                for (i = 0; i < 3; i++) {
+                    headers[i].style.display = "none";
+                }
+                
 
                 if (event.target.value === "over 350 kr") {
                     prizeContainer.innerHTML = "";
@@ -97,9 +119,6 @@ function filterPrize(event) {
                         }
                     }
                 }
-
-
-
                 console.log(event.target.value);
 }
 games();
@@ -108,5 +127,19 @@ games();
 
 selectPrize.addEventListener("change",filterPrize);
 
-const cart = document.querySelectorAll(".cart");
+function cartFunctions(gametype) {
+document.getElementById(gametype).addEventListener('click',function(event){
+               
+        if (event.target && event.target.classList.value === "cart") {
+            event.preventDefault();
+          
+
+          addToCart(event);
+          }    
+ });}
+
+cartFunctions("action-games");
+cartFunctions("adventure-games");
+cartFunctions("sports-games");
+
         

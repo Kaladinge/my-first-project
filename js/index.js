@@ -12,10 +12,7 @@ function addToCart(event) {
     quantity.style.display = "block";
     cartMenu.setAttribute('href',"checkout.html");
 
-    console.log(x);
     quantity.innerHTML = x;
-    console.log(event.detail);
-
 
     cartBox.style.display = "block";
     cartDetails.innerHTML += `<div class="product-line">
@@ -39,16 +36,3 @@ function removeCartDetails() {
 
 keepShopping.addEventListener("click", removeCartDetails);
 sidebar.addEventListener("click", addToCart);
-
-
-/*function addToCart(event) {
-    event.preventDefault();
-    cart.style.borderRadius = "50%";
-    cart.innerHTML = event.detail;
-    cart.style.width = "0px";
-
-    console.log(event.detail)
-
-    var rect = cart.getBoundingClientRect();
-    cartMenu.appendChild(cart);
-}*/

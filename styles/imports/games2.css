@@ -6,7 +6,8 @@ main {
   position: relative;
 }
 
-.allcontent1 {
+.search-content,
+h2 {
   margin-left: 180px;
 }
 
@@ -162,10 +163,16 @@ body {
 
 .action-games,
 .adventure-games,
-.sports-games {
+.sports-games,
+#prize-container {
+  text-align: center;
   padding: 0;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#prize-container {
+  grid-area: 1fr 1fr 1fr;
 }
 
 /* footer info */

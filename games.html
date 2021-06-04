@@ -77,18 +77,8 @@
     <nav>
         <ul>
             <div class="vertical-menu">
-                <li class="outer-wrapper dropdown">
-                    <button class="vertical drop-button"><img src="images/games.png" id="icon1"
-                            alt="game symbol" /></button>
-                    <div class="dropdown-content">
-                        <a href="action-games.html" id="action"><img src="images/star.png" alt="Action Star"
-                                class="drop-icon">
-                            Action</a>
-                        <a href="adventure-games.html" id="adventure"><img src="images/leaf.png" alt="Adventure Leaf"
-                                class="drop-icon">Adventure</a>
-                        <a href="sports-games.html" id="sports"><img src="images/pocal.png" alt="Sports Pocal"
-                                class="drop-icon">Sports</a>
-                    </div>
+                <li>
+                    <a href="games.html" class="vertical active"><img src="images/games.png" id="icon1" alt="Games" /></a>
                 </li>
                 <li>
                     <a href="search-results.html" class="vertical"><img src="images/used-games.png" id="icon2"
@@ -124,6 +114,19 @@
                 <option value="all prizes">All</option>
                 <option value="over 350 kr">Over 350 kr</option>
                 <option value="below 350 kr">Max 350 kr</option>
+            </select>
+        </form>
+
+        <form>
+            <label for="filter2">Choose by platform:</label>
+            <select name="filter2" id="filter2">
+                <option value="all platforms">All</option>
+                <option value="Nintendo Switch">Nintendo Switch</option>
+                <option value="Playstation 4">Playstation 4</option>
+                <option value="PC">PC</option>
+                <option value="Nintendo Gamecube">Nintendo Gamecube</option>
+                <option value="NES">NES</option>
+                <option value="Nintendo 64">Nintendo 64</option>
             </select>
         </form>
     

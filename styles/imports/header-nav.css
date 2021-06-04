@@ -190,7 +190,7 @@ main,
   width: 182px;
   height: 134px;
   border: 1px solid grey;
-  background-color: #1b203d;
+  background-color: black;
 }
 
 .drop-button {
@@ -198,7 +198,7 @@ main,
 }
 
 .active {
-  background-color: black;
+  background-color: red;
 }
 
 .dropdown {
@@ -267,7 +267,7 @@ main,
 }
 
 .vertical:hover {
-  background-color: black;
+  background-color: red;
 }
 
 .blank {

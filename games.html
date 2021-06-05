@@ -104,9 +104,16 @@
     </nav>
 
     <main>
-      
+    
+    <h1>The GAME PLACE</h1>
     <div class="search-content">
-        <img src="images/search-hub.png" alt="search bar" id="search">
+        <div class="searchbar">
+            <form action="/action_page.php" class="search-form">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit" class="search-button"><img src="images/search-icon.png" alt="search bar"
+                        id="search-icon"></button>
+            </form>
+        </div>
 
         <form>
             <label for="filter">Choose by prize:</label>
@@ -136,6 +143,8 @@
     <div class="action-games" id="action-games">
         <div class="loader"></div>
     </div>
+
+    <h2></h2>
 
     <div id="prize-container"></div>
 

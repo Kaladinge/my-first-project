@@ -25,9 +25,11 @@ async function gameList() {
         sportsGames.innerHTML = "";
         prizeContainer.innerHTML = "";
 
-         for (i = 0; i < 3; i++) {
+         for (i = 0; i < 4; i++) {
                     headers[i].style.display = "block";
                 }
+
+                headers[1].style.display = "none";
 
         for (let i = 0; i < 9; i++) {
             if (results[i].categories[0].name == "Action") {
@@ -54,11 +56,14 @@ gameList();
 
 function createHTML(results,gamecategory) {
         gamecategory.innerHTML += `<div class="clearfix click-area">
+                                <div class="text">
                                         <a href="products-specific.html?id=${results.id}"><img src="${results.images[0].src}" class="gamepicture" alt="Mass effect logo" />
-                                        <h3 class="game info">${results.name}</h3>
-                                        <p class="gameinfo info">${results.short_description}</p>
-                                        <p>More about the game</p>
-                                        <p id="price">${results.price} kr</p></a>
+                                        
+                                            <h3 class="header">${results.name}</h3>
+                                            <p class="short-info">${results.short_description}</p>
+                                            <p class="more">More about the game</p>
+                                            </div>
+                                            <p id="price">${results.price} kr</p></a>
                                         
                                         <div class="buy-button">
                                             <a href="" class="cart">Put in Cart</a>
@@ -85,7 +90,7 @@ function filterPrize(event) {
                 adventureGames.innerHTML = "";
                 sportsGames.innerHTML = "";
                 
-                for (i = 0; i < 3; i++) {
+                for (i = 0; i < 4; i++) {
                     headers[i].style.display = "none";
                 }
                 
@@ -138,11 +143,15 @@ function filterPlatform(event) {
                 actionGames.innerHTML = "";
                 adventureGames.innerHTML = "";
                 sportsGames.innerHTML = "";
+
                 
-                for (i = 0; i < 3; i++) {
+                
+                for (i = 0; i < 4; i++) {
                     headers[i].style.display = "none";
                 }
-
+                headers[1].style.display = "block";
+                headers[1].innerHTML = event.target.value;
+                
                 checkPlatform(event,"Nintendo Switch",prizeContainer,results);
                 checkPlatform(event,"Playstation 4",prizeContainer,results);
                 checkPlatform(event,"PC",prizeContainer,results);

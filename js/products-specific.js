@@ -20,7 +20,7 @@ async function findInfo() {
     console.log(result);
 
     container.innerHTML = `
-                        <img src="${result.images[0].src}" class="image" alt="">
+                        <img src="${result.images[0].src}" class="image" alt="product image">
                         <div class="text">
                             <h1 class="header">${result.name}</h1>
                             <p>${result.short_description}</p>

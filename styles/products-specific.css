@@ -1,7 +1,5 @@
 @import "imports/header-nav.css";
 
-@import "imports/sidebar.css";
-
 /* main info */
 
 .container {
@@ -86,6 +84,22 @@ div a {
   }
 }
 
+.cart {
+  margin-top: 20px;
+  color: white;
+  background-color: #ee1925;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 7px 25px;
+  border-radius: 15px;
+  cursor: grabbing;
+  position: relative;
+}
+
+.cart:hover {
+  background-color: #b10c26;
+}
+
 /* Grid info, body */
 
 main {
@@ -102,13 +116,6 @@ body {
   grid-template-areas:
     "main"
     "footer";
-}
-
-/* footer info */
-
-footer {
-  display: flex;
-  justify-content: space-between;
 }
 
 /* media queries */
@@ -140,7 +147,6 @@ footer {
 
   .text {
     margin-left: 0px;
-    font-size: 18px;
   }
 
   main {
@@ -149,11 +155,6 @@ footer {
 
   .vertical {
     width: 110px;
-  }
-
-  footer {
-    font-size: 0.6em;
-    margin-left: 111px;
   }
 
   #hamburger-menu,
@@ -181,17 +182,11 @@ footer {
 
   .text {
     margin-left: 0px;
-    font-size: 15px;
   }
 
   .pics3 {
     display: flex;
     flex-direction: column;
-  }
-
-  footer {
-    font-size: 0.6em;
-    margin-left: 0;
   }
 
   main,

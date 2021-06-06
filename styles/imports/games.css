@@ -1,18 +1,15 @@
-/**/
-
-#menuline {
-  border: 2px solid #ee1925;
-}
-
-/* main info */
-
 main {
   position: relative;
 }
 
-.allcontent1 {
-  margin-left: 0px;
-  text-align: center;
+.search-content,
+h2 {
+  padding-left: 35px;
+}
+
+h1 {
+  width: 95%;
+  margin: 28px auto;
 }
 
 #search {
@@ -21,9 +18,39 @@ main {
   width: 75%;
 }
 
-#star {
-  width: 40px;
-  margin-right: 10px;
+.search-form {
+  float: left;
+  margin: 20px 20px 0 0;
+  position: relative;
+  width: 300px;
+}
+
+.search-button {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#search-icon {
+  width: 30px;
+}
+
+input[type="text"] {
+  width: 265px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+#filter {
+  margin-top: 20px;
+}
+
+#star,
+#leaf,
+#pocal {
+  width: 30px;
 }
 
 .category {
@@ -37,21 +64,24 @@ main {
 }
 
 .gamepicture {
-  float: left;
-  width: 130px;
-  margin: 0 20px 30px 20px;
+  width: 200px;
+  margin: 0;
   border: 1px solid black;
 }
 
-.gameinfo {
-  font-size: 16px;
-  color: grey;
-  margin-bottom: 30px;
+.header {
+  line-height: 15px;
+  margin: 10px 0 -10px 0;
 }
 
-.info {
-  line-height: 15px;
-  margin-top: 10px;
+.more {
+  text-decoration: underline;
+}
+
+.text {
+  width: 200px;
+  margin: auto;
+  text-align: left;
 }
 
 .clearfix::after {
@@ -70,12 +100,18 @@ a {
 }
 
 .buy-button {
-  margin: 60px 5px;
-  height: 145px;
+  margin: 0;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+#price {
+  display: inline-block;
+  border: 1px solid black;
 }
 
 .cart {
-  margin: 20px;
+  margin: 0px;
   color: white;
   background-color: #ee1925;
   border: 1px solid black;
@@ -91,14 +127,32 @@ a {
   background-color: #b10c26;
 }
 
-.filter {
-  border-top: 1px solid #ee1925;
-  border-right: 1px solid #ee1925;
+#action-header,
+#adventure-header,
+#sports-header,
+#used-header,
+#price-header {
+  padding-top: 10px;
 }
 
-.games,
-.buy {
+#price-header {
   border-top: 1px solid #ee1925;
+}
+
+#action-header {
+  border-top: 1px solid #ee1925;
+}
+
+#used-header {
+  border-top: 1px solid #f1b000;
+}
+
+#adventure-header {
+  border-top: 1px solid #a6c906;
+}
+
+#sports-header {
+  border-top: 1px solid #9859d0;
 }
 
 .loader {
@@ -118,15 +172,6 @@ a {
   100% {
     transform: rotate(360deg);
   }
-}
-
-/* sidebar info */
-
-.sidebar {
-  width: 400px;
-  margin-left: 0px;
-  background-image: url("../images/action-ryuu.jpg");
-  background-size: cover;
 }
 
 /* Grid info, sidebar */
@@ -158,34 +203,20 @@ body {
   font-weight: bold;
 }
 
-/* Grid info, main */
-
-.allcontent1 {
-  grid-area: search;
-}
-
-.filter {
-  grid-area: filter;
-  padding: 10px;
-}
-
-.games {
-  grid-area: games;
+.action-games,
+.adventure-games,
+.sports-games,
+#prize-container,
+.games-used {
+  margin-top: 20px;
+  text-align: center;
   padding: 0;
-}
-
-.buy {
-  grid-area: buy;
-}
-
-main {
   display: grid;
-  grid-gap: 0;
-  grid-template-rows: auto 1fr;
-  grid-template-columns: auto 1fr;
-  grid-template-areas:
-    "search search search"
-    "filter games buy";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#prize-container {
+  grid-area: 1fr 1fr 1fr;
 }
 
 /* footer info */
@@ -222,26 +253,31 @@ footer {
 /* desktop styles */
 
 @media only screen and (min-width: 550px) and (max-width: 999px) {
-  .sidebar,
-  .filter {
-    display: none;
-  }
-
   .vertical {
     width: 110px;
   }
 
   main {
-    font-size: 0.8em;
     margin-left: 111px;
+  }
+
+  .action-games,
+  .adventure-games,
+  .sports-games,
+  #prize-container,
+  .games-used {
+    grid-template-columns: 1fr 1fr;
   }
 
   #star {
     width: 30px;
   }
 
+  .search-form {
+    float: none;
+  }
+
   footer {
-    font-size: 0.6em;
     margin-left: 111px;
   }
 
@@ -260,6 +296,23 @@ footer {
     display: none;
   }
 
+  .search-form {
+    float: none;
+  }
+
+  .search-content,
+  h2 {
+    padding-left: 10px;
+  }
+
+  .action-games,
+  .adventure-games,
+  .sports-games,
+  #prize-container,
+  .games-used {
+    grid-template-columns: 1fr;
+  }
+
   #logo {
     width: 80px;
     height: 50px;
@@ -276,7 +329,6 @@ footer {
 
   main,
   nav {
-    font-size: 0.7em;
     margin-top: 96px;
     margin-left: 0;
   }
@@ -305,7 +357,6 @@ footer {
   }
 
   footer {
-    font-size: 0.6em;
     margin-left: 0;
   }
 

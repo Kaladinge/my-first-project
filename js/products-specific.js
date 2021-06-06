@@ -24,7 +24,7 @@ async function findInfo() {
                         <div class="text">
                             <h1 class="header">${result.name}</h1>
                             <p>${result.short_description}</p>
-                            <h1 class="price">${result.prices.price} kr</h1><a href="" class="cart">Put in Cart</a>
+                            <h2 class="price">${result.prices.price} kr</h2><a href="" class="cart">Put in Cart</a>
                             <p class="description">${result.description}</p>
                         </div>
                         `

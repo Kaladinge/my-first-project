@@ -1,5 +1,5 @@
 html {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "PT Sans", verdana, sans-serif;
 }
 
@@ -10,6 +10,12 @@ body {
 header {
   position: relative;
   background-color: white;
+}
+
+.allcontent1 {
+  text-align: left;
+  width: 95%;
+  margin: 0 auto;
 }
 
 #cart-box {
@@ -54,7 +60,6 @@ h2 {
   font-family: "Russo One", verdana, sans-serif;
   text-align: left;
   font-size: 30px;
-  line-height: 20px;
 }
 
 h4 {
@@ -114,7 +119,6 @@ nav ul {
   background-color: #ee1925;
   color: white;
   text-align: center;
-  font-size: 0.8rem;
   display: none;
 }
 
@@ -123,22 +127,20 @@ nav ul {
 }
 
 #cart {
-  width: 55px;
+  width: 35px;
   position: relative;
 }
 
+#person,
 #mag-glass {
-  width: 50px;
+  width: 30px;
+  width: 30px;
 }
 
 .used-games {
   display: inline;
   border: 1px solid black;
   padding: 5px 20px;
-}
-
-#person {
-  width: 45px;
 }
 
 #cart,
@@ -167,8 +169,7 @@ header {
   z-index: 200;
 }
 
-main,
-footer {
+main {
   margin-left: 184px;
 }
 
@@ -274,6 +275,19 @@ main,
   height: 300px;
 }
 
+/* footer info */
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 16px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  margin-left: 184px;
+}
+
 /* desktop styles */
 
 @media only screen and (min-width: 550px) and (max-width: 999px) {
@@ -289,28 +303,26 @@ main,
   .quantity {
     right: 8px;
   }
+
+  footer {
+    flex-direction: column;
+    margin-left: 111px;
+  }
 }
 
 /* Smart phone styles */
 
 @media only screen and (max-width: 549px) {
-  /*.horizontal-text,
-  .hor1 {
-    display: none;
-  }*/
-
-  header {
-    font-size: 0.7rem;
-  }
-
   .horizontal-text {
     display: none;
   }
 
-  #mag-glass,
-  #person,
-  #cart {
-    width: 30px;
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
   }
 
   .horizontal-menu {
@@ -334,5 +346,10 @@ main,
   #cart-box {
     top: 90px;
     width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    margin-left: 0;
   }
 }

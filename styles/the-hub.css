@@ -14,11 +14,6 @@ nav {
   display: table;
 }
 
-.allcontent1 {
-  text-align: left;
-  width: 95%;
-  margin: 0 auto;
-}
 .paragraph {
   margin-top: 50px;
   max-width: 750px;
@@ -73,7 +68,7 @@ nav {
 input[type="text"] {
   width: 470px;
   padding: 10px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 /* Grid info */
@@ -104,13 +99,6 @@ body {
     "header header header"
     "nav main sidebar"
     "footer footer footer";
-}
-
-/* footer info */
-
-footer {
-  display: flex;
-  justify-content: space-between;
 }
 
 /* media queries
@@ -168,7 +156,6 @@ footer {
   }
 
   main {
-    font-size: 0.8em;
     margin-left: 111px;
   }
 
@@ -178,11 +165,6 @@ footer {
 
   .search-form {
     width: 380px;
-  }
-
-  footer {
-    font-size: 0.6em;
-    margin-left: 111px;
   }
 
   #hamburger-menu,
@@ -208,7 +190,6 @@ footer {
 
   main,
   nav {
-    font-size: 0.8em;
     margin-top: 96px;
     margin-left: 0;
   }
@@ -230,11 +211,6 @@ footer {
 
   #icon3 {
     width: 50%;
-  }
-
-  footer {
-    font-size: 0.6em;
-    margin-left: 0;
   }
 
   input[type="text"] {

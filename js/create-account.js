@@ -8,6 +8,7 @@ const password = document.querySelector("#pick_password");
 const errorPassword = document.querySelector("#passwordError");
 const passwordConfirm = document.querySelector("#confirm_password");
 const errorPasswordConfirm = document.querySelector("#passwordConfirmError");
+const button = document.querySelector("button");
 
 function validateNickname(event) {
     if (lencheck(nickName.value, 2) === true) {
@@ -53,6 +54,17 @@ function validateConfirmPassword(event) {
     console.log(passwordConfirm.value);
 }
 
+    if (lencheck(nickName.value, 2)) {
+        
+    }
+
+function checkForm() {
+    if (lencheck(nickName.value, 2) === true && lencheck(birthDay.value, 8) === true && emailCheck(inputEmail.value) === true && lencheck(password.value, 8) === true && passwordConfirm.value === password.value) {
+
+        button.disabled = false;
+        console.log("hello");
+    }
+}
 
 function lencheck(item, len) {
     if (item.trim().length > len) {
@@ -73,3 +85,4 @@ birthDay.addEventListener("blur", validateBirthday);
 inputEmail.addEventListener("blur", validateEmail);
 password.addEventListener("blur", validatePassword);
 passwordConfirm.addEventListener("keyup", validateConfirmPassword);
+document.addEventListener("keyup",checkForm);

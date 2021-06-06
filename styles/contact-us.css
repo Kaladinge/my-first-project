@@ -3,15 +3,7 @@
 /* main info */
 
 main {
-  background-color: grey;
   margin-top: 120px;
-}
-
-.sheet {
-  background: white;
-  margin-right: 100px;
-  margin-right: 10%;
-  border: 1px solid white;
 }
 
 .text {
@@ -144,16 +136,9 @@ body {
   grid-gap: 0;
   grid-auto-columns: auto 1fr;
   grid-template-areas:
-    "header header header"
-    "nav main main"
-    "footer footer footer";
-}
-
-/* footer info */
-
-footer {
-  display: flex;
-  justify-content: space-between;
+    "header header"
+    "nav main"
+    "footer footer";
 }
 
 /* media queries */
@@ -193,17 +178,11 @@ footer {
   }
 
   main {
-    font-size: 0.8em;
     margin-left: 111px;
   }
 
   .vertical {
     width: 110px;
-  }
-
-  footer {
-    font-size: 0.6em;
-    margin-left: 111px;
   }
 
   #hamburger-menu,
@@ -242,7 +221,6 @@ footer {
 
   main,
   nav {
-    font-size: 0.8em;
     margin-top: 96px;
     margin-left: 0;
   }
@@ -264,11 +242,6 @@ footer {
 
   #icon3 {
     width: 50%;
-  }
-
-  footer {
-    font-size: 0.6em;
-    margin-left: 0;
   }
 
   nav {

@@ -9,18 +9,8 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
-  <link href="styles/search-results.css" rel="stylesheet" />
-  <!-- Hotjar Tracking Code for https://kaladinge-my-first-project.netlify.app/ -->
-  <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      h._hjSettings = { hjid: 2267224, hjsv: 6 };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-  </script>
+  <link href="styles/all-games.css" rel="stylesheet" />
+  
 </head>
 
 <body>
@@ -83,10 +73,6 @@
         <li>
           <a href="contact-us.html" class="vertical"><img src="images/support.png" id="icon4" alt="support" /></a>
         </li>
-        <!--<li>
-          <a href="index.html" class="vertical"><img src="images/other-categories.png" id="icon5"
-              alt="Other Categories" /></a>
-        </li>-->
         <li>
           <div class="blank vertical"></div>
         </li>
@@ -95,88 +81,52 @@
   </nav>
 
   <main>
-    <div class="allcontent1">
-      <img src="images/search-hub.png" alt="search bar" id="search">
-      <p>Your search for 'Used games' has 200 hits.</p>
-      <p class="category">Most recent</p>
-      <p class="category all">All</p>
-      <p class="category">Nintendo</p>
-      <p class="category">XBox</p>
-      <p class="category">Playstation</p>
-      <p class="category">Gameboy</p>
-    </div>
-
-    <div class="filter">
-      <h2 class="filterheaders">Filter 1</h2>
-      <form id="filter">
-        <div class="form__input">
-          <input type="checkbox" id="choice1" name="choice1" value="choice1">
-          <label for="choice1">Choice</label>
-        </div>
-        <div class="form__input">
-          <input type="checkbox" id="choice2" name="choice2" value="choice2">
-          <label for="choice2">Choice</label>
-        </div>
-        <div class="form__input">
-          <input type="checkbox" id="choice3" name="choice3" value="choice3">
-          <label for="choice3">Choice</label>
-        </div>
-        <div class="form__input">
-          <input type="checkbox" id="choice4" name="choice4" value="choice4">
-          <label for="choice4">Choice</label>
-        </div>
-        <div class="form__input">
-          <input type="checkbox" id="choice5" name="choice5" value="choice5">
-          <label for="choice5">Choice</label>
-        </div>
-        <div class="form__input">
-          <input type="checkbox" id="choice6" name="choice6" value="choice6">
-          <label for="choice6">Choice</label>
-        </div>
-
-        <h2 class="filterheaders">Filter 2</h2>
-
-        <div class="form__input">
-          <input type="checkbox" id="choice1" name="choice1" value="choice1">
-          <label for="choice1">Choice</label>
-        </div>
-        <div class="form__input">
-          <input type="checkbox" id="choice1" name="choice1" value="choice1">
-          <label for="choice1">Choice</label>
-        </div>
-        <div class="form__input">
-          <input type="checkbox" id="choice1" name="choice1" value="choice1">
-          <label for="choice1">Choice</label>
-        </div>
-
-        <h2 class="filterheaders">Filter 3</h2>
-
-        <div class="form__input">
-          <input type="checkbox" id="choice1" name="choice1" value="choice1">
-          <label for="choice1">Choice</label>
-        </div>
-        <div class="form__input">
-          <input type="checkbox" id="choice1" name="choice1" value="choice1">
-          <label for="choice1">Choice</label>
-        </div>
-        <div class="form__input">
-          <input type="checkbox" id="choice1" name="choice1" value="choice1">
-          <label for="choice1">Choice</label>
-        </div>
+    <h1>USED GAMES</h1>
+    <div class="search-content">
+      <div class="searchbar">
+        <form action="/action_page.php" class="search-form">
+          <input type="text" placeholder="Search..." name="search">
+          <button type="submit" class="search-button"><img src="images/search-icon.png" alt="search bar"
+              id="search-icon"></button>
+        </form>
+      </div>
+    
+      <form>
+        <label for="filter">Choose by prize:</label>
+        <select name="filter" id="filter">
+          <option value="all prizes">All</option>
+          <option value="over 350 kr">Over 350 kr</option>
+          <option value="below 350 kr">Max 350 kr</option>
+        </select>
       </form>
+    
+      <form>
+        <label for="filter2">Choose by platform:</label>
+        <select name="filter2" id="filter2">
+          <option value="all platforms">All</option>
+          <option value="Nintendo Switch">Nintendo Switch</option>
+          <option value="Playstation 4">Playstation 4</option>
+          <option value="PC">PC</option>
+          <option value="Nintendo Gamecube">Nintendo Gamecube</option>
+          <option value="NES">NES</option>
+          <option value="Nintendo 64">Nintendo 64</option>
+        </select>
+      </form>
+    
     </div>
-
-        <div class="games click-area">
-          <div class="loader"></div>
-        </div>
-        <div class="buy click-area2">
-        </div>
-
+    <h2 id="used-header"><img src="images/shopping-bag.png" alt="star content" id="bag">5 years old or newer</h2>
+    
+    <div class="games-used" id="games-used">
+      <div class="loader"></div>
+    </div>
+    
+    <h2 id="price-header"></h2>
+    
+    <div id="prize-container"></div>
+  
   </main>
 
-  <div class="sidebar">
-
-  </div>
+  
 
   <footer>
     <p>Company Information</p>
@@ -186,8 +136,8 @@
     <p>Support</p>
     <p>Copyright &copy;</p>
   </footer>
-  <script src="js/fetch-used.js"></script>
   <script src="js/index.js"></script>
+  <script src="js/used-games.js"></script>
 </body>
 
 </html>

@@ -1,225 +1,209 @@
 @import "imports/header-nav.css";
 
 @import "imports/sidebar.css";
-  
-  /* main info */
-  
-  .allcontent1::after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .allcontent1 {
-    margin-left: 0px;
-    text-align: left;
-    width: 95%;
-    margin: 0 auto;
-  }
 
-  .paragraph {
-    margin-top: 50px;
-    max-width: 750px;
-  }
-  
-  #mario {
-    border: 3px solid grey;
-    float: right;
-    width: 230px;
-  }
-  
-  #search {
-    width: 70%;
-    min-width: 200px;
-    margin-top: 30px;
-  }
-  
-  .container {
-    width: 95%;
-    margin: 0 auto;
-    }
+/* main info */
 
+.allcontent1::after {
+  clear: both;
+  content: "";
+  display: table;
+}
 
-  .yellow {
-      position: relative;
-      max-width: 1000px;
-      height: 350px;
-      background-image: url('../images/yellow-block.png');
-      background-size: cover;
-      }
- 
-   #logo2 {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 161px;
-        height: 101px;
-      }
-  
-  /* Grid info */
-  
-  header {
-    grid-area: header;
-  }
-  
-  nav {
-    grid-area: nav;
-  }
-  
-  main {
-    grid-area: main;
-  }
-  .sidebar {
-    grid-area: sidebar;
-  }
-  footer {
-    grid-area: footer;
-  }
-  
-  body {
-    display: grid;
-    grid-gap: 0;
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas:
-      "header header header"
-      "nav main sidebar"
-      "footer footer footer";
-  }
-  
-  /* footer info */
-  
-  footer {
-    display: flex;
-    justify-content: space-between;
-  }
-  
+.allcontent1 {
+  margin-left: 0px;
+  text-align: left;
+  width: 95%;
+  margin: 0 auto;
+}
 
-  /* media queries
+.paragraph {
+  margin-top: 50px;
+  max-width: 750px;
+}
+
+#mario {
+  border: 3px solid grey;
+  float: right;
+  width: 230px;
+}
+
+#search {
+  width: 70%;
+  min-width: 200px;
+  margin-top: 30px;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.yellow {
+  position: relative;
+  max-width: 1000px;
+  height: 350px;
+  background-image: url("../images/yellow-block.png");
+  background-size: cover;
+}
+
+#logo2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 161px;
+  height: 101px;
+}
+
+/* Grid info */
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+footer {
+  grid-area: footer;
+}
+
+body {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:
+    "header header header"
+    "nav main sidebar"
+    "footer footer footer";
+}
+
+/* media queries
 
  /* Desktop styles */
 
- @media only screen and (min-width: 1280px) {
-  #hamburger-menu, .fas {
+@media only screen and (min-width: 1280px) {
+  #hamburger-menu,
+  .fas {
     display: none;
   }
 }
 
-  /* small desktop styles */
+/* small desktop styles */
 
-  @media only screen and (min-width: 1000px) and (max-width: 1279px) {
-    #mario {
-      display: none;
-    }
+@media only screen and (min-width: 1000px) and (max-width: 1279px) {
+  #mario {
+    display: none;
+  }
 
-    #hamburger-menu, .fas {
-      display: none;
-    }
+  #hamburger-menu,
+  .fas {
+    display: none;
+  }
 }
 
- /* desktop styles */
+/* desktop styles */
 
- @media only screen and (min-width: 550px) and (max-width: 999px) {
-    body {
-        display: grid;
-        grid-gap: 0;
-        grid-template-areas:
-        "header header"
-        "nav main"
-        "nav sidebar"
-        "footer footer"
-        }
+@media only screen and (min-width: 550px) and (max-width: 999px) {
+  body {
+    display: grid;
+    grid-gap: 0;
+    grid-template-areas:
+      "header header"
+      "nav main"
+      "nav sidebar"
+      "footer footer";
+  }
 
-        main {
-          font-size: 0.8em;
-          margin-left: 111px;
-        }
+  main {
+    margin-left: 111px;
+  }
 
-        #mario {
-          width: 150px;
-        }
+  #mario {
+    width: 150px;
+  }
 
-        .vertical {
-            width: 110px;
-        }
+  .vertical {
+    width: 110px;
+  }
 
-        .sidebar {
-          margin-top: 0;
-          margin-left: 114px;
-        }
+  .sidebar {
+    margin-top: 0;
+    margin-left: 114px;
+  }
 
-        footer {
-            font-size: 0.6em;
-            margin-left: 111px;
-        }
-
-        #hamburger-menu, .fas {
-          display: none;
-        }
+  #hamburger-menu,
+  .fas {
+    display: none;
+  }
 }
 
+/* small desktop styles */
 
- /* small desktop styles */
+@media only screen and (max-width: 549px) {
+  .sidebar,
+  .horizontal2 {
+    display: none;
+  }
 
- @media only screen and (max-width: 549px) {
+  #logo {
+    width: 80px;
+    height: 50px;
+  }
 
-    .sidebar, .horizontal2 {
-        display: none;
-    }
+  main,
+  nav {
+    margin-top: 96px;
+    margin-left: 0;
+  }
 
-    #logo {
-        width: 80px;
-        height: 50px;
-    }
+  .vertical {
+    width: 100px;
+    height: 100px;
+  }
 
-    main, nav {
-      font-size: 0.8em;
-      margin-top: 96px;
-      margin-left: 0;
-    }
+  #icon1,
+  #icon4,
+  #icon5 {
+    width: 45%;
+  }
 
-    .vertical {
-      width: 100px;
-      height: 100px;
-    }
-    
-      #icon1, #icon4, #icon5 {
-        width: 45%;
-      }
-      
-      #icon2 {
-        width: 70%;
-      }
-      
-      #icon3 {
-        width: 50%;
-      }
+  #icon2 {
+    width: 70%;
+  }
 
-    #mario {
-      display: none;
-    }
+  #icon3 {
+    width: 50%;
+  }
 
-    footer {
-        font-size: 0.6em;
-        margin-left: 0;
-    }
+  #mario {
+    display: none;
+  }
 
-    nav {
-      display: none;
-      position: fixed;
-    }
-  
-    #hamburger-menu {
-      display: none;
-    }
-  
-    .fas{
-      position: fixed;
-      z-index: 300;
-      top: 40px;
-      right: 40px;
-    }
-  
-    #hamburger-menu:checked ~ nav {
-      display:block;
-    }
+  nav {
+    display: none;
+    position: fixed;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  .fas {
+    position: fixed;
+    z-index: 300;
+    top: 40px;
+    right: 40px;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
 }

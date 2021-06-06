@@ -1,6 +1,5 @@
-const actionGames = document.querySelector(".action-games");
-const adventureGames = document.querySelector(".adventure-games");
-const sportsGames = document.querySelector(".sports-games");
+const usedGames = document.querySelector(".games-used");
+
 
 const selectPrize = document.getElementById("filter");
 const selectPlatform = document.getElementById("filter2");
@@ -20,30 +19,21 @@ async function gameList() {
         const results = await response.json();
 
 
-        actionGames.innerHTML = "";
-        adventureGames.innerHTML = "";
-        sportsGames.innerHTML = "";
+        usedGames.innerHTML = "";
+        
         prizeContainer.innerHTML = "";
 
-         for (i = 0; i < 4; i++) {
+         for (i = 0; i < 1; i++) {
                     headers[i].style.display = "block";
                 }
 
                 headers[1].style.display = "none";
 
         for (let i = 0; i < 9; i++) {
-            if (results[i].categories[0].name == "Action") {
-                createHTML(results[i],actionGames);
+             {
+                createHTML(results[i],usedGames);
             } 
-
-            if (results[i].categories[0].name == "Adventure") {
-                createHTML(results[i],adventureGames);
-            } 
-
-            if (results[i].categories[0].name == "Sports") {
-                createHTML(results[i],sportsGames);
-            } 
-           
+            
            const buttons = document.querySelectorAll(".buy-button");
         }
     }
@@ -86,18 +76,16 @@ function filterPrize(event) {
                 const response = await fetch(url);
                 const results = await response.json();
         
-                actionGames.innerHTML = "";
-                adventureGames.innerHTML = "";
-                sportsGames.innerHTML = "";
+                usedGames.innerHTML = "";
+               
                 
-                for (i = 0; i < 4; i++) {
+                for (i = 0; i < 2; i++) {
                     headers[i].style.display = "none";
                 }
-
+                
                 headers[1].style.display = "block";
                 headers[1].innerHTML = event.target.value;
                 
-
                 if (event.target.value === "over 350 kr") {
                     prizeContainer.innerHTML = "";
                     for (i = 0; i < 9; i++) {
@@ -143,13 +131,9 @@ function filterPlatform(event) {
                 const results = await response.json();
                 console.log(results);
         
-                actionGames.innerHTML = "";
-                adventureGames.innerHTML = "";
-                sportsGames.innerHTML = "";
-
-                
-                
-                for (i = 0; i < 4; i++) {
+                usedGames.innerHTML = "";
+            
+                for (i = 0; i < 2; i++) {
                     headers[i].style.display = "none";
                 }
                 headers[1].style.display = "block";
@@ -191,10 +175,9 @@ document.getElementById(gametype).addEventListener('click',function(event){
           }    
  });}
 
-cartFunctions("action-games");
-cartFunctions("adventure-games");
-cartFunctions("sports-games");
+cartFunctions("games-used");
 cartFunctions("prize-container");
+
 
 selectPrize.addEventListener("change",filterPrize);
 selectPlatform.addEventListener("change",filterPlatform);

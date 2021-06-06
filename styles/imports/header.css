@@ -1,5 +1,5 @@
 html {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "PT Sans", verdana, sans-serif;
 }
 
@@ -77,21 +77,18 @@ nav ul {
 }
 
 #cart {
-  width: 55px;
+  width: 35px;
 }
 
-#mag-glass {
-  width: 50px;
+#mag-glass,
+#person {
+  width: 30px;
 }
 
 .used-games {
   display: inline;
   border: 1px solid black;
   padding: 5px 20px;
-}
-
-#person {
-  width: 45px;
 }
 
 #cart,
@@ -121,11 +118,27 @@ main {
   margin-top: 147px;
 }
 
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 184px;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+}
+
 /* desktop styles */
 
 @media only screen and (min-width: 550px) and (max-width: 999px) {
   .horizontal-text {
     display: none;
+  }
+
+  footer {
+    flex-direction: column;
+    margin-left: 111px;
   }
 }
 /* Smart phone styles */
@@ -136,14 +149,14 @@ main {
     display: none;
   }
 
-  #mag-glass,
-  #person {
-    width: 55%;
-  }
-
   .horizontal-menu {
     justify-content: end;
     top: 38px;
     width: 20%;
+  }
+
+  footer {
+    flex-direction: column;
+    margin-left: 0;
   }
 }

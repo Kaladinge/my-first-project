@@ -102,19 +102,16 @@ a {
 .buy-button {
   margin: 0;
   display: inline-block;
-  border: 1px solid black;
 }
 
 #price {
   display: inline-block;
-  border: 1px solid black;
 }
 
 .cart {
   margin: 0px;
   color: white;
   background-color: #ee1925;
-  border: 1px solid black;
   text-decoration: none;
   padding: 7px 25px;
   border-radius: 15px;

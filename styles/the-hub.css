@@ -1,7 +1,5 @@
 @import "imports/header-nav.css";
 
-@import "imports/sidebar.css";
-
 /* main info */
 
 nav {
@@ -235,6 +233,7 @@ body {
     z-index: 300;
     top: 40px;
     right: 40px;
+    cursor: pointer;
   }
 
   #hamburger-menu:checked ~ nav {

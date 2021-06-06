@@ -17,7 +17,7 @@
 }
 
 .yellow {
-  max-width: 1000px;
+  max-width: 100%;
   max-height: 350px;
   background-image: url("../images/yellow-block.png");
   background-size: cover;
@@ -207,6 +207,7 @@ body {
     z-index: 300;
     top: 40px;
     right: 40px;
+    cursor: pointer;
   }
 
   #hamburger-menu:checked ~ nav {

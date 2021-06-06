@@ -148,6 +148,7 @@ body {
     z-index: 300;
     top: 40px;
     right: 40px;
+    cursor: pointer;
   }
 
   #hamburger-menu:checked ~ nav {

@@ -167,6 +167,16 @@ a {
   animation: spin 2s linear infinite;
 }
 
+.adventure-loader {
+  border: 16px solid #a6c906;
+  border-top: 16px solid black;
+}
+
+.sports-loader {
+  border: 16px solid #9859d0;
+  border-top: 16px solid black;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);

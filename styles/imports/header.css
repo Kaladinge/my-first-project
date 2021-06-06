@@ -31,16 +31,6 @@ h2 {
   margin-bottom: 7px;
 }
 
-header > a:hover {
-  box-shadow: 10px 10px 30px black;
-  padding-top: 100px;
-}
-
-.horizontal:hover {
-  box-shadow: 10px 10px 30px black;
-  padding: 20px 0;
-}
-
 header ul {
   list-style-type: none;
   margin: 0;
@@ -147,6 +137,14 @@ footer {
   .horizontal-text,
   .hor1 {
     display: none;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
   }
 
   .horizontal-menu {

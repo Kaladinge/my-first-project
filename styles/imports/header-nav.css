@@ -26,6 +26,8 @@ header {
   right: 0;
   top: 110px;
   display: none;
+  max-height: 330px;
+  overflow: scroll;
 }
 
 .flexing {
@@ -273,6 +275,10 @@ main,
 
 .blank {
   height: 300px;
+}
+
+.blank:hover {
+  background-color: black;
 }
 
 /* footer info */
